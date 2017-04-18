@@ -106,10 +106,10 @@ function onBtnClicked() {
 * [Installation](installation/README.md)
   * Automatic Installation
   * Tutorials
-    * [Tutorial for Windows](installation/windows/cli/README.md)
-    * [Tutorial for Mac/Linux](installation/macosx/README.md)
-    * [PhoneGap Usage](installation/phonegap/README.md)
-    * [Tutorial for Crosswalk](installation/crosswalk/README.md)
+    * [Tutorial for Windows](Installation/windows/cli/README.md)
+    * [Tutorial for Mac/Linux](Installation/macosx/README.md)
+    * [PhoneGap Usage](Installation/phonegap/README.md)
+    * [Tutorial for Crosswalk](Installation/crosswalk/README.md)
   * Upgrade
     * Just re-install this plugin
 
