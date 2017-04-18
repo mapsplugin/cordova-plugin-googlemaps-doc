@@ -133,7 +133,7 @@ function onBtnClicked() {
 - [External Service](./class/External-Service/README.md)
 
 If you want to use crosswalk, just follow this easy documentation.
-[Install Plugin with Crosswalk](installation/crosswalk/README.md)
+[Install Plugin with Crosswalk](Installation/crosswalk/README.md)
 
 -----
 
