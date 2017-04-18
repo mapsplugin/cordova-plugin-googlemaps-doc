@@ -254,7 +254,7 @@ Related pages:
 * [LatLngBounds.contains()](./LatLngBounds.contains()) : Detects if the given coordinates are in the bounds or not.
 
 ***
-#Map Class Reference
+# Map Class Reference
 Method | Return value | Description
 ----|------|----
 [getMap()](Map.getMap()) | Map | Return the instance of a Map class. Plugin does not make multiple maps.
