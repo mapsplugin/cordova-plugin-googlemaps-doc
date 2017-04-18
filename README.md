@@ -24,3 +24,4 @@ Unfortunately, the documentation for v2.0 is not ready yet.
 But the example app contains documentation and demo code.
 
 https://github.com/mapsplugin/v2.0-demo
+https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/v2-beta
