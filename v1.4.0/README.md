@@ -103,7 +103,7 @@ function onBtnClicked() {
 
 [All documentations are here!!](wiki.md)
 
-* [Installation](installation/README.md)
+* [Installation](Installation/README.md)
   * Automatic Installation
   * Tutorials
     * [Tutorial for Windows](Installation/windows/cli/README.md)
