@@ -3,7 +3,8 @@
 The cordova-plugin-crosswalk-webview is based on Chromium webview engine for Cordova.
 It is faster than regular android webview.
 
-** [Unfortunately, the Crosswalk project has been already retired.](https://crosswalk-project.org/blog/crosswalk-final-release.html)**
+[Unfortunately, the Crosswalk project has been already retired.](https://crosswalk-project.org/blog/crosswalk-final-release.html)
+
 However, you can still use the cordova-plugin-crosswalk-webview plugin.
 
 
