@@ -16,7 +16,7 @@ To solve white screen problem add
 <preference name="xwalkZOrderOnTop" value="true" />
 ```
 
-###3. Change the AndroidManifest.xml
+### 3. Change the AndroidManifest.xml
 **ONLY DO THIS STEP IF YOU HAVE A BLACK-SCREEN-PROBLEM, IF NOT, JUST SKIP THAT STEP**
 In my tests, it was not necessary to change anything here. I will just keep it here as a "backup" for older devices.
 
@@ -29,7 +29,7 @@ Open `AndroidManifest.xml`, find `android:theme="@android:style/Theme.Black.NoTi
 Before 1.3.9, you had to change ANIMATABLE_XWALK_VIEW. There is no need to change ANIMATABLE_XWALK_VIEW anymore, since it is FALSE by default now. If you use "Native Transition Plugin", they force you to set it to true with `<preference name="CrosswalkAnimatable" value="true" />`. This should not work with our plugin, but you could try it (my test cases were good)
 
 
-### 3. Build and Run
+### 4. Build and Run
 For Android, just type these commands:
 ```bash
 $> cd HelloMap/
