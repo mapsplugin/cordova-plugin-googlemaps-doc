@@ -1,3 +1,5 @@
+# Before bug reporting
+
 Thank you for using PhoneGap-GoogleMaps-Plugin.
 
 If you get in a trouble, I'm sorry for that.
