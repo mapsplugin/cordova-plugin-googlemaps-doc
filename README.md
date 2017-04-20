@@ -20,8 +20,9 @@ You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
 But it might be unstable sometimes.
 
-Unfortunately, the documentation for v2.0 is not ready yet.
+Unfortunately, the documentation for v2.0 is not enough yet.
 But the example app contains documentation and demo code.
 
 https://github.com/mapsplugin/v2.0-demo
-https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/v2-beta
+
+For documentation, read from [HERE](./v2.0.0/README.md)
