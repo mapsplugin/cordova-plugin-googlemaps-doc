@@ -4,7 +4,7 @@
 
 ![](images/v2demo.gif)
 
-- [What news in version 2?](whats-new-v2/README.md)
+- [What's new in version 2?](whats-new-v2/README.md)
 
 - [How to install the v2-beta?](Installation/README.md)
 
