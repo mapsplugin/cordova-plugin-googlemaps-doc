@@ -15,4 +15,4 @@
 
 ## classes
 
-- [Map class](./Map/README.md)
+- [Map class](./class/Map/README.md)
