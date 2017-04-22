@@ -1,4 +1,4 @@
-# Map class
+# plugin.google.maps.Map.getMap()
 
 ## Create a map
 
