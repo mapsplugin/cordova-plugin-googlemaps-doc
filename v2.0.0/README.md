@@ -11,3 +11,8 @@
 - [Migrate from v1 to v2](migrate-from-v1/README.md)
 
 - [For ionic2 users](For-ionic2-users/README.md)
+
+
+## classes
+
+- [Map class](./Map/README.md)
