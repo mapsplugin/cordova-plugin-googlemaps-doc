@@ -11,10 +11,10 @@ If you don't use a map then remove it - that will save memory.
 ### change 2: Multiple pages
 
 Version 1.x only supported a single HTML file (typically index.html).
-The new version supports multiple HTML file (such as index.html, page1.html, page2.html ...etc)
+The new version supports multiple HTML files (such as index.html, page1.html, page2.html ...etc)
 You don't need to clean up the maps if you change HTML files. The plugin will do that automatically.
 
-However, changing tab page in the same HTML is different.
+However, changing tab page in the same HTML is a different story.
 You still need to use `map.setVisible(true/false)`.
 
 ### change 3: Recognise all HTML elements
@@ -40,7 +40,7 @@ HTML elements that have `position:fixed` always take priority in the maps plugin
 The problem with version 1.x was the [KeepWatching Timer](https://github.com/mapsplugin/cordova-plugin-googlemaps/tree/caf6ec1099afc0c2993a367a346d44b6e5b0f99c/www/googlemaps-cdv-plugin.js#L2474).
 This timer periodically watches HTML element positions in the map div.
 However the timer runs continuously, regardless of whether there is user input in your app or not.
-This affects your battery life.
+This affects your device battery life.
 
 In the new version, the timer stops automatically if the user does not touch on the map for a while.
 If the user touches on the app again then the timer starts.
@@ -64,8 +64,8 @@ document.dispatchEvent(event);
 ### Change 5. Performance improvements
 
 Another big problem of version 1.x was that all (most) native code ran on the UI thread (or ran on the WebCore thread).
-The reason for this is the Google Maps native APIs require it.
-However I tested so much time and rewrote almost the entire codebase in both native and Javascript, so most of the code runs on the background thread. And most of the code now runs in parallel.
+The reason for this is the Google Maps Native API's require it.
+However I tested lots and rewrote almost the entire codebase in both native and Javascript, so most of the code runs on the background thread. And most of the code now also runs in parallel.
 
 For example, adding multiple markers on a map works like this.
 
@@ -100,7 +100,7 @@ The file is 2873 lines long. Wow, it's too large and not suitable for maintenanc
 I have split the JS files for each class (such as Marker.js, Circle.js, etc):
 https://github.com/mapsplugin/cordova-plugin-googlemaps/tree/multiple_maps/www
 
-You can now debug easily :)
+You can now easily debug your app :)
 
 ### change 7. Introduce BaseArrayClass
 
@@ -119,12 +119,12 @@ marker.getPosition(function(position) {
 });
 ```
 
-in version 2.0-beta:
+In version 2.0-beta:
 ```js
 var position = marker.getPosition();
 ```
 
-You know what? Since the marker (and polyline,polygon...etc) extends the BaseClass (which is MVC class), you can monitor like this:
+You know what? Since the marker (and polyline, polygon...etc) extend the BaseClass (which is a MVC class), you can monitor like this:
 
 ```js
 markers[0].on("position_changed", onPositionChanged);
@@ -141,7 +141,7 @@ However, `map.getVisibleRegion()` does not support this, you still have to use a
 
 ### change 9. Chain programming
 
-In version 2.0, most `setXXX()` methods are able to chain.
+In version 2.0, most `setXXX()` methods can be chained.
 
 ```js
 marker.setPosition({"lat": ...., "lng": ....}).setTitle("Hello");
@@ -152,7 +152,7 @@ marker.setPosition({"lat": ...., "lng": ....}).setTitle("Hello");
 #### Version 1.x events
 <table>
 <tr><th>event name</th>
-<th>Androide</th>
+<th>Android</th>
 <th>iOS</th>
 </tr>
 <tr><td> MAP_CLICK </td><td> YES </td><td> YES </td></tr>
@@ -177,7 +177,7 @@ marker.setPosition({"lat": ...., "lng": ....}).setTitle("Hello");
 #### Version 2.x events
 <table>
 <tr><th>event name</th>
-<th>Androide</th>
+<th>Android</th>
 <th>iOS</th>
 <th>arguments[0]</th>
 </tr>
@@ -206,9 +206,9 @@ marker.setPosition({"lat": ...., "lng": ....}).setTitle("Hello");
 
 ### change 11. Set background color
 
-Use `plugin.google.maps.environment.setBackgroundColor()`
+Use `plugin.google.maps.environment.setBackgroundColor()` to set the background color.
 
-### change 12. Geocoding/reverse geocoding
+### change 12. Geocoding / reverse geocoding
 
 You can do Geocoding like this:
 
@@ -231,9 +231,9 @@ plugin.google.maps.Geocoder.geocode({
 I forgot too much. See the demo APK.
 
 
-### change 14. Not yet
+### change 14. Methods still in development
 
-`map.showDialog()`, `map.closeDialog()`, and `map.addKmlOverlay()` are not ready yet.
+`map.showDialog()`, `map.closeDialog()`, and `map.addKmlOverlay()` are still in development and are not ready yet.
 
 
 ### change 15. UIWebView & WKWebView
