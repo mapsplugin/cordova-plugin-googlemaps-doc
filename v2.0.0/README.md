@@ -21,3 +21,7 @@
 ## classes
 
 - [Map class](./class/Map/README.md)
+
+- [LatLng class](./class/LatLng/README.md)
+
+- [CameraPosition class](./class/CameraPosition/README.md)
