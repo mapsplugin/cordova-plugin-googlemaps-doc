@@ -2,7 +2,6 @@
 
 ## Methods
 
-<h3>Methods</h3>
 <table >
     <tr>
         <th><a href="./getMap/README.md">getMap()</a></th>

@@ -1,6 +1,6 @@
 # map.getCameraPosition()
 
-Get the current camera position, including the center, zoom, tilt and bearing.
+Get the current [camera position](../../CameraPosition/README.md).
 
 ```html
 <div class="map" id="map_canvas">
