@@ -16,7 +16,7 @@
 
 - [Terms of Services](./Terms-of-Services/README.md)
 
-- [Apache Lincense version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
+- [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## classes
 
