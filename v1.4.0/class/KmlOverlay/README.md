@@ -17,7 +17,7 @@ animation | Boolean | Set false if you want to change the camera view without an
 map.addKmlOverlay({
   'url': "www/polygon.kml"
 }, function(kmlOverlay) {
-  kmlOverlay.on(plugin.google.maps.event.OVERLAY_CLICK, function(overlay, latLng) {
+  kmlOverlay.on(plugin.google.maps.event.OVERLAY_CLICK, function(overlay) {
     if (overlay.type === "Polygon") {
       overlay.setFillColor("red");
     }
