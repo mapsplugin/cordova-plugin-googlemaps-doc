@@ -12,6 +12,11 @@
 
 - [For ionic2 users](For-ionic2-users/README.md)
 
+## Lincense
+
+- [Terms of Services](./Terms-of-Services/README.md)
+
+- [Apache Lincense version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## classes
 
