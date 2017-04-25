@@ -1,11 +1,9 @@
-# map.clear()
+# map.fromLatLngToPoint()
 
-Removes all markers, polylines, polygons, overlays, etc from the map.
+Convert the unit from LatLng to the pixels from the left/top of the map div.
 
 ```html
-<div class="map" id="map_canvas">
-    <span class="smallPanel"><button>Click here</button></span>
-</div>
+<div class="map" id="map_canvas"></div>
 ```
 
 ```js
@@ -13,31 +11,32 @@ var div = document.getElementById("map_canvas");
 var map = plugin.google.maps.Map.getMap(div);
 map.one(plugin.google.maps.event.MAP_READY, function() {
 
-  var button = div.getElementsByTagName('button')[0];
-  button.addEventListener('click', function() {
-    // Removes the markers completely.
-    map.clear();
-  });
+  var center = map.getCameraTarget();
 
-  // Puts ramdom markers on the map.
-  createMarkers(map);
-});
-function createMarkers(map) {
-  map.getVisibleRegion(function(latLngBounds) {
-    var sw = latLngBounds.southwest;
-    var ne = latLngBounds.northeast;
-    var diffY = (ne.lat - sw.lat);
-    var diffX = (ne.lng - sw.lng);
-    for (var i = 0; i < 100; i++) {
-      map.addMarker({
-        'position': {
-          'lat': sw.lat + diffY * Math.random(),
-          'lng': sw.lng  + diffX * Math.random()
-        }
-      });
-    }
+  map.addMarker({
+    position: center,
+    draggable: true,
+    title: "Drag me!"
+  }, function(marker) {
+    marker.showInfoWindow();
+
+    // Catch the marker drag event
+    marker.on(plugin.google.maps.event.MARKER_DRAG_END, function(latLng) {
+        // LatLng -> Point
+        map.fromLatLngToPoint(latLng, function(point) {
+
+          // Show on the marker
+          marker
+            .setTitle(
+              "left : " + point[0].toFixed(1) + "px\n" + "top : " + point[1].toFixed(1) + "px"
+            )
+            .showInfoWindow();
+        });
+
+    });
+
   });
-}
+});
 ```
 
 ![](image.gif)
