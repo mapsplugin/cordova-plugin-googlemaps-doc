@@ -1,0 +1,41 @@
+# map.getVisibleRegion()
+
+Get the current visible region (SouthWest and NorthEast).
+
+```html
+<div class="map" id="map_canvas">
+    <span class="smallPanel"><button>Click here</button></span>
+</div>
+```
+
+```js
+var div = document.getElementById("map_canvas");
+var map = plugin.google.maps.Map.getMap(div, {
+  camera: {
+    target: {
+      lat: 37.422858,
+      lng: -122.085065
+    },
+    zoom: 15,
+    bearing: 150
+  }
+});
+map.one(plugin.google.maps.event.MAP_READY, function() {
+
+  var button = div.getElementsByTagName('button')[0];
+  button.addEventListener('click', function() {
+
+    // Get the visible region (LatLngBounds of SouthWest and NorthEast)
+    map.getVisibleRegion(function(latLngBounds) {
+      alert([
+        "NorthEast : " + latLngBounds.northeast.toUrlValue(),
+        "SouthWest : " + latLngBounds.southwest.toUrlValue()
+      ].join("\n"));
+    });
+
+  });
+
+});
+```
+
+![](image.gif)
