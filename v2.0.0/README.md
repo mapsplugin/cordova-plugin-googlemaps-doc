@@ -12,7 +12,7 @@
 
 - [For ionic2 users](For-ionic2-users/README.md)
 
-## Lincense
+## License
 
 - [Terms of Services](./Terms-of-Services/README.md)
 
