@@ -160,3 +160,72 @@
         <td><span class="highlight">Not ready yet currently</span></td>
     </tr>
 </table>
+
+## Events
+<table class="reference">
+    <tr>
+        <th><a href="./MAP_CLICK.html">MAP_CLICK</a></th>
+        <td>This event is fired when you click on the map.</td>
+    </tr>
+    <tr>
+        <th><a href="./MAP_LONG_CLICK.html">MAP_LONG_CLICK</a></th>
+        <td>This event is fired when you press your finger a few seconds on the map.</td>
+    </tr>
+    <tr>
+        <th><a href="./MY_LOCATION_BUTTON_CLICK.html">MY_LOCATION_BUTTON_CLICK</a></th>
+        <td>This event is fired when you tap on the location button.</td>
+    </tr>
+    <tr>
+        <th><a href="./CAMERA_EVENTS.html">CAMERA_MOVE_START<BR>CAMERA_MOVE<br>CAMERA_MOVE_END</a></th>
+        <td>This events are fired when the camera moves.</td>
+    </tr>
+    <tr>
+        <th><a href="./MAP_READY.html">MAP_READY</a></th>
+        <td>This event is fired when the map is created using the <span class="highlight">map.getMap()</span> method.</td>
+    </tr>
+</table>
+
+## Migrate from v1.4.0 to v2.0
+
+<table class="reference">
+    <tr>
+        <th>setCenter()</th>
+        <td>Use <a href="./setCameraTarget.html">setCameraTarget()</a> method.</td>
+    </tr>
+    <tr>
+        <th>setZoom()</th>
+        <td>Use <a href="./setCameraZoom.html">setCameraZoom()</a> method.</td>
+    </tr>
+    <tr>
+        <th>setBearing()</th>
+        <td>Use <a href="./setCameraBearing.html">setCameraBearing()</a> method.</td>
+    </tr>
+    <tr>
+        <th>setTilt()</th>
+        <td>Use <a href="./setCameraTilt.html">setCameraTilt()</a> method.</td>
+    </tr>
+    <tr>
+        <th>getCenter()</th>
+        <td>Use <a href="./getCameraTarget.html">getCameraTarget()</a> method.</td>
+    </tr>
+    <tr>
+        <th>getZoom()</th>
+        <td>Use <a href="./getCameraZoom.html">getCameraZoom()</a> method.</td>
+    </tr>
+    <tr>
+        <th>getBearing()</th>
+        <td>Use <a href="./getCameraBearing.html">getCameraBearing()</a> method.</td>
+    </tr>
+    <tr>
+        <th>getTilt()</th>
+        <td>Use <a href="./getCameraTilt.html">getCameraTilt()</a> method.</td>
+    </tr>
+    <tr>
+        <th><a href="../Environment/setBackgroundColor.html">setBackgroundColor()</a></th>
+        <td><span class="highlight">Move to the </span><a href="../Environment">Environment</a> class.</td>
+    </tr>
+    <tr>
+        <th>refreshLayout()</th>
+        <td>You can execute it, but you don't need to do that. The plugin do this automatically.</td>
+    </tr>
+</table>
