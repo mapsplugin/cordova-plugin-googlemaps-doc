@@ -1,12 +1,17 @@
 # Map class
 
-## Methods
+## Create
 
-<table >
+<table>
     <tr>
         <th><a href="./getMap/README.md">getMap()</a></th>
         <td>Gets a new map class instance.</td>
     </tr>
+</table>
+
+## Methods
+
+<table >
     <tr>
         <th><a href="./setDiv/README.md">setDiv()</a></th>
         <td>Changes the map div.</td>
