@@ -21,4 +21,4 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 });
 ```
 
-![](image.gif)
+![](image.png)
