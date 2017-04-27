@@ -22,6 +22,8 @@
 
 - [Map class](./class/Map/README.md)
 
+- [Marker class](./class/Marker/README.md)
+
 - [Environment class](./class/Environment/README.md)
 
 - [LatLng class](./class/LatLng/README.md)
