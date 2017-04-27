@@ -75,7 +75,7 @@
     </tr>
     <tr>
         <th><a href="./setDisableAutoPan/README.md">setDisableAutoPan()</a></th>
-        <td>Set true if you <b>do not want</b> to move the map when you click on the marker.</td>
+        <td>Set true if you **do not want** to move the map when you click on the marker.</td>
     </tr>
     <tr>
         <th><a href="./setPosition/README.md">setPosition()</a></th>
@@ -101,35 +101,35 @@
 <table>
     <tr>
         <th>MARKER_CLICK</th>
-        <td><div class="arguments">Arguments:  none</div>This event is fired when you click on a marker.</td>
+        <td>`Arguments:  none`This event is fired when you click on a marker.</td>
     </tr>
     <tr>
         <th>MARKER_DRAG_START</a>
         </th>
-        <td><div class="arguments">Arguments:  LatLng</div>This event is fired when you start dragging with a marker.</td>
+        <td>`Arguments:  LatLng`This event is fired when you start dragging with a marker.</td>
     </tr>
     <tr>
         <th>MARKER_DRAG</th>
-        <td><div class="arguments">Arguments:  LatLng</div>This event is fired during marker dragging.</td>
+        <td>`Arguments:  LatLng`This event is fired during marker dragging.</td>
     </tr>
     <tr>
         <th>MARKER_DRAG_END</th>
-        <td><div class="arguments">Arguments:  LatLng</div>This event is fired when you drop the marker.</td>
+        <td>`Arguments:  LatLng`This event is fired when you drop the marker.</td>
     </tr>
     <tr>
         <th>INFO_OPEN</th>
-        <td><div class="arguments">Arguments:  none</div>This event is fired when the infoWindow will be opened.</td>
+        <td>`Arguments:  none`This event is fired when the infoWindow will be opened.</td>
     </tr>
     <tr>
         <th>INFO_CLICK</th>
-        <td><div class="arguments">Arguments:  none</div>This event is fired when you click on the infoWindow.</td>
+        <td>`Arguments:  none`This event is fired when you click on the infoWindow.</td>
     </tr>
     <tr>
         <th>INFO_LONG_CLICK</th>
-        <td><div class="arguments">Arguments:  none</div>This event is fired when you click longer on the infoWindow.</td>
+        <td>`Arguments:  none`This event is fired when you click longer on the infoWindow.</td>
     </tr>
     <tr>
         <th>INFO_CLOSE</th>
-        <td><div class="arguments">Arguments:  none</div>This event is fired when the infoWindow is closed.</td>
+        <td>`Arguments:  none`This event is fired when the infoWindow is closed.</td>
     </tr>
 </table>

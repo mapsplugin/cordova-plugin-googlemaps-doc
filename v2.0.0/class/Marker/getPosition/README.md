@@ -3,7 +3,7 @@
 Get the marker position.
 
 ```html
-<div class="map" id="map_canvas">
+<div  id="map_canvas">
     <span class="smallPanel" id="label"></span>
 </div>
 ```
