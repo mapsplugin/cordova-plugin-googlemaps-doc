@@ -22,6 +22,8 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 });
 ```
 
+![](image1.png)
+
 ## set title & snippet
 
 Marker shows an infoWindow when you tap on the marker. You can also display the snippet strings.
@@ -50,6 +52,8 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   });
 });
 ```
+
+![](image2.png)
 
 ## Adding multiple marker
 
@@ -128,3 +132,5 @@ function addMarkers(map, data, callback) {
   });
 }
 ```
+
+![](image3.png)
