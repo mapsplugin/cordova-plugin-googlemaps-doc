@@ -1,4 +1,4 @@
-# The methods of Map class
+# Map class
 
 ## Methods
 
