@@ -133,27 +133,27 @@
     </tr>
     <tr>
         <th><a href="../Marker/addMarker/README.md">map.addMarker()</a></th>
-        <td>Add a <a href="../Marker/index/README.md">marker</a>.</td>
+        <td>Add a <a href="../Marker/README.md">marker</a>.</td>
     </tr>
     <tr>
         <th><a href="../Polyline/addPolyline/README.md">map.addPolyline()</a></th>
-        <td>Add a <a href="../Polyline/index/README.md">polyline</a>.</td>
+        <td>Add a <a href="../Polyline/README.md">polyline</a>.</td>
     </tr>
     <tr>
         <th><a href="../Polygon/addPolygon/README.md">map.addPolygon()</a></th>
-        <td>Add a <a href="../Polygon/index/README.md">polygon</a>.</td>
+        <td>Add a <a href="../Polygon/README.md">polygon</a>.</td>
     </tr>
     <tr>
         <th><a href="../Circle/addCircle/README.md">map.addCircle()</a></th>
-        <td>Add a <a href="../Circle/index/README.md">circle</a>.</td>
+        <td>Add a <a href="../Circle/README.md">circle</a>.</td>
     </tr>
     <tr>
         <th><a href="../GroundOverlay/addGroundOverlay/README.md">map.addGroundOverlay()</a></th>
-        <td>Add a <a href="../GroundOverlay/index/README.md">ground overlay</a>.</td>
+        <td>Add a <a href="../GroundOverlay/README.md">ground overlay</a>.</td>
     </tr>
     <tr>
         <th><a href="../TileLayer/addTileLayer/README.md">map.addTileLayer()</a></th>
-        <td>Add <a href="../addTileLayer/index/README.md">tile layer</a>.</td>
+        <td>Add <a href="../TileLayer/README.md">tile layer</a>.</td>
     </tr>
     <tr>
         <th>map.addKmlOverlay()</th>
@@ -164,23 +164,23 @@
 ## Events
 <table class="reference">
     <tr>
-        <th><a href="./MAP_CLICK.html">MAP_CLICK</a></th>
+        <th><a href="./MAP_CLICK/README.md">MAP_CLICK</a></th>
         <td>This event is fired when you click on the map.</td>
     </tr>
     <tr>
-        <th><a href="./MAP_LONG_CLICK.html">MAP_LONG_CLICK</a></th>
+        <th><a href="./MAP_LONG_CLICK/README.md">MAP_LONG_CLICK</a></th>
         <td>This event is fired when you press your finger a few seconds on the map.</td>
     </tr>
     <tr>
-        <th><a href="./MY_LOCATION_BUTTON_CLICK.html">MY_LOCATION_BUTTON_CLICK</a></th>
+        <th><a href="./MY_LOCATION_BUTTON_CLICK/README.md">MY_LOCATION_BUTTON_CLICK</a></th>
         <td>This event is fired when you tap on the location button.</td>
     </tr>
     <tr>
-        <th><a href="./CAMERA_EVENTS.html">CAMERA_MOVE_START<BR>CAMERA_MOVE<br>CAMERA_MOVE_END</a></th>
+        <th><a href="./CAMERA_EVENTS/README.md">CAMERA_MOVE_START<BR>CAMERA_MOVE<br>CAMERA_MOVE_END</a></th>
         <td>This events are fired when the camera moves.</td>
     </tr>
     <tr>
-        <th><a href="./MAP_READY.html">MAP_READY</a></th>
+        <th><a href="./MAP_READY/README.md">MAP_READY</a></th>
         <td>This event is fired when the map is created using the <span class="highlight">map.getMap()</span> method.</td>
     </tr>
 </table>
@@ -190,39 +190,39 @@
 <table class="reference">
     <tr>
         <th>setCenter()</th>
-        <td>Use <a href="./setCameraTarget.html">setCameraTarget()</a> method.</td>
+        <td>Use <a href="./setCameraTarget/README.md">setCameraTarget()</a> method.</td>
     </tr>
     <tr>
         <th>setZoom()</th>
-        <td>Use <a href="./setCameraZoom.html">setCameraZoom()</a> method.</td>
+        <td>Use <a href="./setCameraZoom/README.md">setCameraZoom()</a> method.</td>
     </tr>
     <tr>
         <th>setBearing()</th>
-        <td>Use <a href="./setCameraBearing.html">setCameraBearing()</a> method.</td>
+        <td>Use <a href="./setCameraBearing/README.md">setCameraBearing()</a> method.</td>
     </tr>
     <tr>
         <th>setTilt()</th>
-        <td>Use <a href="./setCameraTilt.html">setCameraTilt()</a> method.</td>
+        <td>Use <a href="./setCameraTilt/README.md">setCameraTilt()</a> method.</td>
     </tr>
     <tr>
         <th>getCenter()</th>
-        <td>Use <a href="./getCameraTarget.html">getCameraTarget()</a> method.</td>
+        <td>Use <a href="./getCameraTarget/README.md">getCameraTarget()</a> method.</td>
     </tr>
     <tr>
         <th>getZoom()</th>
-        <td>Use <a href="./getCameraZoom.html">getCameraZoom()</a> method.</td>
+        <td>Use <a href="./getCameraZoom/README.md">getCameraZoom()</a> method.</td>
     </tr>
     <tr>
         <th>getBearing()</th>
-        <td>Use <a href="./getCameraBearing.html">getCameraBearing()</a> method.</td>
+        <td>Use <a href="./getCameraBearing/README.md">getCameraBearing()</a> method.</td>
     </tr>
     <tr>
         <th>getTilt()</th>
-        <td>Use <a href="./getCameraTilt.html">getCameraTilt()</a> method.</td>
+        <td>Use <a href="./getCameraTilt/README.md">getCameraTilt()</a> method.</td>
     </tr>
     <tr>
-        <th><a href="../Environment/setBackgroundColor.html">setBackgroundColor()</a></th>
-        <td><span class="highlight">Move to the </span><a href="../Environment">Environment</a> class.</td>
+        <th><a href="../Environment/setBackgroundColor/README.md">setBackgroundColor()</a></th>
+        <td><span class="highlight">Move to the </span><a href="../Environment/README.md">Environment</a> class.</td>
     </tr>
     <tr>
         <th>refreshLayout()</th>
