@@ -24,9 +24,13 @@
 
 - [Marker class](./class/Marker/README.md)
 
+- [Polyline class](./class/Polyline/README.md)
+
 - [Environment class](./class/Environment/README.md)
 
 - [LatLng class](./class/LatLng/README.md)
+
+- [BaseArray class](./class/BaseArrayClass/README.md)
 
 - [CameraPosition class](./class/CameraPosition/README.md)
 

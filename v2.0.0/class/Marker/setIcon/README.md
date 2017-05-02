@@ -60,9 +60,6 @@ var mapDiv = document.getElementById("map_canvas");
 var map = plugin.google.maps.Map.getMap(mapDiv);
 map.one(plugin.google.maps.event.MAP_READY, function() {
 
-  // Show a virtual dialog (loader.js)
-  showVirtualDialog(mapDiv, "Click on the markers!");
-
   // Add markers
   addMarkers(map, POINTS, function(markers) {
 

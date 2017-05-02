@@ -17,7 +17,7 @@
     </tr>
     <tr>
         <th><a href="./getPoints/README.md">getPoints()</a></th>
-        <td>Return an instance of the <a href="../BaseArrayClass/index/README.md">BaseArrayClass</a>.<br>
+        <td>Return an instance of the [BaseArrayClass](../../BaseArrayClass/index/README.md).<br>
           You can modify the points.</td>
     </tr>
     <tr>
