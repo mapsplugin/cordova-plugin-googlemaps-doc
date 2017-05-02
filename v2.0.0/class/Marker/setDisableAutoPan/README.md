@@ -24,6 +24,10 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
     // Disable marker auto panning.
     marker.setDisableAutoPan(true);
 
+    marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+      marker.showInfoWindow();
+    });
+
   });
 });
 ```

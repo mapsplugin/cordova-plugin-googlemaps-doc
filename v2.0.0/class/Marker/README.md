@@ -66,8 +66,8 @@
         <td>Change the marker zIndex.</td>
     </tr>
     <tr>
-        <th><a href="./isVisible/README.md">setVisible()</a></th>
-        <td>Change the marker visibility. See the demo of the marker.isVisible()</td>
+        <th><a href="./setVisible/README.md">setVisible()</a></th>
+        <td>Change the marker visibility.</td>
     </tr>
     <tr>
         <th><a href="./setDraggable/README.md">setDraggable()</a></th>
