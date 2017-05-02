@@ -3,7 +3,14 @@
 Change the marker visibility.
 
 ```html
-<div id="map_canvas"></div>
+<div class="map" id="map_canvas">
+    <table class="smallPanel">
+    <tr>
+      <td><button>marker.setVisible(true)</button></td>
+      <td><button>marker.setVisible(false)</button></td>
+    </tr>
+    </table>
+</div>
 ```
 
 ```js
