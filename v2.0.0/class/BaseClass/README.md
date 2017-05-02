@@ -5,7 +5,7 @@ The Base class is designed for MVC(Model-View-Controller). MVC helps you to writ
 The [Map](../Map/README.md),[Marker](../Marker/README.md),
 [Polyline](../Polyline/README.md),[Polygon](../Polygon/README.md),
 [Circle](../Circle/README.md),[TileOverlay](../TileOverlay/README.md),
-and [GroundOverlay](../GroundOverlay/README.md) classes extend this class.
+[GroundOverlay](../GroundOverlay/README.md), and [BaseArrayClass](../BaseArrayClass/README.md) extend this class.
 
 -----
 
