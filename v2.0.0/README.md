@@ -32,6 +32,8 @@
 
 - [LatLng class](./class/LatLng/README.md)
 
+- [Base class](./class/BaseClass/README.md)
+
 - [BaseArray class](./class/BaseArrayClass/README.md)
 
 - [CameraPosition class](./class/CameraPosition/README.md)
