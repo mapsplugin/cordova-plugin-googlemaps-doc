@@ -24,6 +24,8 @@
 
 - [Marker class](./class/Marker/README.md)
 
+- [InfoWindow class](./class/InfoWindow/README.md)
+
 - [Polyline class](./class/Polyline/README.md)
 
 - [Environment class](./class/Environment/README.md)

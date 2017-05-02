@@ -79,6 +79,6 @@
 <table>
     <tr>
         <th><a href="./POLYLINE_CLICK/README.md">POLYLINE_CLICK</a></th>
-        <td><div class="arguments">Arguments:  LatLng</div>This event is fired when you click on the polyline.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on the polyline.</td>
     </tr>
 </table>
