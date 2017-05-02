@@ -1,4 +1,4 @@
-# new plugin.google.maps.InfoWindow()
+# new plugin.google.maps.HtmlInfoWindow()
 
 You can display HTML elements in InfoWindow.
 
@@ -25,17 +25,19 @@ If you want to execute inline javascript (such as onclick), you need to define t
 var div = document.getElementById("map_canvas");
 var map = plugin.google.maps.Map.getMap(div);
 map.one(plugin.google.maps.event.MAP_READY, function() {
-  var infoWindow = new plugin.google.maps.InfoWindow();
+  var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
+
+  var html = [
+    'This is &lt;b&gt;Html&lt;/b&gt; InfoWindow',
+    '&lt;br&gt;',
+    '&lt;button onclick="javascript:alert(\'clicked!\');"&gt;click here&lt;/button&gt;',
+  ].join("");
+  htmlInfoWindow.setContent(html);
 
   map.addMarker({
     position: {lat: 0, lng: 0},
     draggable: true,
-    title: [
-      'This is &lt;b&gt;Html&lt;/b&gt; InfoWindow',
-      '&lt;br&gt;',
-      '&lt;button onclick="javascript:alert(\'clicked!\');"&gt;click here&lt;/button&gt;',
-    ].join(""),
-    infoWindow: infoWindow
+    infoWindow: htmlInfoWindow
   });
 });
 ```

@@ -24,7 +24,7 @@
 
 - [Marker class](./class/Marker/README.md)
 
-- [InfoWindow class](./class/InfoWindow/README.md)
+- [HtmlInfoWindow class](./class/HtmlInfoWindow/README.md)
 
 - [Polyline class](./class/Polyline/README.md)
 
