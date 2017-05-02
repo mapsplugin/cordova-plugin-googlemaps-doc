@@ -2,11 +2,9 @@
 
 You can display HTML elements in InfoWindow.
 
-##memo
+## memo
 
 If you want to execute inline javascript (such as onclick), you need to define the following meta tag in HTML.
-
-&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self' gap:; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: 'unsafe-eval'; object-src *; style-src 'self' data: 'unsafe-inline' *; img-src 'self' data: *; media-src 'self' data:; font-src 'self' data:; connect-src *"&gt;
 
 ```html
 <!DOCTYPE html>
