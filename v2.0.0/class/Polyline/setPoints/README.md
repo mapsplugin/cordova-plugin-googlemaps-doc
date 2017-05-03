@@ -1,4 +1,4 @@
-# marker.setPoints()
+# polyline.setPoints()
 
 The polyline.setPoints() updates the polyline points.<br>
 If you already get an instance of the [BaseArrayClass](../../BaseArrayClass/README.md) using [polyline.getPoints()](../getPoitns/README.md),

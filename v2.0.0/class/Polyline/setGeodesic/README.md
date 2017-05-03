@@ -1,4 +1,4 @@
-# marker.setGeodesic()
+# polyline.setGeodesic()
 
 When true, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth. When false, edges of the polygon are rendered as straight lines in screen space.
 

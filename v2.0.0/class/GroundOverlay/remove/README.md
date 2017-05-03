@@ -1,1 +1,1 @@
-# marker.remove()
+# groundOverlay.remove()

@@ -1,4 +1,4 @@
-# marker.setZIndex()
+# polyline.setZIndex()
 
 Change the polyline zIndex order.
 

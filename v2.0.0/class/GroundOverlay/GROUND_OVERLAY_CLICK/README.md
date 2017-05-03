@@ -1,1 +1,1 @@
-# marker.GROUND_OVERLAY_CLICK()
+# event: GROUND_OVERLAY_CLICK

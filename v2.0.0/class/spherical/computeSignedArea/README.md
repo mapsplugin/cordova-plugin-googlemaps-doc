@@ -1,1 +1,1 @@
-# marker.computeSignedArea()
+# spherical.computeSignedArea()

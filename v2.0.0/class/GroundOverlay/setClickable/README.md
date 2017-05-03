@@ -1,1 +1,1 @@
-# marker.setClickable()
+# groundOverlay.setClickable()

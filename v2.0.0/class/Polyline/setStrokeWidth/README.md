@@ -1,4 +1,4 @@
-# marker.setStrokeWidth()
+# polyline.setStrokeWidth()
 
 Change the polyline stroke width.
 

@@ -1,1 +1,1 @@
-# marker.setBearing()
+# groundOverlay.setBearing()

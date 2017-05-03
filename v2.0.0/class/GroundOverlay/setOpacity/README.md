@@ -1,1 +1,1 @@
-# marker.setOpacity()
+# groundOverlay.setOpacity()

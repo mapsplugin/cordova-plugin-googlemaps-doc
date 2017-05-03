@@ -1,1 +1,1 @@
-# marker.computeDistanceBetween()
+# spherical.computeDistanceBetween()

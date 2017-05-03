@@ -1,4 +1,4 @@
-# marker.remove()
+# polyline.remove()
 
 Remove the polyline.
 

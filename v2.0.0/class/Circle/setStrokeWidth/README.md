@@ -1,1 +1,1 @@
-# marker.setStrokeWidth()
+# circle.setStrokeWidth()

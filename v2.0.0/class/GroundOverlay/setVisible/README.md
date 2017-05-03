@@ -1,1 +1,1 @@
-# marker.setVisible()
+# groundOverlay.setVisible()

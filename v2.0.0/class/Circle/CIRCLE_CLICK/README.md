@@ -1,1 +1,1 @@
-# marker.CIRCLE_CLICK()
+# event : CIRCLE_CLICK

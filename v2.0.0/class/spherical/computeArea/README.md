@@ -1,1 +1,1 @@
-# marker.computeArea()
+# spherical.computeArea()

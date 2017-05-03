@@ -1,1 +1,1 @@
-# marker.setOpacity()
+# tileOverlay.setOpacity()

@@ -1,1 +1,1 @@
-# marker.addGroundOverlay()
+# map.addGroundOverlay()

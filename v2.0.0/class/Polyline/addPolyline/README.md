@@ -1,4 +1,4 @@
-# marker.addPolyline()
+# map.addPolyline()
 
 Adds a polygon on the map.
 

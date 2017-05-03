@@ -1,4 +1,4 @@
-# marker.setStrokeColor()
+# polyline.setStrokeColor()
 
 You can change the polyline color.
 

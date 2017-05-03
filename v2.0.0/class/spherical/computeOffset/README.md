@@ -1,1 +1,1 @@
-# marker.computeOffset()
+# spherical.computeOffset()

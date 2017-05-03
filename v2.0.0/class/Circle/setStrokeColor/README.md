@@ -1,1 +1,1 @@
-# marker.setStrokeColor()
+# circle.setStrokeColor()

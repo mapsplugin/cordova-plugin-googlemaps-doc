@@ -1,4 +1,4 @@
-# marker.setVisible()
+# polyline.setVisible()
 
 Change visibility of the polyline.
 

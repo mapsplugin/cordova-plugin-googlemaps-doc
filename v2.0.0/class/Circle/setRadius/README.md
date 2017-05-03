@@ -1,1 +1,1 @@
-# marker.setRadius()
+# circle.setRadius()

@@ -1,1 +1,1 @@
-# marker.computeHeading()
+# spherical.computeHeading()

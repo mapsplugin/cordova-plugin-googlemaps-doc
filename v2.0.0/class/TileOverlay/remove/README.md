@@ -1,1 +1,1 @@
-# marker.remove()
+# tileOverlay.remove()

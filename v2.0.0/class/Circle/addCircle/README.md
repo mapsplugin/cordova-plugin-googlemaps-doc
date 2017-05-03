@@ -1,1 +1,1 @@
-# marker.addCircle()
+# map.addCircle()

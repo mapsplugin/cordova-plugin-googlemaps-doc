@@ -1,4 +1,4 @@
-# marker.setClickable()
+# polyline.setClickable()
 
 Change clickability of the polyline.
 

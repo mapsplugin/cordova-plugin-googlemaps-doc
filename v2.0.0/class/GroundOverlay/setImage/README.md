@@ -1,1 +1,1 @@
-# marker.setImage()
+# groundOverlay.setImage()
