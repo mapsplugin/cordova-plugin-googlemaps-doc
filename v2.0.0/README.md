@@ -44,6 +44,8 @@
 
 - [LatLng class](./class/LatLng/README.md)
 
+- [LatLngBounds class](./class/LatLngBounds/README.md)
+
 - [Base class](./class/BaseClass/README.md)
 
 - [BaseArray class](./class/BaseArrayClass/README.md)
