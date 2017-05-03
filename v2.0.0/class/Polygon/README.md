@@ -57,6 +57,10 @@
         <td>Change visibility of the polygon.</td>
     </tr>
     <tr>
+        <th>getVisible()</th>
+        <td>Return true if the polygon is visible.</td>
+    </tr>
+    <tr>
         <th><a href="./setZIndex/README.md">setZIndex()</a></th>
         <td>Change the polygon zIndex order.</td>
     </tr>
