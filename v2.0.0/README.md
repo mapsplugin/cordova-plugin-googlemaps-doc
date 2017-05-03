@@ -28,6 +28,8 @@
 
 - [Polyline class](./class/Polyline/README.md)
 
+- [Polygon class](./class/Polygon/README.md)
+
 - [Environment class](./class/Environment/README.md)
 
 - [LatLng class](./class/LatLng/README.md)
