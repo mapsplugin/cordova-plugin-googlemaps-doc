@@ -78,6 +78,6 @@
 <table>
     <tr>
         <th><a href="./CIRCLE_CLICK/README.md">CIRCLE_CLICK</a></th>
-        <td<a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a circle.</td>
+        <td><a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a circle.</td>
     </tr>
 </table>
