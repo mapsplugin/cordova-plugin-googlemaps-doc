@@ -20,8 +20,8 @@
           You can modify the points.</td>
     </tr>
     <tr>
-        <th><a href="./setPoints/README.md">setPoints()</a></th>
-        <td>Change the polygon points.</td>
+        <th><a href="./setHoles/README.md">setHoles()</a></th>
+        <td>Change the polygon holes.</td>
     </tr>
     <tr>
         <th><a href="./getHoles/README.md">getHoles()</a></th>
