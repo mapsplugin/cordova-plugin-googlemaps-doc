@@ -30,6 +30,16 @@
 
 - [Polygon class](./class/Polygon/README.md)
 
+- Circle class
+
+- TileOverlay class
+
+- GroundOverlay class
+
+- Geocoder class
+
+- spherical class
+
 - [Environment class](./class/Environment/README.md)
 
 - [LatLng class](./class/LatLng/README.md)
@@ -39,6 +49,7 @@
 - [BaseArray class](./class/BaseArrayClass/README.md)
 
 - [CameraPosition class](./class/CameraPosition/README.md)
+
 
 ## External links
 
