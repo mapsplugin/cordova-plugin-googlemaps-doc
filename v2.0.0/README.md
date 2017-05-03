@@ -38,7 +38,8 @@
 
 - Geocoder class
 
-- spherical class
+- external class
+
 
 - [Environment class](./class/Environment/README.md)
 
@@ -50,8 +51,17 @@
 
 - [BaseArray class](./class/BaseArrayClass/README.md)
 
-- [CameraPosition class](./class/CameraPosition/README.md)
+- [CameraPosition object](./class/CameraPosition/README.md)
 
+- MapTypeId enum
+
+- Animation enum
+
+- Location object
+
+- geometry.spherical
+
+- geometry.encoding
 
 ## External links
 
