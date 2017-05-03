@@ -30,7 +30,7 @@
 
 - [Polygon class](./class/Polygon/README.md)
 
-- Circle class
+- [Circle class](./class/Circle/README.md)
 
 - TileOverlay class
 
