@@ -53,6 +53,10 @@
         <td>Return true if the polygon is clickable.</td>
     </tr>
     <tr>
+        <th><a href="./setVisible/README.md">setVisible()</a></th>
+        <td>Change visibility of the polygon.</td>
+    </tr>
+    <tr>
         <th><a href="./setZIndex/README.md">setZIndex()</a></th>
         <td>Change the polygon zIndex order.</td>
     </tr>

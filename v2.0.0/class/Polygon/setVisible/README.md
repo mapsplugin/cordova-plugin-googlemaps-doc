@@ -1,10 +1,10 @@
-# polygon.setClickable()
+# polygon.setVisible()
 
-Change clickability of the polygon.
+Change visibility of the polygon.
 
 ```html
 <div class="map" id="map_canvas">
-  <span class="smallPanel"><input type="checkbox" id="toggleCheckbox" checked="checked">polygon.setClickable(true)</span>
+  <span class="smallPanel"><input type="checkbox" id="toggleCheckbox" checked="checked">polygon.setVisible(true)</span>
 </div>
 ```
 
@@ -80,27 +80,19 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
 map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
   // Add a polygon
-  map.addPolygon({
+  map.addpolygon({
     'points': GERMANY,
     'fillColor' : '#AAFFAA',
     'strokeColor' : '#FF0000',
-    'strokeWidth': 2,
-    'clickable': true  // default = false
+    'strokeWidth': 2
   }, function(polygon) {
 
     var checkbox = document.getElementById("toggleCheckbox");
     checkbox.addEventListener("change", function() {
 
-      // Change the clickable property
-      polygon.setClickable(checkbox.checked);
-
+      // Change the visible property
+      polygon.setVisible(checkbox.checked);
     });
-
-
-    polygon.on(plugin.google.maps.event.POLYGON_CLICK, function(latLng) {
-      alert("polygon is clicked!");
-    });
-
   });
 
 });
