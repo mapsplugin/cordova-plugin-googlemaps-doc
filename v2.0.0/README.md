@@ -57,7 +57,7 @@
 
 - [geometry.spherical](./utilities/geometry/spherical/README.md)
 
-- geometry.encoding
+- [geometry.encoding](./utilities/geometry/encoding/README.md)
 
 ## External links
 
