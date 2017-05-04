@@ -32,7 +32,7 @@
 
 - [Circle class](./class/Circle/README.md)
 
-- TileOverlay class
+- [TileOverlay class](./class/TileOverlay/README.md)
 
 - GroundOverlay class
 
