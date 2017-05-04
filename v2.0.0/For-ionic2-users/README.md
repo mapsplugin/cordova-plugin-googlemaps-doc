@@ -20,7 +20,7 @@ So basically no support for the  [ionic-native-googlemaps](http://market.ionic.i
 **The steps described are tested on Ionic 2 version 3.1.1**
 
 ### Ionic Native
-The Ionic Native module that's available for cordova-googlemaps plugin is not yet modified to be compatible with the new v2-beta, so in this approach we will use Cordova directly.
+The Ionic Native module that's available for the cordova-googlemaps-plugin is not yet modified to be compatible with the new v2-beta, so in this approach we will use Cordova directly.
 
 ### Install plugin
 The first step is to activate your Google Maps SDK iOS / Android and obtain your keys from the Google API console. 
@@ -105,5 +105,6 @@ loadMap() {
 
 }
 ```
+Now you can build and take a look at your brand new map. Don't try to use `ionic serve` as this is a native module and thus will only be available on iOS and Android devices.
 
-When you want to use a fullscreen map without any tabs or toolbar you will run in to a bug, resulting in a hidden map. Please see the following (https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1429 "#1429") to fix that problem.
+If you want to use a fullscreen map without any tabs or toolbar you will run in to a bug, resulting in a hidden map. Please see the following (https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1429 "#1429") to fix that problem.
