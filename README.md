@@ -12,7 +12,9 @@ There are two versions:
 ## v1.4.0 (current, but it's an old version)
 
 You can create only one map in your application.
-For documentation, read from [HERE](./v1.4.0/README.md)
+
+- [Documentations](./v2.0.0/README.md)
+
 
 ## v2.0.0 (new version, but might be unstable)
 
@@ -20,9 +22,10 @@ You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
 But it might be unstable sometimes.
 
-Unfortunately, the documentation for v2.0 is not complete yet.
-But the example app contains documentation and demo code.
+- [Documentations](./v2.0.0/README.md)
 
-https://github.com/mapsplugin/v2.0-demo
+- [Demo](https://github.com/mapsplugin/v2.0-demo)
 
-For documentation, read from [HERE](./v2.0.0/README.md)
+----
+
+* Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](LINCENSES/CC-BY-4.0.md), and code samples are licensed under the [Apache 2.0 License](LINCENSES/APACH-BY-2.0.md)
