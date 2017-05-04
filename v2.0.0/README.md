@@ -20,6 +20,8 @@
 
 ## API Reference
 
+### Classes
+
 - [Map class](./class/Map/README.md)
 
 - [Marker class](./class/Marker/README.md)
@@ -38,9 +40,6 @@
 
 - [Geocoder class](./class/Geocoder/README.md)
 
-- external class
-
-
 - [Environment class](./class/Environment/README.md)
 
 - [LatLng class](./class/LatLng/README.md)
@@ -53,13 +52,10 @@
 
 - [CameraPosition object](./class/CameraPosition/README.md)
 
-- MapTypeId enum
 
-- Animation enum
+### Utilities
 
-- Location object
-
-- geometry.spherical
+- [geometry.spherical](./utilities/geometry/spherical/README.md)
 
 - geometry.encoding
 

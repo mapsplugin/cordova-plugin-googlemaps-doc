@@ -1,9 +1,11 @@
-# circle.setRadius()
+# spherical.computeDistanceBetween()
 
-Change the circle radius.
+Returns the distance, in meters, between two LatLngs.
 
 ```html
-<div id="map_canvas"></div>
+<div id="map_canvas">
+  <span  class="smallPanel" id="label"></span>
+</div>
 ```
 
 ```js
@@ -34,6 +36,7 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
 
 map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
+
   map.addMarker({
       'position': deg0,
       'draggable': true,
@@ -50,6 +53,11 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
         'strokeWidth': 5,
         'fillColor' : '#00880055'
     }, function(circle) {
+
+        var label = document.getElementById("label");
+        circle.on("radius_changed", function(prev, radius) {
+          label.innerText = "radius : " + radius.toFixed(2) + "(m)";
+        });
 
         marker.on("position_changed", function(oldValue, newValue) {
             // Calculate distance between center and the marker position
