@@ -1,4 +1,4 @@
-# GroundOverlay clas
+# GroundOverlay class
 
 ## Create
 
@@ -10,6 +10,7 @@
 </table>
 
 ## Methods
+
 <table>
     <tr>
         <th><a href="./setBounds/README.md">setBounds()</a></th>

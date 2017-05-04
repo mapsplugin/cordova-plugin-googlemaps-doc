@@ -34,7 +34,7 @@
 
 - [TileOverlay class](./class/TileOverlay/README.md)
 
-- GroundOverlay class
+- [GroundOverlay class](./class/GroundOverlay/README.md)
 
 - Geocoder class
 
