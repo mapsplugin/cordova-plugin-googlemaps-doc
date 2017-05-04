@@ -28,9 +28,6 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
     'clickable': true
   }, function(groundOverlay) {
 
-    // Show a virtual dialog (loader.js)
-    showVirtualDialog(mapDiv, "Click on the ground overlay!");
-
     // Catch the circle_CLICK event
     groundOverlay.on(plugin.google.maps.event.GROUND_OVERLAY_CLICK, function() {
 

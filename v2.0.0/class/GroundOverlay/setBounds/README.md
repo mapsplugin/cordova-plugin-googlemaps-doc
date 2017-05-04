@@ -21,9 +21,6 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
 
 map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-  // Show a virtual dialog (loader.js)
-  showVirtualDialog(mapDiv, "Drag the markers on the map!");
-
   var markers = [];
 
   // Add ground overlay

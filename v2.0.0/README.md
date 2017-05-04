@@ -36,7 +36,7 @@
 
 - [GroundOverlay class](./class/GroundOverlay/README.md)
 
-- Geocoder class
+- [Geocoder class](./class/Geocoder/README.md)
 
 - external class
 

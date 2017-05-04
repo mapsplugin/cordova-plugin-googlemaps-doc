@@ -20,9 +20,6 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
 
 map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-  // Show a virtual dialog (loader.js)
-  showVirtualDialog(mapDiv, "Click on the ground overlay!");
-
   // Add ground overlay
   map.addGroundOverlay({
     'url': "../images/newark_nj_1922.jpg",

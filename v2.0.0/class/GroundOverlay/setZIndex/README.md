@@ -36,9 +36,6 @@ var map = plugin.google.maps.Map.getMap(mapDiv);
 
 map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-  // Show the message
-  showVirtualDialog(mapDiv, "Click on the ground overlays");
-
   var mvcArray = new plugin.google.maps.BaseArrayClass();
   var latLngBounds = new plugin.google.maps.LatLngBounds();
 
