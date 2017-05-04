@@ -13,7 +13,7 @@ There are two versions:
 
 You can create only one map in your application.
 
-- [Documentations](./v2.0.0/README.md)
+- [Documentations](./v1.4.0/README.md)
 
 
 ## v2.0.0 (new version, but might be unstable)
