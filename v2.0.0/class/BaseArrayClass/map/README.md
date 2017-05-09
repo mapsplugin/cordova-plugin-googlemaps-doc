@@ -1,8 +1,8 @@
 # baseArrayClass.map()
 
 The map() method has two use case:
-- [map(fn)](#map(fn)
-- [map(fn, callback)](#map(fn, callback)
+- [map(fn)](#map(fn))
+- [map(fn, callback)](#map(fn, callback))
 
 -----
 
