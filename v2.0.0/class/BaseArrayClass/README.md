@@ -108,7 +108,7 @@ console.log(mvcArray.getArray());  // "A", "D"
     </tr>
     <tr>
         <th>set_at</th>
-        <td><b>Arguments:  number, *<b><br>
+        <td><b>Arguments:  number, *</b><br>
         This event is fired when <a href="setAt/README.md">setAt()</a> is called. The event passes the index that was passed to <a href="setAt/README.md">setAt()</a> and the element that was previously in the array at that index.</td>
     </tr>
 </table>
