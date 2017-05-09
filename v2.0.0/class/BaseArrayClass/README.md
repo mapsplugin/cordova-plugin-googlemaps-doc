@@ -46,7 +46,7 @@ console.log(mvcArray.getArray());  // "A", "D"
 
 <table>
     <tr>
-        <th>BaseArrayClass(array?:Array)</th>
+    <th><a href="./constructor/README.md">BaseArrayClass(array?:Array)</a></th>
         <td>A mutable MVC Array.</td>
     </tr>
 </table>
