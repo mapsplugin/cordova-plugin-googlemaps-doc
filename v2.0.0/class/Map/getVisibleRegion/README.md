@@ -2,7 +2,7 @@
 
 Returns the latLngBounds that contains the four points defining the polygon that is visible in a map's camera.
 
-The word: "<span class="highlight">Visible region</span>" means the latLngBounds that containts four points of the map, left-top, right-top, right-bottom, and left-bottom. Not equal with viewport region.
+The word: "**Visible region**" means the latLngBounds that containts four points of the map, left-top, right-top, right-bottom, and left-bottom. Not equal with viewport region.
 
 This polygon can be a trapezoid instead of a rectangle, because a camera can have tilt. If the camera is directly over the center of the camera, the shape is rectangular, but if the camera is tilted, the shape will appear to be a trapezoid whose smallest side is closest to the point of view.
 
