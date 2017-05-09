@@ -137,7 +137,8 @@ function onPositionChanged() {
 }
 ```
 
-However, `map.getVisibleRegion()` does not support this, you still have to use a callback.
+~~However, `map.getVisibleRegion()` does not support this, you still have to use a callback.~~
+As of the v2.0-beta2, you can use the map.getVisibleRegion() method synchronously.
 
 ### change 9. Chain programming
 

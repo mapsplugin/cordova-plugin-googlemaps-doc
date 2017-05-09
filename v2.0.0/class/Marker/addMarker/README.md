@@ -99,7 +99,15 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   ];
 
   // Add markers
-  addMarkers(map, data, function(markers) {
+  var baseArrayClass = new plugin.google.maps.BaseArrayClass(data);
+
+  baseArrayClass.map(function(options, cb) {
+    // The variable "options" contains each element of the data.
+    //
+    // The variable "cb" is a callback function of interation.
+    map.addMarker(option, cb);
+
+  }, function(markers) {
 
     // Set camera position that include all markers.
     var bounds = [];
@@ -119,18 +127,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 });
 
-function addMarkers(map, data, callback) {
-  var markers = [];
-  function onMarkerAdded(marker) {
-    markers.push(marker);
-    if (markers.length === data.length) {
-      callback(markers);
-    }
-  }
-  data.forEach(function(markerOptions) {
-    map.addMarker(markerOptions, onMarkerAdded);
-  });
-}
+
 ```
 
 ![](image3.png)

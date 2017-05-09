@@ -7,7 +7,7 @@ If you need to modify an element, use `insertAt()`, `setAt()` and `removeAt()` m
 
 The benefit of this class is you are able to catch the events that occurs when you change the value.
 
-The belows are exmaple how to use this class.
+The below examples are how to use this class.
 
 ## Basic example
 
@@ -40,6 +40,7 @@ mvcArray.setAt(2, "D");   // ---> [set_at] position : 1, value : "B"
 console.log(mvcArray.getArray());  // "A", "D"
 ```
 
+---
 
 ## Constructor
 
@@ -54,39 +55,39 @@ console.log(mvcArray.getArray());  // "A", "D"
 
 <table>
     <tr>
-        <th>empty()</th>
+        <th><a href="empty/README.md">empty()</a></th>
         <td>Removes all elements from the array.</td>
     </tr>
     <tr>
-        <th>callback:function(*, number)</th>
+        <th><a href="forEach/README.md">forEach()</a></th>
         <td>Iterate over each element, calling the provided callback. The callback is called for each element like: callback(element, index).</td>
     </tr>
     <tr>
-        <th>getArray()</th>
-        <td>Returns a reference to the underlying Array. Warning: if the Array is mutated, no events will be fired by this object.</td>
+        <th><a href="getArray/README.md">getArray()</a></th>
+        <td>Returns a reference to the underlying Array.</td>
     </tr>
     <tr>
-        <th>getAt(i:number)</th>
+        <th><a href="getAt/README.md">getAt(i:number)</a></th>
         <td>Returns the element at the specified index.</td>
     </tr>
     <tr>
-        <th>insertAt(i:number, elem:*)</th>
+        <th><a href="insertAt/README.md">insertAt(i:number, elem:*)</a></th>
         <td>Inserts an element at the specified index.</td>
     </tr>
     <tr>
-        <th>pop()</th>
+        <th><a href="pop/README.md">pop()</a></th>
         <td>Removes the last element of the array and returns that element.</td>
     </tr>
     <tr>
-        <th>push(elem:*)</th>
+        <th><a href="push/README.md">push(elem:*)</a></th>
         <td>Adds one element to the end of the array and returns the new length of the array.</td>
     </tr>
     <tr>
-        <th>removeAt(i:number)</th>
+        <th><a href="removeAt/README.md">removeAt(i:number)</a></th>
         <td>Removes an element from the specified index.</td>
     </tr>
     <tr>
-        <th>setAt(i:number, elem:*)</th>
+        <th><a href="setAt/README.md">setAt(i:number, elem:*)</a></th>
         <td>Sets an element at the specified index.</td>
     </tr>
 </table>
@@ -98,16 +99,16 @@ console.log(mvcArray.getArray());  // "A", "D"
     <tr>
         <th>insert_at</th>
         <td><div class="arguments">Arguments:  number</div>
-This event is fired when <span class="highlight">insertAt()</span> is called. The event passes the index that was passed to <span class="highlight">insertAt()</span>.</td>
+This event is fired when `insertAt()` is called. The event passes the index that was passed to `insertAt()`.</td>
     </tr>
     <tr>
         <th>remove_at</th>
         <td><div class="arguments">Arguments:  number, *</div>
-This event is fired when <span class="highlight">removeAt()</span> is called. The event passes the index that was passed to <span class="highlight">removeAt()</span> and the element that was removed from the array.</td>
+This event is fired when `removeAt()` is called. The event passes the index that was passed to `removeAt()` and the element that was removed from the array.</td>
     </tr>
     <tr>
         <th>set_at</th>
         <td><div class="arguments">Arguments:  number, *</div>
-This event is fired when <span class="highlight">setAt()</span> is called. The event passes the index that was passed to <span class="highlight">setAt()</span> and the element that was previously in the array at that index.</td>
+This event is fired when `setAt()` is called. The event passes the index that was passed to `setAt()` and the element that was previously in the array at that index.</td>
     </tr>
 </table>

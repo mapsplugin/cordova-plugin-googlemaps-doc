@@ -18,6 +18,10 @@
 
 - [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
+## Release notes
+
+- [v2.0-beta2](./ReleaseNotes/v2.0-beta2/README.md)
+
 ## API Reference
 
 ### Classes

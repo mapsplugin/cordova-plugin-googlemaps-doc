@@ -19,24 +19,23 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
     map.clear();
   });
 
-  // Puts ramdom markers on the map.
+  // Puts random markers on the map.
   createMarkers(map);
 });
 function createMarkers(map) {
-  map.getVisibleRegion(function(latLngBounds) {
-    var sw = latLngBounds.southwest;
-    var ne = latLngBounds.northeast;
-    var diffY = (ne.lat - sw.lat);
-    var diffX = (ne.lng - sw.lng);
-    for (var i = 0; i < 100; i++) {
-      map.addMarker({
-        'position': {
-          'lat': sw.lat + diffY * Math.random(),
-          'lng': sw.lng  + diffX * Math.random()
-        }
-      });
-    }
-  });
+  var latLngBounds = map.getVisibleRegion();
+  var sw = latLngBounds.southwest;
+  var ne = latLngBounds.northeast;
+  var diffY = (ne.lat - sw.lat);
+  var diffX = (ne.lng - sw.lng);
+  for (var i = 0; i < 100; i++) {
+    map.addMarker({
+      'position': {
+        'lat': sw.lat + diffY * Math.random(),
+        'lng': sw.lng  + diffX * Math.random()
+      }
+    });
+  }
 }
 ```
 

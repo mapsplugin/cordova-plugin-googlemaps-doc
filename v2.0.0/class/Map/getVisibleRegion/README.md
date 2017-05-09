@@ -1,15 +1,13 @@
 # map.getVisibleRegion()
 
-Get the current visible region (SouthWest and NorthEast).
+Returns the latLngBounds that contains the four points defining the polygon that is visible in a map's camera.
 
-```html
-<div class="map" id="map_canvas">
-    <span class="smallPanel"><button>Click here</button></span>
-</div>
-```
+The word: "<span class="highlight">Visible region</span>" means the latLngBounds that containts four points of the map, left-top, right-top, right-bottom, and left-bottom. Not equal with viewport region.
 
-```js
-var div = document.getElementById("map_canvas");
+This polygon can be a trapezoid instead of a rectangle, because a camera can have tilt. If the camera is directly over the center of the camera, the shape is rectangular, but if the camera is tilted, the shape will appear to be a trapezoid whose smallest side is closest to the point of view.
+
+
+In the below example, the blue rectangle represents the visible region, the red rectangle represents the viewport region.
 var map = plugin.google.maps.Map.getMap(div, {
   camera: {
     target: {
@@ -26,12 +24,38 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   button.addEventListener('click', function() {
 
     // Get the visible region (LatLngBounds of SouthWest and NorthEast)
-    map.getVisibleRegion(function(latLngBounds) {
-      alert([
-        "NorthEast : " + latLngBounds.northeast.toUrlValue(),
-        "SouthWest : " + latLngBounds.southwest.toUrlValue()
-      ].join("\n"));
+    var latLngBounds = map.getVisibleRegion();
+    map.addPolygon({
+      'points': [
+        latLngBounds.northeast,
+        {lat: latLngBounds.northeast.lat, lng: latLngBounds.southwest.lng},
+        latLngBounds.southwest,
+        {lat: latLngBounds.southwest.lat, lng: latLngBounds.northeast.lng}
+      ],
+      'strokeColor' : 'blue',
+      'strokeWidth': 2,
+      'fillColor': 'transparent'
     });
+
+    var mapDiv = map.getDiv();
+    var batch1 = new plugin.google.maps.BaseArrayClass();
+    batch1.push([0, 0]); //left-top
+    batch1.push([mapDiv.offsetWidth, 0]); //right-top
+    batch1.push([mapDiv.offsetWidth, mapDiv.offsetHeight]); //right-bottom
+    batch1.push([0, mapDiv.offsetHeight]); //left-bottom
+
+    batch1.map(function(point, cb) {
+      map.fromPointToLatLng(point, cb);
+    }, function(values) {
+      map.addPolygon({
+        'points': values,
+        'strokeColor' : 'red',
+        'strokeWidth': 2,
+        'fillColor': 'rgba(255, 0, 0, 0.5)'
+      });
+    });
+
+    map.animateCameraZoomOut();
 
   });
 

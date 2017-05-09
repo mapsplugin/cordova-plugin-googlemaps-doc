@@ -17,32 +17,29 @@ var map = plugin.google.maps.Map.getMap(div, {
 map.one(plugin.google.maps.event.MAP_READY, function() {
 
   // Get the current visible region
-  map.getVisibleRegion(function(latLngBounds) {
+  var latLngBounds = map.getVisibleRegion();
+  var centerLat = latLngBounds.getCenter().lat;
+  var centerLng = latLngBounds.getCenter().lng-0.005;
+  for (var i = 1; i <= 20; i++) {
 
-    var centerLat = latLngBounds.getCenter().lat;
-    var centerLng = latLngBounds.getCenter().lng-0.005;
-    for (var i = 1; i <= 20; i++) {
+    map.addMarker({
+      position: {
+        lat: centerLat,
+        lng: centerLng+0.001*i
+      },
+      icon: "green",
+      zIndex: i
+    });
 
-      map.addMarker({
-        position: {
-          lat: centerLat,
-          lng: centerLng+0.001*i
-        },
-        icon: "green",
-        zIndex: i
-      });
-
-      map.addMarker({
-        position: {
-          lat: centerLat+0.005,
-          lng: centerLng+0.001*i
-        },
-        icon: "blue",
-        zIndex: -i
-      });
-    }
-
-  });
+    map.addMarker({
+      position: {
+        lat: centerLat+0.005,
+        lng: centerLng+0.001*i
+      },
+      icon: "blue",
+      zIndex: -i
+    });
+  }
 
 });
 ```
