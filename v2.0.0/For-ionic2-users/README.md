@@ -107,4 +107,4 @@ loadMap() {
 ```
 Now you can build and take a look at your brand new map. Don't try to use `ionic serve` as this is a native module and thus will only be available on iOS and Android devices.
 
-If you want to use a fullscreen map without any tabs or toolbar you will run in to a bug, resulting in a hidden map. Please see the following (https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1429 "#1429") to fix that problem.
+If you want to use a fullscreen map without any tabs or toolbar you will run in to a bug, resulting in a hidden map. Please see the following (https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1429) to fix that problem.
