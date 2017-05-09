@@ -98,17 +98,17 @@ console.log(mvcArray.getArray());  // "A", "D"
 <table>
     <tr>
         <th>insert_at</th>
-        <td><div class="arguments">Arguments:  number</div>
-This event is fired when `insertAt()` is called. The event passes the index that was passed to `insertAt()`.</td>
+        <td><b>Arguments:  number</b><br>
+        This event is fired when  <a href="insertAt/README.md">insertAt()</a> is called. The event passes the index that was passed to  <a href="insertAt/README.md">insertAt()</a>.</td>
     </tr>
     <tr>
         <th>remove_at</th>
-        <td><div class="arguments">Arguments:  number, *</div>
-This event is fired when `removeAt()` is called. The event passes the index that was passed to `removeAt()` and the element that was removed from the array.</td>
+        <td><b>Arguments:  number, *</b><br>
+        This event is fired when  <a href="removeAt/README.md">removeAt()</a> is called. The event passes the index that was passed to <a href="removeAt/README.md">removeAt()</a> and the element that was removed from the array.</td>
     </tr>
     <tr>
         <th>set_at</th>
-        <td><div class="arguments">Arguments:  number, *</div>
-This event is fired when `setAt()` is called. The event passes the index that was passed to `setAt()` and the element that was previously in the array at that index.</td>
+        <td><b>Arguments:  number, *<b><br>
+        This event is fired when <a href="setAt/README.md">setAt()</a> is called. The event passes the index that was passed to <a href="setAt/README.md">setAt()</a> and the element that was previously in the array at that index.</td>
     </tr>
 </table>
