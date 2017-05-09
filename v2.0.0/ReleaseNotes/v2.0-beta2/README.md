@@ -4,18 +4,18 @@
 
 ### Add
 
-- [map.animateCameraZoomIn()](../class/Map/animateCameraZoomIn/REAMDE.md),
-[map.animateCameraZoomOut()](../class/Map/animateCameraZoomOut/REAMDE.md),
-[map.moveCameraZoomIn()](../class/Map/moveCameraZoomIn/REAMDE.md), and
-[map.moveCameraZoomOut()](../class/Map/moveCameraZoomOut/REAMDE.md)
+- [map.animateCameraZoomIn()](../../class/Map/animateCameraZoomIn/REAMDE.md),
+[map.animateCameraZoomOut()](../../class/Map/animateCameraZoomOut/REAMDE.md),
+[map.moveCameraZoomIn()](../../class/Map/moveCameraZoomIn/REAMDE.md), and
+[map.moveCameraZoomOut()](../../class/Map/moveCameraZoomOut/REAMDE.md)
 
-- [BaseArrayClass.forEach(fn, callback)](../class/BaseArrayClass/forEach/README.md)
+- [BaseArrayClass.forEach(fn, callback)](../../class/BaseArrayClass/forEach/README.md)
 
-- [BaseArrayClass.map(fn, callback)](../class/BaseArrayClass/map/README.md)
+- [BaseArrayClass.map(fn, callback)](../../class/BaseArrayClass/map/README.md)
 
 ### Update
 
-- [map.getVisibleRegion()] method returns the values synchronously.
+- [map.getVisibleRegion()](../../class/Map/getVisibleRegion/README.md) method returns the values synchronously.
 
 ```js
 // Before
