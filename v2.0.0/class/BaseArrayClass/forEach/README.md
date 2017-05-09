@@ -1,8 +1,8 @@
 # baseArrayClass.forEach()
 
 The forEach() method has two use case:
-- [forEach(fn)](#forEach(fn)
-- [forEach(fn, callback)](#forEach(fn, callback)
+- forEach(fn)
+- forEach(fn, callback)
 
 -----
 
