@@ -25,8 +25,24 @@
         <td>Moves the camera <b>with animation</b>.</td>
     </tr>
     <tr>
+        <th><a href="./animateCameraZoomIn/README.md">animateCameraZoomIn()</a></th>
+        <td>Zooming in the camera <b>with animation</b>.</td>
+    </tr>
+    <tr>
+        <th><a href="./animateCameraZoomOut/README.md">animateCameraZoomOut()</a></th>
+        <td>Zooming out the camera <b>with animation</b>.</td>
+    </tr>
+    <tr>
         <th><a href="./moveCamera/README.md">moveCamera()</a></th>
         <td>Moves the camera <b>without animation</b>.</td>
+    </tr>
+    <tr>
+        <th><a href="./moveCameraZoomIn/README.md">moveCameraZoomIn()</a></th>
+        <td>Zooming in the camera <b>without animation</b>.</td>
+    </tr>
+    <tr>
+        <th><a href="./moveCameraZoomOut/README.md">moveCameraZoomOut()</a></th>
+        <td>Zooming out the camera <b>without animation</b>.</td>
     </tr>
     <tr>
         <th><a href="./getCameraPosition/README.md">getCameraPosition()</a></th>
