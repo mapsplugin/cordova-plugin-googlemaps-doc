@@ -22,7 +22,6 @@ $> cordova platform add ios
 // Add the SDK plugin at first with --nofetch option
 $> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk --nofetch
 
-$> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps --variable API_KEY_FOR_IOS="(API key)"
 $> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps \
      --variable API_KEY_FOR_ANDROID="<YOUR KEY>" \
      --variable API_KEY_FOR_IOS="<YOUR KEY>" \
