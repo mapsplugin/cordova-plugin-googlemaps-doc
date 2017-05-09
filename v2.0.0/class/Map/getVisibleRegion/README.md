@@ -8,6 +8,8 @@ This polygon can be a trapezoid instead of a rectangle, because a camera can hav
 
 
 In the below example, the blue rectangle represents the visible region, the red rectangle represents the viewport region.
+
+```js
 var map = plugin.google.maps.Map.getMap(div, {
   camera: {
     target: {
