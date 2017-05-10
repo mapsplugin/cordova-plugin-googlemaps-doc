@@ -2,7 +2,7 @@
 
 **This is beta version of the Cordova GoogleMaps plugin version 2. The code won't change significantly, but it might be modified without announcing in advance**
 
-![](images/v2demo.gif)
+![](https://github.com/mapsplugin/v2.0-demo/raw/master/image.gif)
 
 - [What's new in version 2?](whats-new-v2/README.md)
 
