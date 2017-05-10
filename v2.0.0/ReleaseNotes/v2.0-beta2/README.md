@@ -1,5 +1,34 @@
 # Release notes v2.0-beta2
 
+## May/10/2017
+
+### Add
+
+- [MAP_DRAG_START, MAP_DRAG, and MAP_DRAG_END](../../class/Map/MAP_DRAG_EVENTS/README.md) events
+- You can get the event data in event listener.
+
+```js
+map.on(plugin.google.maps.event.MAP_DRAG_START, onMapDragEvents);
+map.on(plugin.google.maps.event.MAP_DRAG, onMapDragEvents);
+map.on(plugin.google.maps.event.MAP_DRAG_END, onMapDragEvents);
+
+function onMapDragEvents() {
+  console.log("---> event = " + this.event.type);
+}
+```
+
+- Attach the date to version number.
+
+```
+> $ cordova plugin list
+
+com.googlemaps.ios 2.2.0 "Google Maps SDK for iOS"
+cordova-plugin-googlemaps 2.0.0-beta2-20170510-1500 "cordova-plugin-googlemaps"
+                                      ^^^^^^^^^^^^^
+```
+
+----
+
 ## May/9/2017
 
 ### Add

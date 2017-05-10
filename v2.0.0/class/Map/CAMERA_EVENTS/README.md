@@ -2,9 +2,9 @@
 
 These events are fired when the camera moves.
 
-- The `CAMERA_MOVE_START` event is fired when the camera will move.</li>
-- The `CAMERA_MOVE` event is fired during the camera is moving.</li>
-- The `CAMERA_MOVE_END` event is fired during the camera is stopped.</li>
+- The `CAMERA_MOVE_START` event is fired when the camera moving starts.</li>
+- The `CAMERA_MOVE` event is fired while the camera is moving.</li>
+- The `CAMERA_MOVE_END` event is fired when the camera is stopped.</li>
 
 ```html
 <div class="map" id="map_canvas">
