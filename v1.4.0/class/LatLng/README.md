@@ -9,7 +9,7 @@ var latLng = new plugin.google.maps.LatLng(40.712216,-74.22655);
 
 ## Tips
 
-PhoneGap-GoogleMaps-Plugin allows you to write very more simple format for LatLng class.
+cordova-googlemaps-plugin allows you to write very more simple format for LatLng class.
 The below code works with (only) this plugin.
 Because the JS code of this plugin just checks the `lat` and `lng` properties.
 ```js

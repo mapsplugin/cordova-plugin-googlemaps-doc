@@ -57,7 +57,7 @@ marker.hideInfoWindow();
 ```
 
 ### Add a marker with multiple line
-The Phonegap-GoogleMaps-Plugin accepts the strings which include multiple line.
+The cordova-googlemaps-plugin accepts the strings which include multiple line.
 ```js
 map.addMarker({
   'position': {"lat": 0, "lng": 0},
@@ -426,7 +426,7 @@ map.addMarker({
 ![img](marker_drag.gif)
 
 ### Drag Events
-The phonegap-googlemaps-plugin fires MARKER_DRAG_START, MARKER_DRAG and MARGER_DRAG_END events when the marker starts drag, during dragging, and ends drag.
+The cordova-googlemaps-plugin fires MARKER_DRAG_START, MARKER_DRAG and MARGER_DRAG_END events when the marker starts drag, during dragging, and ends drag.
 
 ```js
 map.addMarker({

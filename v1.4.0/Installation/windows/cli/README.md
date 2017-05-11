@@ -1,4 +1,4 @@
-With the phonegap-googlemaps-plugin, you can add a map into your application.
+With the cordova-googlemaps-plugin, you can add a map into your application.
 The plugin automatically handles access to Google Maps mobile SDKs.
 
 To install this plugin, you need to prepare your API keys for both **Google Maps Android API v2** and **Google Maps iOS SDK**.
@@ -124,7 +124,7 @@ Visual studio will automatically fetch the plugin and configure it with the API 
     </script>
   </head>
   <body>
-    <h3>PhoneGap-GoogleMaps-Plugin</h3>
+    <h3>cordova-googlemaps-plugin</h3>
     <div style="width:100%;height:400px" id="map_canvas"></div>
     <button id="button">Full Screen</button>
   </body>

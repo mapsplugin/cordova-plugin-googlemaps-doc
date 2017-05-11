@@ -4,7 +4,7 @@ You can specify the file using one of the following protocols: `http`, `https`, 
 Only Android, also accepts `file:///android_asset/`.
 The added overlays are clickable.
 
-**PhoneGap-GoogleMaps-Plugin can parse only Polyline, Polygon, and Markers currently**
+**cordova-googlemaps-plugin can parse only Polyline, Polygon, and Markers currently**
 
 
 Field Name | Type | Description

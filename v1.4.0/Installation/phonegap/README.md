@@ -1,6 +1,6 @@
 #PhoneGap local install
 
-The phonegap-googlemaps-plugin, gives you the ability to work with Native maps in your application. The plugin automatically handles access to Google Maps mobile SDKs.
+The cordova-googlemaps-plugin, gives you the ability to work with Native maps in your application. The plugin automatically handles access to Google Maps mobile SDKs.
 
 To install this plugin on PhoneGap, you need to prepare your API keys for both Google Maps Android API v2 and Google Maps iOS SDK. The below tutorial explains how to obtain the API keys, and how to install this plugin. Please follow each steps.
 
@@ -138,7 +138,7 @@ $> phonegap local plugin add (path to the plugin)/cordova-plugin-googlemaps-mast
     </script>
   </head>
   <body>
-    <h3>PhoneGap-GoogleMaps-Plugin</h3>
+    <h3>cordova-googlemaps-plugin</h3>
     <div style="width:100%;height:400px" id="map_canvas"></div>
     <button id="button">Full Screen</button>
   </body>

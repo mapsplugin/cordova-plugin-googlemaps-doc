@@ -1,6 +1,6 @@
 # Before bug reporting
 
-Thank you for using PhoneGap-GoogleMaps-Plugin.
+Thank you for using cordova-googlemaps-plugin.
 
 If you get in a trouble, I'm sorry for that.
 Many people reports many issues, however there are many reasons.
@@ -21,7 +21,7 @@ https://github.com/mapsplugin/cordova-plugin-googlemaps/issues?utf8=%E2%9C%93&q=
 
 The most amount time of investing is that detecting what is the wrong.
 Many people use JavaScript frameworks, such as OnsenUI, jQuery mobile, ionic framework.
-Sometimes these JS frameworks causes the trouble with PhoneGap-GoogleMaps-Plugin.
+Sometimes these JS frameworks causes the trouble with cordova-googlemaps-plugin.
 
 In order to detect that, please create a very simple example project, then **try to reproduce your issue**.
 

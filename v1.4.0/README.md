@@ -149,9 +149,9 @@ Join our online chat at<br>
 ### Example
 You can see an example here. **(old version, but all most the same)**
 
- [phonegap-googlemaps-plugin-v1.2.5.apk](top/phonegap-googlemaps-plugin-v1.2.5.apk)
+ [cordova-googlemaps-plugin-v1.2.5.apk](top/cordova-googlemaps-plugin-v1.2.5.apk)
 ```bash
-$> adb install phonegap-googlemaps-plugin-v1.2.5.apk
+$> adb install cordova-googlemaps-plugin-v1.2.5.apk
 ```
 
 ![image](top/example-v1.2.5.gif)

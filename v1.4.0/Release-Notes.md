@@ -1,4 +1,4 @@
-I will update this change log with each new release of the phonegap-googlemaps-plugin.
+I will update this change log with each new release of the cordova-googlemaps-plugin.
 The change log will list releases by date and will include any new features and bug fixes.
 
 ## v.1.3.6 | 07/12/2015

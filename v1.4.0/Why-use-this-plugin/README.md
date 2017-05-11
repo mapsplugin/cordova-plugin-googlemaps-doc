@@ -34,7 +34,7 @@ map.animateCamera({
   console.log("The animation is done.");
 });
 ```
-![img](https://raw.github.com/wf9a5m75/phonegap-googlemaps-plugin/Images/screencapture/animateCamera.gif)
+![img](https://raw.github.com/wf9a5m75/cordova-googlemaps-plugin/Images/screencapture/animateCamera.gif)
 
 #### Fit bounds
 If you want to display the map with fitting a bound, pass an Array of LatLng, or an instance of LatLngBounds.
@@ -75,7 +75,7 @@ cordova-plugin-googlemaps has some original features, that Google Maps Android A
 ![img](https://camo.githubusercontent.com/ee2658fe6364bd3d45642bfaab441124cf935d5e/68747470733a2f2f676f6f676c6564726976652e636f6d2f686f73742f304231454366715443634c45384c557855576d6873516d67785656552f6d61726b6572352e676966)
 
 [Load a KML file](https://github.com/mapsplugin/cordova-plugin-googlemaps-ja-doc/wiki/KmlOverlay)<br>
-![img](https://raw.githubusercontent.com/wf9a5m75/phonegap-googlemaps-plugin/Images/screencapture/kml-polygon.gif)
+![img](https://raw.githubusercontent.com/wf9a5m75/cordova-googlemaps-plugin/Images/screencapture/kml-polygon.gif)
 
 ---
 

@@ -1,4 +1,4 @@
-Thank you for using phonegap-googlemaps-plugin.
+Thank you for using cordova-googlemaps-plugin.
 
 You can use this plugin in your application for free or business.
 However you need to follow the terms of service.

@@ -87,6 +87,9 @@ Welcome to the cordova-googlemaps-plugin!
 * [External Service](./External-Service/README.md)
   * Launch the navigation application
 
+* [Events](./Events/README.md)
+
+
 * Utility
   * [Geometry library](../Geometry-Library/README.md)
 

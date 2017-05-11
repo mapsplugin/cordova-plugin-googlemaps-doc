@@ -139,7 +139,7 @@ $> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps --
     </script>
   </head>
   <body>
-    <h3>PhoneGap-GoogleMaps-Plugin</h3>
+    <h3>cordova-googlemaps-plugin</h3>
     <div style="width:100%;height:400px" id="map_canvas"></div>
     <button id="button">Full Screen</button>
   </body>

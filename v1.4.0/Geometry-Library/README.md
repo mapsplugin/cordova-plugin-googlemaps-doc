@@ -1,6 +1,6 @@
 ## Encode / decode the path
 
-Paths within the PhoneGap-GoogleMaps-Plugin are often specified as an Array of [LatLng](../class/LatLng) objects.
+Paths within the cordova-googlemaps-plugin are often specified as an Array of [LatLng](../class/LatLng) objects.
 However, passing around such an array is often bulky.
 You may instead use Google's [polyline encoding algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) to compress a given path, which you can later decompress through decoding.
 
