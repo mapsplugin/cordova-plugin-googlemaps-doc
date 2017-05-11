@@ -91,17 +91,17 @@ Welcome to the cordova-googlemaps-plugin!
 
 
 * Utility
-  * [Geometry library](../Geometry-Library/README.md)
+  * [Geometry library](./Geometry-Library/README.md)
 
-* [Available HTML colors](../Available-HTML-colors/README.md)
+* [Available HTML colors](./Available-HTML-colors/README.md)
 ***
 
 ### Tips
 - Plugin
-  * [How to update the plugin?](../How-to-upgrade-the-plugin/README.md)
+  * [How to update the plugin?](./How-to-upgrade-the-plugin/README.md)
   * [Using this plugin with Ionic](http://forum.ionicframework.com/t/using-google-maps-cordova-plugin/4456/5)
-  * [Categorize your markers](../Categorize-your-markers/README.md)
-  * [Run on Android Emulator](../Android-Emulator/README.md)
+  * [Categorize your markers](./Categorize-your-markers/README.md)
+  * [Run on Android Emulator](./Android-Emulator/README.md)
 - Android
   * [Obtain your SHA 1 fingerprint from your keystore](./Obtain-your-SHA-1-fingerprint-from-your-keystore/README.md)
 - Meteor Cordova
