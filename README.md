@@ -27,6 +27,16 @@ But it might be unstable sometimes.
 - [Demo](https://github.com/mapsplugin/v2.0-demo)
 
 - [Release notes](./v2.0.0/ReleaseNotes/v2.0-beta2/README.md)
+
+### Version 2.0 Beta Roadmap
+
+The version 1.x will be shutdown in 2017.
+The date is not decided yet, but we release the v1.4.0 is the last version of v1.x
+
+For more details are announced through the [Official community](https://plus.google.com/u/0/communities/117427728522929652853)
+
+![](https://github.com/mapsplugin/cordova-plugin-googlemaps/blob/master/roadmap.png?raw=true)
+
 ----
 
 *Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](LINCENSES/CC-BY-4.0.md), and code samples are licensed under the [Apache 2.0 License](LINCENSES/APACH-BY-2.0.md)*
