@@ -71,6 +71,10 @@
         <th><a href="./remove/README.md">remove()</a></th>
         <td>Remove the circle.</td>
     </tr>
+    <tr>
+        <th>getBounds()</th>
+        <td>Return the latLngBounds (rectangle) that contains the circle.</td>
+    </tr>
 </table>
 
 ## Events
