@@ -60,7 +60,22 @@ console.log(mvcArray.getArray());  // "A", "D"
     </tr>
     <tr>
         <th><a href="forEach/README.md">forEach()</a></th>
-        <td>Iterate over each element, calling the provided callback. The callback is called for each element like: callback(element, index).</td>
+        <td>Iterate over each element, calling the provided callback.<br>
+        This method provides two ways:<br>
+        <ul>
+        <li>forEach(fn)</li>
+        <li>forEach(fn, callback)</li>
+        </ul></td>
+    </tr>
+    <tr>
+        <th><a href="map/README.md">map()</a></th>
+        <td>Iterate over each element, calling the provided callback.<br>
+        Then you can get the results of each callback.<br>
+        This method provides two ways:<br>
+        <ul>
+        <li>map(fn)</li>
+        <li>map(fn, callback)</li>
+        </ul></td>
     </tr>
     <tr>
         <th><a href="getArray/README.md">getArray()</a></th>
