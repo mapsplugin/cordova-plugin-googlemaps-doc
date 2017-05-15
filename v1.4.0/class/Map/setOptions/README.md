@@ -58,3 +58,24 @@ $(":checkbox").on("change", function() {
 });
 ```
 ![](image2.gif)
+
+---
+
+### Custom styling google maps
+
+You can add your own custom colors to the features and elements on google map.
+- Keywords: `featureType, elementType, stylers`
+```js
+map.setOptions({
+  styles: [
+    {
+      featureType: 'administrative.locality',
+      elementType: 'labels.text.fill',
+      stylers: [{ color: '#d59563' }]
+    }
+  ]
+});
+```
+![](mapstyle.png)
+
+[More about styles](https://developers.google.com/maps/documentation/javascript/styling)
