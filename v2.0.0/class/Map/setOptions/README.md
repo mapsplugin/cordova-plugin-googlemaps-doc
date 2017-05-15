@@ -79,8 +79,9 @@ You can also change the map tile styles. More details, please check out the [goo
 <div class="map" id="map_canvas">
   <span class="smallPanel"><button>Change the style</button></span>
 </div>
+```
 
-```html
+```js
 var div = document.getElementById("map_canvas");
 
 // Initialize the map view
