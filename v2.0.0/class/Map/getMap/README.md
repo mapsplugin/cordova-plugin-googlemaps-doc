@@ -26,47 +26,65 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 You can specify the map options with **getMap()** method.
 
+Check out the available options at the [setOptions()](../setOptions/README.md) method.
+
 ```js
 var div = document.getElementById("map_canvas2");
 var map = plugin.google.maps.Map.getMap(div, {
-  'mapType': plugin.google.maps.MapTypeId.HYBRID,
+  'mapType': plugin.google.maps.MapTypeId.ROADMAP,
   'controls': {
     'compass': true,
-      //'myLocationButton': true, // you can specify this option, but app asks permission when it launches.
-      'indoorPicker': true,
-      'zoom': true
-    },
-    'gestures': {
-      'scroll': true,
-      'tilt': true,
-      'rotate': true,
-      'zoom': true
-    },
-    camera: {
-      target : [
-        {lat:41.79883, lng:140.75675},
-        {lat:41.799240000000005, lng:140.75875000000002},
-        {lat:41.797650000000004, lng:140.75905},
-        {lat:41.79637, lng:140.76018000000002},
-        {lat:41.79567, lng:140.75845},
-        {lat:41.794470000000004, lng:140.75714000000002},
-        {lat:41.795010000000005, lng:140.75611},
-        {lat:41.79477000000001, lng:140.75484},
-        {lat:41.79576, lng:140.75475},
-        {lat:41.796150000000004, lng:140.75364000000002},
-        {lat:41.79744, lng:140.75454000000002},
-        {lat:41.79909000000001, lng:140.75465},
-        {lat:41.79883, lng:140.75673}
-      ],
-      'tilt': 60,
-      'bearing': 50
+    //'myLocationButton': true,
+    'indoorPicker': true,
+    'zoom': true
+  },
+  'gestures': {
+    'scroll': true,
+    'tilt': true,
+    'rotate': true,
+    'zoom': true
+  },
+  'styles': [
+    {
+      featureType: "all",
+      stylers: [
+        { saturation: -80 }
+      ]
+    },{
+      featureType: "road.arterial",
+      elementType: "geometry",
+      stylers: [
+        { hue: "#00ffee" },
+        { saturation: 50 }
+      ]
+    },{
+      featureType: "poi.business",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
     }
-  });
+  ],
+  'camera' : {
+    target: {
+      lat: 37.422375,
+      lng: -122.084207
+    },
+    zoom: 10
+  },
+  'preferences': {
+    'zoom': {
+      'minZoom': 10,
+      'maxZoom': 18
+    },
+    'building': false
+  }
+});
 map.one(plugin.google.maps.event.MAP_READY, function() {
   console.log("--> map_canvas2 : ready.");
 });
-
 ```
+
 ![](image2.png)
 
 

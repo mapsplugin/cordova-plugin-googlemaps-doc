@@ -30,6 +30,13 @@ map.setOptions({
     'tilt': 30,
     'zoom': 15,
     'bearing': 50
+  },
+  'preferences': {
+    'zoom': {
+      'minZoom': 15,
+      'maxZoom': 18
+    },
+    'building': false
   }
 });
 ```
@@ -63,19 +70,42 @@ $(":checkbox").on("change", function() {
 
 ### Custom styling google maps
 
-You can add your own custom colors to the features and elements on google map.
-- Keywords: `featureType, elementType, stylers`
+You can modify the colors of map tiles (ROADMAP), such as landmark, road ...etc.
+This feature is called "StyledMapType".
+You can change the color, opacity, and even visibility of them.
+
+In order to change the styles, you need to specify the styles using JSON.
+
+More about styles, please read the [Google Maps JavaScript API v3 document](https://developers.google.com/maps/documentation/javascript/styling).
+
+And try the [https://mapstyle.withgoogle.com/](https://mapstyle.withgoogle.com/).
+
+The `styles` property is also specifiable with `Map.getMap()`.
+
 ```js
 map.setOptions({
-  styles: [
+  'styles': [
     {
-      featureType: 'administrative.locality',
-      elementType: 'labels.text.fill',
-      stylers: [{ color: '#d59563' }]
+      featureType: "all",
+      stylers: [
+        { saturation: -80 }
+      ]
+    },{
+      featureType: "road.arterial",
+      elementType: "geometry",
+      stylers: [
+        { hue: "#00ffee" },
+        { saturation: 50 }
+      ]
+    },{
+      featureType: "poi.business",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
     }
   ]
 });
 ```
-![](mapstyle.png)
 
-[More about styles](https://developers.google.com/maps/documentation/javascript/styling)
+![](image3.png)
