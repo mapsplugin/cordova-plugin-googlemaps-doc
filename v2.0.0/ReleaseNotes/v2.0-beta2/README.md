@@ -1,5 +1,17 @@
 # Release notes v2.0-beta2
 
+## May/17/2017
+
+### Update
+
+- **Important** [Map.getVisibleRegion()](../../class/Map/getVisibleRegion/README.md) is changed.
+
+## May/16/2017
+
+### Update
+
+- Small update in order to prevent null pointer crash
+
 ## May/10/2017
 
 ### Add

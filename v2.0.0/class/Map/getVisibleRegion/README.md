@@ -1,13 +1,28 @@
 # map.getVisibleRegion()
 
-Returns the latLngBounds that contains the four points defining the polygon that is visible in a map's camera.
+**May/17/2017 changed**
 
-The word: "**Visible region**" means the latLngBounds that containts four points of the map, left-top, right-top, right-bottom, and left-bottom. Not equal with viewport region.
+This method returns the **visible region**.
 
-This polygon can be a trapezoid instead of a rectangle, because a camera can have tilt. If the camera is directly over the center of the camera, the shape is rectangular, but if the camera is tilted, the shape will appear to be a trapezoid whose smallest side is closest to the point of view.
+The visible region contains these properties:
+
+- nearLeft, nearRight, farLeft, and farRight
+- latLngBounds
+
+
+## nearLeft, nearRight, farLeft, and farRight
+
+These are the latitude/longitude pairs of left-top(nearLeft), left-right(nearRight), left-bottom(farLeft) and right-bottom(farRight) of the current viewport.
+
+## latLngBounds
+
+A LatLngBounds that contains the above four points. Not equals with the four points when the map is rotated or has tilt.
 
 
 In the below example, the blue rectangle represents the visible region, the red rectangle represents the viewport region.
+
+This polygon can be a trapezoid instead of a rectangle, because a camera can have tilt. If the camera is directly over the center of the camera, the shape is rectangular, but if the camera is tilted, the shape will appear to be a trapezoid whose smallest side is closest to the point of view.
+
 
 ```js
 var map = plugin.google.maps.Map.getMap(div, {
