@@ -97,7 +97,7 @@ loadMap() {
 
     console.log('Map should be loaded.');     
 
-    this.map.one(plugin.google.maps.event.MAP_READY, () => {
+    this.map.on(plugin.google.maps.event.MAP_READY, () => {
       
       console.log("Map is ready.");
       
