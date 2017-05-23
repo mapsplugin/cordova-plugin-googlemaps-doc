@@ -21,10 +21,6 @@
         <td>Set your HTML contents.</td>
     </tr>
     <tr>
-        <th><a href="./setBackgroundColor/README.md">setBackgroundColor</a></th>
-        <td>Change the backgroundColor</td>
-    </tr>
-    <tr>
         <th><a href="./open/README.md">open(marker)</a></th>
         <td>Open the htmlInfoWindow</td>
     </tr>
