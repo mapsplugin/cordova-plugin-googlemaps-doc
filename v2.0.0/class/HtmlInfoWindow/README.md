@@ -13,10 +13,6 @@
 
 <table>
     <tr>
-        <th>setContent(string|node)</th>
-        <td>Set your HTML contents.</td>
-    </tr>
-    <tr>
         <th><a href="./setBackgroundColor/README.md">setBackgroundColor</a></th>
         <td>Change the backgroundColor</td>
     </tr>
