@@ -36,8 +36,14 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
   map.addMarker({
     position: {lat: 0, lng: 0},
-    draggable: true,
-    infoWindow: htmlInfoWindow
+    draggable: true
+  }, function(marker) {
+
+    marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+      htmlInfoWindow.open(marker);
+    });
+    marker.trigger(plugin.google.maps.event.MARKER_CLICK);
+
   });
 });
 ```

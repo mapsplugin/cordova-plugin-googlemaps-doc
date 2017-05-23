@@ -1,6 +1,8 @@
-# htmlInfoWindow.setBackgroundColor()
+# htmlInfoWindow.setContent(string|node)
 
-You can change the background color of HtmlInfoWindow.
+You can change the content of the html info window.
+
+You can set HTML strings or HTML element.
 
 ```html
 <div id="map_canvas"></div>
@@ -12,21 +14,18 @@ var map = plugin.google.maps.Map.getMap(div);
 map.one(plugin.google.maps.event.MAP_READY, function() {
   var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
-  var contents = document.createElement("div");
-  contents.appendChild(document.createTextNode("Change the backgroundColor"));
-  contents.appendChild(document.createElement("br"));
-
   var button = document.createElement("button");
-  button.appendChild(document.createTextNode("click here"));
-  contents.appendChild(button);
+  button.innerText = "Click me!";
   button.addEventListener("click", function() {
-    htmlInfoWindow.setBackgroundColor("#aaaaff");
+    var html = "&lt;img src='./House-icon.png' width='64' height='64' &gt;" +
+               "&lt;br&gt;" +
+               "Ta-da!";
+    htmlInfoWindow.setContent(html);
   });
-  htmlInfoWindow.setContent(contents);
+  htmlInfoWindow.setContent(button);
 
   map.addMarker({
-    position: {lat: 0, lng: 0},
-    draggable: true
+    position: {lat: 0, lng: 0}
   }, function(marker) {
 
     marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
@@ -35,7 +34,6 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
     marker.trigger(plugin.google.maps.event.MARKER_CLICK);
 
   });
-
 });
 ```
 

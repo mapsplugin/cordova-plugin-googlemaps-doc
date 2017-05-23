@@ -1,6 +1,6 @@
-# htmlInfoWindow.setBackgroundColor()
+# htmlInfoWindow.close()
 
-You can change the background color of HtmlInfoWindow.
+Close the htmlInfoWindow.
 
 ```html
 <div id="map_canvas"></div>
@@ -12,21 +12,20 @@ var map = plugin.google.maps.Map.getMap(div);
 map.one(plugin.google.maps.event.MAP_READY, function() {
   var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
-  var contents = document.createElement("div");
-  contents.appendChild(document.createTextNode("Change the backgroundColor"));
-  contents.appendChild(document.createElement("br"));
+  var infoDiv = document.createElement("div");
+  infoDiv.innerHTML = "Click the below button.&lt;br&gt;";
 
   var button = document.createElement("button");
-  button.appendChild(document.createTextNode("click here"));
-  contents.appendChild(button);
+  button.innerText = "Close this infoWindow";
   button.addEventListener("click", function() {
-    htmlInfoWindow.setBackgroundColor("#aaaaff");
+    htmlInfoWindow.close();
   });
-  htmlInfoWindow.setContent(contents);
+  infoDiv.appendChild(button);
+
+  htmlInfoWindow.setContent(infoDiv);
 
   map.addMarker({
-    position: {lat: 0, lng: 0},
-    draggable: true
+    position: {lat: 0, lng: 0}
   }, function(marker) {
 
     marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
@@ -35,7 +34,6 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
     marker.trigger(plugin.google.maps.event.MARKER_CLICK);
 
   });
-
 });
 ```
 

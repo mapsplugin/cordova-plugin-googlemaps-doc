@@ -1,16 +1,53 @@
 # Release notes v2.0-beta2
 
+## May/22/2017
+
+### Update
+
+- **Important** [HtmlInfoWindow()](../../class/HtmlInfoWindow/README.md) is changed.
+You should not use the `infoWindow` option of the marker. New way is more simple.
+
+```js
+var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
+
+var html = "&lt;img src='./House-icon.png' width='64' height='64' &gt;" +
+           "&lt;br&gt;" +
+           "This is an example";
+htmlInfoWindow.setContent(html);
+
+map.addMarker({
+  position: {lat: 0, lng: 0}
+}, function(marker) {
+
+  marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+    htmlInfoWindow.open(marker);
+  });
+  marker.trigger(plugin.google.maps.event.MARKER_CLICK);
+
+});
+```
+
+### Bug fix
+
+- [Map.fromLatLngToPoint()](../../class/Map/fromLatLngToPoint/README.md) and [Map.PointTofromLatLng()](../../class/Map/PointTofromLatLng/README.md) methods return incorrect position sometimes
+
+----
+
 ## May/17/2017
 
 ### Update
 
 - **Important** [Map.getVisibleRegion()](../../class/Map/getVisibleRegion/README.md) is changed.
 
+----
+
 ## May/16/2017
 
 ### Update
 
 - Small update in order to prevent null pointer crash
+
+----
 
 ## May/10/2017
 
