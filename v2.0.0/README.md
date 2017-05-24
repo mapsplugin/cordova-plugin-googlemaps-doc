@@ -63,6 +63,3 @@
 
 - [geometry.encoding](./utilities/geometry/encoding/README.md)
 
-## External links
-
-- [How to use the plugin v2 with ionic2](https://github.com/jalescardoso/ionic2-cordova-plugin-googlemaps-v2) by @jalescardoso
