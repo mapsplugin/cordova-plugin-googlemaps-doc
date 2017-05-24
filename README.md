@@ -39,4 +39,4 @@ For more details are announced through the [Official community](https://plus.goo
 
 ----
 
-*Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](LINCENSES/CC-BY-4.0.md), and code samples are licensed under the [Apache 2.0 License](LINCENSES/APACH-BY-2.0.md)*
+*Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](LICENSES/CC-BY-4.0.md), and code samples are licensed under the [Apache 2.0 License](LICENSES/APACH-BY-2.0.md)*
