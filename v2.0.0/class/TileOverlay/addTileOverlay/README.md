@@ -22,7 +22,10 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
   map.addTileOverlay({
     // Load image files from the local file path
-    tileUrlFormat: "../images/map-for-free/<zoom>_<x>-<y>.gif"
+    getTile: function(x, y, zoom) {
+      //return "http://tile.openstreetmap.org/" + zoom + "/" + x + "/" + y + ".png";
+      return "../images/map-for-free/" + zoom + "_" + x + "-" + y + ".gif"
+    }
   }, function(tileOverlay) {
 
   });

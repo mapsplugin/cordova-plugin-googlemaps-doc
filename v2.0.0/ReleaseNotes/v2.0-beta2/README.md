@@ -1,5 +1,44 @@
 # Release notes v2.0-beta2
 
+## May/24/2017
+
+### Update
+
+- **Important** [map.addTileOverlay()](../../class/TileOverlay/README.md) is changed.
+You can use the `getTile()` callback instead of the `tileUrlFormat` property.
+This allows you to have lots of freedom.
+
+```js
+// Before
+//
+// The url format is limited only three variables : <x>, <y>, and <zoom>
+map.addTileOverlay({
+  tileUrlFormat: "../images/map-for-free/<zoom>_<x>-<y>.gif"
+}, function(tileOverlay) {
+
+});
+```
+
+```
+// After
+//
+// You can generate any url.
+map.addTileOverlay({
+
+  getTile: function(x, y, zoom) {
+    return "../images/map-for-free/" + zoom + "_" + x + "-" + y + ".gif"
+  }
+}, function(tileOverlay) {
+
+});
+```
+
+### Bug fix
+
+- (Android) Marker image caching mechanism does not work
+
+----
+
 ## May/22/2017
 
 ### Update

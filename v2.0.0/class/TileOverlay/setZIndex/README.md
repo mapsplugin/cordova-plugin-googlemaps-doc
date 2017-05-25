@@ -17,15 +17,19 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
   var tileList = [
 
-    "../images/map-for-free/&lt;zoom&gt;_&lt;x&gt;-&lt;y&gt;.gif",
-    "http://tile.stamen.com/toner/&lt;zoom&gt;/&lt;x&gt;/&lt;y&gt;.png"
+    "../images/map-for-free/{zoom}_{x}-{y}.gif",
+    "http://tile.stamen.com/toner/{zoom}/{x}/{y}.png"
   ];
   var layers = [];
   tileList.forEach(function(layerUrl, idx) {
 
     // Create a layer
     map.addTileOverlay({
-      tileUrlFormat: layerUrl
+      getTile: function(x, y, zoom) {
+        return layerUrl.replace("{zoom}", zoom)
+                  .replace("{x}", x)
+                  .replace("{y}", y);
+      }
     }, function(layer) {
 
       layers.push(layer);

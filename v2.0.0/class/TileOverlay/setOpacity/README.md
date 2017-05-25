@@ -22,7 +22,9 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   map.addTileOverlay({
     // &lt;x&gt;,&lt;y&gt; and &lt;zoom&gt; are replaced with values
     // (i.e. http://tile.stamen.com/toner/2/1/2.png)
-    tileUrlFormat: "http://tile.stamen.com/toner/&lt;zoom&gt;/&lt;x&gt;/&lt;y&gt;.png"
+    getTile: function(x, y, zoom) {
+      return "http://tile.stamen.com/toner/" + zoom + "/" + x + "/" + y + ".png";
+    }
   }, function(tileOverlay) {
 
     var range = document.getElementById("opacityRange");
