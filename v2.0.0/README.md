@@ -8,6 +8,8 @@
 
 - [How to install the v2-beta?](Installation/README.md)
 
+  - [Use the cordova-googlemaps-plugin v2.0 with Crosswalk plugin](Installation/Crosswalk/README.md)
+
 - [Migrate from v1 to v2](migrate-from-v1/README.md)
 
 - [For ionic2 users](For-ionic2-users/README.md)
