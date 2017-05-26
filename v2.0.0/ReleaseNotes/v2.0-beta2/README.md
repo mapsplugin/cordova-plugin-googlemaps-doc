@@ -27,7 +27,7 @@ map.addTileOverlay({
 });
 ```
 
-```
+```js
 // After
 //
 // You can generate any url.
