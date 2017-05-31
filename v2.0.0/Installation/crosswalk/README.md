@@ -5,6 +5,8 @@ It is faster than regular android webview.
 
 [Unfortunately, the Crosswalk project has been already retired.](https://crosswalk-project.org/blog/crosswalk-final-release.html)
 
+![](crosswalk_nolonger.png)
+
 However, you can still use the cordova-plugin-crosswalk-webview plugin.
 
 

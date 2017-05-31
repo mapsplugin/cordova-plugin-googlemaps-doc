@@ -8,6 +8,14 @@
 
 ---
 
+## May/25/2017
+
+### Bug fix
+
+- (iOS) App crashes when infoWindow is closed.
+
+---
+
 ## May/24/2017
 
 ### Update
@@ -27,7 +35,7 @@ map.addTileOverlay({
 });
 ```
 
-```
+```js
 // After
 //
 // You can generate any url.
