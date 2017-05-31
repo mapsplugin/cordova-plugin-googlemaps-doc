@@ -202,7 +202,11 @@
     </tr>
     <tr>
         <th><a href="./MAP_READY/README.md">MAP_READY</a></th>
-        <td>This event is fired when the map is created using the <span class="highlight">map.getMap()</span> method.</td>
+        <td>This event is fired when the map is created using the <a href="./getMap/README.md">map.getMap()</a> method.</td>
+    </tr>
+    <tr>
+        <th><a href="./MAP_LOADED/README.md">MAP_LOADED</a></th>
+        <td>This event is fired when the map tiles are loaded.</td>
     </tr>
 </table>
 

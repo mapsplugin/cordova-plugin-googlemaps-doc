@@ -1,5 +1,13 @@
 # Release notes v2.0-beta2
 
+## May/31/2017
+
+### Add
+
+- [MAP_LOADED event](../../v2.0/class/Map/MAP_LOADED/README.md)
+
+---
+
 ## May/24/2017
 
 ### Update
