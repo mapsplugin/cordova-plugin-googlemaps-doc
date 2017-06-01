@@ -4,7 +4,7 @@
 
 ### Add
 
-- [MAP_LOADED event](../../v2.0/class/Map/MAP_LOADED/README.md)
+- [MAP_LOADED event](../../class/Map/MAP_LOADED/README.md)
 
 ---
 
