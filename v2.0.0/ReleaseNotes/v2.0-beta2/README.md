@@ -26,6 +26,7 @@ map.addMarker({
 
 ```
 
+- (Android/iOS) The depth calculation of dom tree is incorrect.
 
 ## May/31/2017
 
