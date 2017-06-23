@@ -1,5 +1,32 @@
 # Release notes v2.0-beta2
 
+## Jun/23/2017
+
+### Bug fix
+
+- (Android/iOS) When you register multiple event listers for one event name, the event listers the second and after are never executed.
+
+```js
+map.addMarker({
+  ...
+  mydata: "hello"
+}, function(marker) {
+
+  marker.on("mydata_changed", function(oldValue, newValue) {
+    console.log("lister 1: " + oldValue + " -> " + newValue);  // <-- executed
+  });
+
+  marker.on("mydata_changed", function(oldValue, newValue) {
+    console.log("lister 2: " + oldValue + " -> " + newValue);  // <-- never executed (bug)
+  });
+  
+  marker.set("mydata", "world");
+  
+});
+
+```
+
+
 ## May/31/2017
 
 ### Add
