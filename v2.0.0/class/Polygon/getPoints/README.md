@@ -59,32 +59,22 @@ function addEditablePolygon(map, points, callback) {
     var mvcArray = polygon.getPoints();
 
     // Add draggable markers
-    var markers = [];
-    function onMarkerAdded(marker, idx) {
-      markers.push(marker);
-
-      // If the position property of the marker is updated,
-      // a position_changed event is fired.
-      marker.on("position_changed", function(oldValue, newValue) {
-
-        // If the mvcArray is updated, the polygon will also be updated.
-        mvcArray.setAt(idx, newValue);
-
-      });
-      if (markers.length === points.length) {
-        callback(polygon);
-      }
-    }
-
-    points.forEach(function(latLng, idx) {
+    mvcArray.map(function(latLng, cb) {
       map.addMarker({
         position: latLng,
         draggable: true
-      }, function(marker) {
-        onMarkerAdded(marker, idx);
-      });
-    });
+      }, cb);
+    }, function(markers) {
 
+      // If a marker is dragged, set the position of it to the points of the Polygon.
+      markers.forEach(function(marker, idx) {
+        marker.on(plugin.google.maps.event.MARKER_DRAG, function(position) {
+          mvcArray.setAt(idx, position);
+        });
+      });
+
+      callback(polygon);
+    });
   });
 
 }
