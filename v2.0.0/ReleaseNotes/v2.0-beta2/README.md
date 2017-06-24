@@ -1,5 +1,12 @@
 # Release notes v2.0-beta2
 
+## Jun/24/2017
+
+### Bug fix
+
+- (Android/iOS) The depth calculation of dom tree is incorrect. (Additional patch)
+
+
 ## Jun/23/2017
 
 ### Bug fix
