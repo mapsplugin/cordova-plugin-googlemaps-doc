@@ -24,7 +24,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 ![](image1.png)
 
-## set title & snippet
+## Set title & snippet
 
 Marker shows an infoWindow when you tap on the marker. You can also display the snippet strings.
 
@@ -55,9 +55,9 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 ![](image2.png)
 
-## Adding multiple marker
+## Adding multiple markers
 
-The below code is recommended way to add multiple marker on the map.
+The code below is the recommended way to add multiple markers on the map.
 
 ```html
 <div class="map" id="map_canvas3"></div>
@@ -109,7 +109,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
   }, function(markers) {
 
-    // Set camera position that include all markers.
+    // Set a camera position that includes all markers.
     var bounds = [];
     data.forEach(function(POI) {
       bounds.push(POI.position);
@@ -119,7 +119,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
       target: bounds
     }, function() {
 
-      // After camera moving, open the last marker.
+      // After camera moves open the last marker.
       markers[markers.length - 1].showInfoWindow();
     });
 
