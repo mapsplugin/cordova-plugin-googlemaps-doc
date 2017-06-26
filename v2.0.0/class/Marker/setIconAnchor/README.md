@@ -1,11 +1,9 @@
 # marker.setIconAnchor()
 
-Set true if you allows all users to drag the marker.
+Change the marker anchor position.
 
 ```html
-<div class="map" id="map_canvas">
-    <span class="smallPanel"><input type="checkbox" id="toggleCheckbox" checked="checked">marker.setDraggable(true)</span>
-</div>
+<div class="map" id="map_canvas"></div>
 ```
 
 ```js
@@ -13,38 +11,44 @@ var div = document.getElementById("map_canvas");
 var map = plugin.google.maps.Map.getMap(div);
 map.one(plugin.google.maps.event.MAP_READY, function() {
 
+  // Add a marker (correct position)
+  map.addMarker({
+    'position': {
+      lat: 0,
+      lng: 0
+    },
+    'zIndex' : 2
+  });
+
   // Add a marker
   map.addMarker({
     'position': {
       lat: 0,
       lng: 0
     },
-    'title': "Drag me!",
-    'snippet': "Press a few seconds on this marker",
-    'draggable': true
+    'icon': "./target_icon.png",
+    'title': 'Click here to fix the icon anchor.',
+    'zIndex': 1
   }, function(marker) {
 
-    // Show the infoWindow
+    // Open the infoWindow
     marker.showInfoWindow();
 
-    var checkbox = document.getElementById("toggleCheckbox");
-    checkbox.addEventListener("change", function() {
+    // Catch the MARKER_CLICK evnet
+    marker.on(plugin.google.maps.event.INFO_CLICK, function() {
 
-      // Change the marker draggable.
-      marker.setDraggable(checkbox.checked);
-
-    });
-
-    marker.on("draggable_changed", function(oldValue, newValue) {
+      // Change the icon anchor.
+      // Set icon anchor point as 24x24 px from the left-top.
+      marker.setIconAnchor(24, 24);
 
       // Change the marker title.
-      marker.setTitle("This marker is " + (newValue ? "" : "not ") + "draggable.");
+      marker.setTitle("Ta-da!");
+      marker.setSnippet("The marker should be the correct position.");
 
-      // Show (redraw) the infoWindow
+      // Redraw (reopen) the infoWindow.
       marker.showInfoWindow();
 
     });
-
   });
 });
 ```
