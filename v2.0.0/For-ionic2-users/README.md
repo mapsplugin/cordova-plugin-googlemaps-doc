@@ -93,7 +93,7 @@ loadMap() {
     console.log('Start loading MAP');
 
     let mapEle = this.theMap.nativeElement;
-    this.map = new plugin.google.maps.Map.getMap(mapEle, {});
+    this.map = plugin.google.maps.Map.getMap(mapEle, {});
 
     console.log('Map should be loaded.');     
 
