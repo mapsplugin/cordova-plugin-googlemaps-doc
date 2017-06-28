@@ -1,7 +1,7 @@
 You can get your SHA-1 fingerprint from your keystore.
 
 ```
-$> keytool -v -list -keystore <debug.keystore path>
+$> keytool -v -list -keystore <keystore path>
 ```
 
 For example:
