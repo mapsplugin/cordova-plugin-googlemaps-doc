@@ -3,7 +3,7 @@ Cordova GoogleMaps plugin for iOS and Android
 This plugin is a thin wrapper for [Google Maps Android API](https://developers.google.com/maps/documentation/android/) and [Google Maps SDK for iOS](https://developers.google.com/maps/documentation/ios/).
 Both [PhoneGap](http://phonegap.com/) and [Apache Cordova](http://cordova.apache.org/) are supported.
 
-You can create map application that uses native Google Maps with JavaScript, which is faster and uses less data than Google Maps JavaScript API v3.
+You can create a map application that uses native Google Maps with JavaScript, which is faster and uses less data than Google Maps JavaScript API v3.
 
 ----
 
@@ -11,7 +11,7 @@ There are two versions:
 
 ## v1.4.0 (current, but it's an old version)
 
-You can create only one map in your application.
+You can only create one map in your application.
 
 - [Documentations](./v1.4.0/README.md)
 
@@ -22,7 +22,7 @@ You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
 But it might be unstable sometimes.
 
-- [Documentations](./v2.0.0/README.md)
+- [Documentation](./v2.0.0/README.md)
 
 - [Demo](https://github.com/mapsplugin/v2.0-demo)
 
@@ -30,10 +30,10 @@ But it might be unstable sometimes.
 
 ### Version 2.0 Beta Roadmap
 
-The version 1.x will be shutdown in 2017.
-The date is not decided yet, but we release the v1.4.0 is the last version of v1.x
+Version 1.x will be shutdown in 2017.
+The date is not decided yet, but v1.4.0 is the last version of v1.x
 
-For more details are announced through the [Official community](https://plus.google.com/u/0/communities/117427728522929652853)
+More details are announced through the [Official community](https://plus.google.com/u/0/communities/117427728522929652853)
 
 ![](https://github.com/mapsplugin/cordova-plugin-googlemaps/blob/master/roadmap.png?raw=true)
 
