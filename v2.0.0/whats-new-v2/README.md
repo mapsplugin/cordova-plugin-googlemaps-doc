@@ -1,14 +1,14 @@
 # What's new in cordova-google-maps-plugin Version 2?
 
-Version 2 of the plugin has been improved a lot from version 1.
+Version 2 of the plugin has been improved alot from version 1.
 
-### change 1: Multiple maps
+### Change 1: Multiple maps
 
 As you may know, the new version supports multiple maps in the same HTML page.
 However one map takes up a large amount of memory, so I recommend a maximum of two or three maps on one page.
-If you don't use a map then remove it - that will save memory.
+If you don't use a map then remove it - that will save memory!
 
-### change 2: Multiple pages
+### Change 2: Multiple pages
 
 Version 1.x only supported a single HTML file (typically index.html).
 The new version supports multiple HTML files (such as index.html, page1.html, page2.html ...etc)
@@ -17,7 +17,7 @@ You don't need to clean up the maps if you change HTML files. The plugin will do
 However, changing tab page in the same HTML is a different story.
 You still need to use `map.setVisible(true/false)`.
 
-### change 3: Recognise all HTML elements
+### Change 3: Recognise all HTML elements
 
 Version 1.x only supported the map div.
 The new version recognises all the HTML elements on the page.
@@ -92,7 +92,7 @@ See more information at [issue #835: Performance problems when adding many marke
 
 If you don't understand this you can skip it. Just remember that the performance has been improved.
 
-### change 6. Split JS files
+### Change 6. Split JS files
 
 The version 1.x code of the Javascript is [googlemaps-cdv-plugin.js](https://github.com/mapsplugin/cordova-plugin-googlemaps/tree/caf6ec1099afc0c2993a367a346d44b6e5b0f99c/www/googlemaps-cdv-plugin.js)
 The file is 2873 lines long. Wow, it's too large and not suitable for maintenance...not even for me!
@@ -102,13 +102,13 @@ https://github.com/mapsplugin/cordova-plugin-googlemaps/tree/multiple_maps/www
 
 You can now easily debug your app :)
 
-### change 7. Introduce BaseArrayClass
+### Change 7. Introduce BaseArrayClass
 
 If you are familiar with the Google Maps Javascript API v3, you probably know the [MVCArray class](https://developers.google.com/maps/documentation/javascript/3.exp/reference#MVCArray)
 The benefit of this class is you can monitor the events: `insert_at`, `set_at`, and `remove_at`.
 Using this class your code will be simpler.
 
-### change 8. Property synchronizing
+### Change 8. Property synchronizing
 
 This is really useful. Most `getXXXX()` methods return the values as a normal Javascript object.
 
@@ -140,7 +140,7 @@ function onPositionChanged() {
 ~~However, `map.getVisibleRegion()` does not support this, you still have to use a callback.~~
 As of the v2.0-beta2, you can use the map.getVisibleRegion() method synchronously.
 
-### change 9. Chain programming
+### Change 9. Chain programming
 
 In version 2.0, most `setXXX()` methods can be chained.
 
@@ -205,11 +205,11 @@ marker.setPosition({"lat": ...., "lng": ....}).setTitle("Hello");
 <tr><td> MARKER_DRAG_END </td><td> YES </td><td> YES </td><td> LatLng(marker position) </td></tr>
 </table>
 
-### change 11. Set background color
+### Change 11. Set background color
 
 Use `plugin.google.maps.environment.setBackgroundColor()` to set the background color.
 
-### change 12. Geocoding / reverse geocoding
+### Change 12. Geocoding / reverse geocoding
 
 You can do Geocoding like this:
 
@@ -227,20 +227,20 @@ plugin.google.maps.Geocoder.geocode({
 });
 ```
 
-### change 13. Add some features
+### Change 13. Add some features
 
 I forgot too much. See the demo APK.
 
 
-### change 14. Methods still in development
+### Change 14. Methods still in development
 
 `map.showDialog()`, `map.closeDialog()`, and `map.addKmlOverlay()` are still in development and are not ready yet.
 
 
-### change 15. UIWebView & WKWebView
+### Change 15. UIWebView & WKWebView
 
 Both are Supported.
 
 Crosswalk is not confirmed yet.
 
-I think I may have missed something. I will post if I remember.
+I think I may have missed somethin - I will post if I remember.
