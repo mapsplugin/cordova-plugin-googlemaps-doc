@@ -22,7 +22,7 @@
     </tr>
     <tr>
         <th><a href="./setGeodesic/README.md">setGeodesic()</a></th>
-        <td>When true, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth. </td>
+        <td>When true, edges of the polyline are interpreted as geodesic and will follow the curvature of the Earth. </td>
     </tr>
     <tr>
         <th>getGeodesic()</th>
