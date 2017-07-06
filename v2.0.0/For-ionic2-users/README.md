@@ -38,14 +38,17 @@ Open up your desired <PAGE>.html and add a div that will contain the map.
 </ion-content>
 ```
 
-Then open up the corresponding <PAGE>.scss and add the following style. This will make sure the map is visible and disable the nav-decor div that will be on top.
+**You don't need to do this anymore**
 
-```css
+~~Then open up the corresponding <PAGE>.scss and add the following style. This will make sure the map is visible and disable the nav-decor div that will be on top.~~
+
+~~```css
 ion-app._gmaps_cdv_ .nav-decor{
   background-color: transparent!important;
   display:none!important;
 }
-```
+```~~
+
 
 Now open up your <PAGE>.ts file and import the following modules:
 
@@ -71,7 +74,7 @@ Now add the reference to the map container in your page `Class` so we can use th
 Now change the constructor to include the added `Platform` module by adding:
 
 ```javascript
-public platform: Platform, 
+public platform: Platform,
 ```
 
 This enables us to use the following which we place inside the constructor's brackets:
@@ -88,18 +91,18 @@ As you can see we call a `loadMap` function, so let's add this function:
 
 ```javascript
 loadMap() {
- 
+
     console.log('Start loading MAP');
 
     let mapEle = this.theMap.nativeElement;
     this.map = plugin.google.maps.Map.getMap(mapEle, {});
 
-    console.log('Map should be loaded.');     
+    console.log('Map should be loaded.');
 
     this.map.one(plugin.google.maps.event.MAP_READY, () => {
-      
+
       console.log("Map is ready.");
-      
+
     });
 
 }
