@@ -1,5 +1,13 @@
 # Release notes v2.0-beta2
 
+## Jul/5/2017
+
+### Update
+
+- (ionic) The nav-decor class blocks the maps plugin [ionic/#8252](https://github.com/ionic-team/ionic/issues/8252), [ionic/#7205](https://github.com/ionic-team/ionic/issues/7205)
+
+- (Android 4.4) [DOM manipulation is slow when the map is not displayed](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1522)
+
 ## Jun/24/2017
 
 ### Bug fix
@@ -26,9 +34,9 @@ map.addMarker({
   marker.on("mydata_changed", function(oldValue, newValue) {
     console.log("lister 2: " + oldValue + " -> " + newValue);  // <-- never executed (bug)
   });
-  
+
   marker.set("mydata", "world");
-  
+
 });
 
 ```
