@@ -8,6 +8,8 @@
 
 - (Android 4.4) [DOM manipulation is slow when the map is not displayed](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1522)
 
+- (iOS SDK) [cordova-googlemaps-plugin-sdk](https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk) upgrades the google maps sdk for iOS version to 2.3.0
+
 ## Jun/24/2017
 
 ### Bug fix
