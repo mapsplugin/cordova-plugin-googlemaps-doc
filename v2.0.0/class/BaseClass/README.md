@@ -35,7 +35,7 @@ The Base class is designed for MVC(Model-View-Controller). MVC helps you to writ
     </tr>
     <tr>
         <th>on()</th>
-        <td>The same as the [addListener](./addListener/README.md) method.</td>
+        <td>The same as the <a href="./addListener/README.md">addListener()</a> method.</td>
     </tr>
     <tr>
         <th>one(eventName:string, handler:Function)</th>
