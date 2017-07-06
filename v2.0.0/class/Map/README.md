@@ -17,6 +17,10 @@
         <td>Changes the map div.</td>
     </tr>
     <tr>
+        <th>getDiv()</th>
+        <td>Returns the map div.</td>
+    </tr>
+    <tr>
         <th><a href="./setMapTypeId/README.md">setMapTypeId()</a></th>
         <td>Changes the map type id.</td>
     </tr>

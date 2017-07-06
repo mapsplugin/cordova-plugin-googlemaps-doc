@@ -15,15 +15,15 @@
 <table>
     <tr>
         <th><a href="./getPosition/README.md">getPosition()</a></th>
-        <td>Get the marker position.</td>
+        <td>Returns the marker position.</td>
     </tr>
     <tr>
         <th><a href="./showInfoWindow/README.md">showInfoWindow()</a></th>
-        <td>Show the infoWindow of the marker.</td>
+        <td>Shows the infoWindow of the marker.</td>
     </tr>
     <tr>
         <th><a href="./hideInfoWindow/README.md">hideInfoWindow()</a></th>
-        <td>Hide the infoWindow of the marker.</td>
+        <td>Hides the infoWindow of the marker.</td>
     </tr>
     <tr>
         <th><a href="./setAnimation/README.md">setAnimation()</a></th>
@@ -31,15 +31,23 @@
     </tr>
     <tr>
         <th><a href="./isVisible/README.md">isVisible()</a></th>
-        <td>Retrurn true if the marker is visible.</td>
+        <td>Return true if the marker is visible.</td>
+    </tr>
+    <tr>
+        <th>getTitle()</th>
+        <td>Returns the marker title.</td>
     </tr>
     <tr>
         <th><a href="./setTitle/README.md">setTitle()</a></th>
-        <td>Change the marker title.</td>
+        <td>Changes the marker title.</td>
+    </tr>
+    <tr>
+        <th>getSnippet()</th>
+        <td>Returns the marker snippet.</td>
     </tr>
     <tr>
         <th><a href="./setSnippet/README.md">setSnippet()</a></th>
-        <td>Change the marker snippet.</td>
+        <td>Changes the marker snippet.</td>
     </tr>
     <tr>
         <th><a href="./remove/README.md">remove()</a></th>
@@ -47,51 +55,67 @@
     </tr>
     <tr>
         <th><a href="./setIconAnchor/README.md">setIconAnchor()</a></th>
-        <td>Set the marker icon anchor.</td>
+        <td>Sets the marker icon anchor.</td>
     </tr>
     <tr>
         <th><a href="./setInfoWindowAnchor/README.md">setInfoWindowAnchor()</a></th>
-        <td>Change the info window anchor. </td>
+        <td>Changes the info window anchor. </td>
     </tr>
     <tr>
         <th><a href="./isInfoWindowShown/README.md">isInfoWindowShown()</a></th>
-        <td>Retrurn true if the infoWindow is shown on the marker.</td>
+        <td>Return true if the infoWindow is shown on the marker.</td>
     </tr>
     <tr>
         <th><a href="./setOpacity/README.md">setOpacity()</a></th>
-        <td>Change the marker opacity.</td>
+        <td>Changes the marker opacity.</td>
+    </tr>
+    <tr>
+        <th>getOpacity()</th>
+        <td>Returns the marker opacity.</td>
     </tr>
     <tr>
         <th><a href="./setZIndex/README.md">setZIndex()</a></th>
-        <td>Change the marker zIndex.</td>
+        <td>Changes the marker zIndex.</td>
     </tr>
     <tr>
         <th><a href="./setVisible/README.md">setVisible()</a></th>
-        <td>Change the marker visibility.</td>
+        <td>Changes the marker visibility.</td>
     </tr>
     <tr>
         <th><a href="./setDraggable/README.md">setDraggable()</a></th>
-        <td>Set true if you allows all users to drag the marker.</td>
+        <td>Sets true if you allows all users to drag the marker.</td>
+    </tr>
+    <tr>
+        <th>isDraggable()</th>
+        <td>Returs true when the marker is draggable.</td>
     </tr>
     <tr>
         <th><a href="./setDisableAutoPan/README.md">setDisableAutoPan()</a></th>
-        <td>Set true if you **do not want** to move the map when you click on the marker.</td>
+        <td>Sets true if you **do not want** to move the map when you click on the marker.</td>
     </tr>
     <tr>
         <th><a href="./setPosition/README.md">setPosition()</a></th>
-        <td>Set the marker position.</td>
+        <td>Sets the marker position.</td>
     </tr>
     <tr>
         <th><a href="./setRotation/README.md">setRotation()</a></th>
-        <td>Set the marker rotation angle.</td>
+        <td>Sets the marker rotation angle.</td>
+    </tr>
+    <tr>
+        <th>getRotation()</th>
+        <td>Returns the marker rotation angle.</td>
     </tr>
     <tr>
         <th><a href="./setFlat/README.md">setFlat()</a></th>
-        <td>Set true if you want to be flat marker.</td>
+        <td>Sets true if you want to be flat marker.</td>
     </tr>
     <tr>
         <th><a href="./setIcon/README.md">setIcon()</a></th>
-        <td>Change the marker icon.</td>
+        <td>Changes the marker icon.</td>
+    </tr>
+    <tr>
+        <th>getMap()</th>
+        <td>Return the map reference.</td>
     </tr>
 </table>
 

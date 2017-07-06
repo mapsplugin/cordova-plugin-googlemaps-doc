@@ -75,6 +75,10 @@
         <th>getBounds()</th>
         <td>Return the latLngBounds (rectangle) that contains the circle.</td>
     </tr>
+    <tr>
+        <th>getMap()</th>
+        <td>Return the map reference.</td>
+    </tr>
 </table>
 
 ## Events

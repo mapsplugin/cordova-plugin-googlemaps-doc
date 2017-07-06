@@ -37,6 +37,14 @@
         <td>Return the current polygon filling color (inner color).</td>
     </tr>
     <tr>
+        <th>setStrokeWidth()</th>
+        <td>Changes the polygon stroke width.</td>
+    </tr>
+    <tr>
+        <th>getStrokeWidth()</th>
+        <td>Returns the current stroke width (unit: pixel).</td>
+    </tr>
+    <tr>
         <th><a href="./setStrokeColor/README.md">setStrokeColor()</a></th>
         <td>Change the stroke color (outter color).</td>
     </tr>
@@ -61,6 +69,14 @@
         <td>Return true if the polygon is visible.</td>
     </tr>
     <tr>
+        <th>setGeodesic()</th>
+        <td>When true, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth. </td>
+    </tr>
+    <tr>
+        <th>getGeodesic()</th>
+        <td>Returns true if the polygon is geodesic.</td>
+    </tr>
+    <tr>
         <th><a href="./setZIndex/README.md">setZIndex()</a></th>
         <td>Change the polygon zIndex order.</td>
     </tr>
@@ -71,6 +87,10 @@
     <tr>
         <th><a href="./remove/README.md">remove()</a></th>
         <td>Remove the polygon.</td>
+    </tr>
+    <tr>
+        <th>getMap()</th>
+        <td>Return the map reference.</td>
     </tr>
 </table>
 
