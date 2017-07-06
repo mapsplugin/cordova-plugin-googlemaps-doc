@@ -42,6 +42,8 @@ console.log(mvcArray.getArray());  // "A", "D"
 
 ---
 
+This class extends [BaseClass](../BaseClass/README.md).
+
 ## Constructor
 
 <table>
