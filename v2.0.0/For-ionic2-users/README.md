@@ -40,14 +40,15 @@ Open up your desired <PAGE>.html and add a div that will contain the map.
 
 **You don't need to do this anymore**
 
-~~Then open up the corresponding <PAGE>.scss and add the following style. This will make sure the map is visible and disable the nav-decor div that will be on top.~~
+~~Then open up the corresponding &lt;PAGE&gt;.scss and add the following style. This will make sure the map is visible and disable the nav-decor div that will be on top.
 
 ~~```css
 ion-app._gmaps_cdv_ .nav-decor{
   background-color: transparent!important;
   display:none!important;
 }
-```~~
+```
+~~
 
 
 Now open up your <PAGE>.ts file and import the following modules:
