@@ -2,25 +2,6 @@
 
 The Base class is designed for MVC(Model-View-Controller). MVC helps you to write your code Model, View and Controller separately.
 
-
------
-
-### trigger()
-
-You can dispatch your event with your data. This is useful to write down your code separately.
-
-```js
-function onMyEvent(data1, data2) {
-  var myObject = this;
-  alert(data1 + " " + data2);
-}
-
-myObject.on("my event", onMyEvent);
-
-myObject.trigger("my event", "Hello", "World");
-```
-
-
 ## Constructor
 
 <table>
