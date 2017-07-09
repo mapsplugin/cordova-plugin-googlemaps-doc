@@ -29,3 +29,16 @@
         <td>Close the htmlInfoWindow</td>
     </tr>
 </table>
+
+## Events
+
+<table>
+    <tr>
+        <th>INFO_OPEN</th>
+        <td>Arguments:  none<br>This event is fired when the infoWindow is opened.</td>
+    </tr>
+    <tr>
+        <th>INFO_CLOSE</th>
+        <td>Arguments:  none<br>This event is fired when the infoWindow is closed.</td>
+    </tr>
+</table>
