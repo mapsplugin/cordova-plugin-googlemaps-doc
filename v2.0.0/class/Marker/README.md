@@ -142,7 +142,7 @@
     </tr>
     <tr>
         <th>INFO_OPEN</th>
-        <td>Arguments:  none<br>This event is fired when the infoWindow will be opened.</td>
+        <td>Arguments:  none<br>This event is fired when the infoWindow is opened.</td>
     </tr>
     <tr>
         <th>INFO_CLICK</th>
