@@ -62,49 +62,6 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
 });
 
-function addEditablePolyline(map, points, callback) {
-
-  // Add a polyline
-  map.addPolyline({
-    'points': points,
-    'color' : '#AA00FF',
-    'width': 10,
-    'geodesic': true
-  }, function(polyline) {
-
-    // polyline.getPoints() returns an instance of the BaseArrayClass.
-    var mvcArray = polyline.getPoints();
-
-    // Add draggable markers
-    var markers = [];
-    function onMarkerAdded(marker, idx) {
-      markers.push(marker);
-
-      // If the position property of the marker is updated,
-      // a position_changed event is fired.
-      marker.on("position_changed", function(oldValue, newValue) {
-
-        // If the mvcArray is updated, the polyline will also be updated.
-        mvcArray.setAt(idx, newValue);
-
-      });
-      if (markers.length === points.length) {
-        callback(polyline);
-      }
-    }
-
-    points.forEach(function(latLng, idx) {
-      map.addMarker({
-        position: latLng,
-        draggable: true
-      }, function(marker) {
-        onMarkerAdded(marker, idx);
-      });
-    });
-
-  });
-
-}
 ```
 
 ![](image.gif)
