@@ -1,7 +1,7 @@
-**This page will update without announce during in beta. Please check periodically**
+**This page will be updated without announcement during beta. Please check back periodically.**
 
 ## Method names are renamed
-Several methods are renamed in v2. Please rewrite your code.
+Several methods have been renamed in v2. Please rewrite your code accordingly.
 
 <table>
 <caption>method names</caption>
@@ -18,15 +18,15 @@ Several methods are renamed in v2. Please rewrite your code.
 </table>
 
 
-## Deprecated &amp; not ready yet
-These methods are not implemented yet because of deprecated considering or technically hard work is needed.
+## Deprecated and not yet ready
+These methods have not been implemented yet, because of deprecated considering or technically hard work is required.
 
 <table>
 <caption>method names</caption>
 <tr><th>v1</th><th>v2</th></tr>
 <tr><td>map.showDialog()</td><td>Deprecated considering</td></tr>
 <tr><td>map.closeDialog()</td><td>Deprecated considering</td></tr>
-<tr><td>map.setDebuggable()</td><td>technically not ready yet</td></tr>
+<tr><td>map.setDebuggable()</td><td>Technically not ready yet</td></tr>
 <tr><td>map.refreshLayout()</td><td>Actually implemented, but you don't need to use this anymore.<br>
 Instead of this method, trigger the <a href="https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/What-are-news-in-v2%3F#change-4-save-battery-life">touch_start event</a>.</td></tr>
 <tr><td>map.addKmlOverlay()</td><td>technically not ready yet</td></tr>
@@ -93,7 +93,7 @@ Instead of this method, trigger the <a href="https://github.com/mapsplugin/cordo
 
 ### removed the `xxxClicked` properties
 
-The plugin version 2 does not support the `xxxClicked` properties anymore.
+Version 2 does not support `xxxClicked` properties anymore.
 Please use `addEventListener() or on()` methods instead.
 
 ```js
