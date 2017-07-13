@@ -3,7 +3,7 @@
 
 ## Jul/13/2017
 
-- (JS) Bug fix: Can not click HtmlInfoWindow (#1522)[https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1552]
+- (JS) Bug fix: Can not click HtmlInfoWindow [#1522](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1552)
 
 - (JS) Bug fix: Map is not displayed when you go back from another page using the back button of Android.
 In order to resolve this issue, the plugin catches the `backbutton` event all the time.
