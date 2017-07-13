@@ -7,7 +7,6 @@
 
 - (JS) Bug fix: Map is not displayed when you go back from another page using the back button of Android.
 In order to resolve this issue, the plugin catches the `backbutton` event all the time.
-
 But other plugins or your JS code might want to catch the `backbutton` event.
 In order to passes the event, the maps plugin fires the `plugin_backbutton` event alternatively.
 (But this is for just in case)
