@@ -1,6 +1,6 @@
-# Cordova GoogleMaps plugin for iOS and Android v2 (beta)
+# Cordova GoogleMaps plugin for iOS and Android - version 2 (beta)
 
-**This is the beta version of the Cordova GoogleMaps Plugin Version 2. The code won't change significantly, but it might be modified without announcement in advance**
+**This is the beta version of the Cordova GoogleMaps Plugin Version 2. The code won't change significantly, but it might be modified without announcement in advance.**
 
 ![](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/raw/master/v2.0.0/class/HtmlInfoWindow/newHtmlInfoWindow/image.gif)
 
@@ -12,7 +12,7 @@
 
 - [Migrate from v1 to v2](migrate-from-v1/README.md)
 
-- [For ionic2 users](For-ionic2-users/README.md)
+- [For Ionic 2 users](For-ionic2-users/README.md)
 
 ## License
 
