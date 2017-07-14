@@ -34,7 +34,7 @@ var map = plugin.google.maps.Map.getMap(div, {
   'mapType': plugin.google.maps.MapTypeId.ROADMAP,
   'controls': {
     'compass': true,
-    //'myLocationButton': true,
+    'myLocationButton': true,
     'indoorPicker': true,
     'zoom': true
   },
