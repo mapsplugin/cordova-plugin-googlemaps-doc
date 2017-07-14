@@ -7,6 +7,8 @@ The previous code was not perfect. You might not click on the map some very part
 
 - (Android/iOS) Stop DOM inspection when you interact with map [fd465ff](https://github.com/mapsplugin/cordova-plugin-googlemaps/commit/fd465ffc61c25dfcdc15c574d3f572a11d597f06).
 
+- (JS) Bug fix: When you create multiple instances of HTMLInfoWindow, previous HTMLInfoWindow does not close when open another HTMLInfoWindow. [#1555](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1555)
+
 ## Jul/13/2017
 
 - (JS) Bug fix: Can not click HtmlInfoWindow [#1522](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1552)
