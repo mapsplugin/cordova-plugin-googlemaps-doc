@@ -1,5 +1,11 @@
 # Release notes v2.0-beta2
 
+## Jul/14/2017
+
+- (JS) Bug fix: The calculation of DOM tree was incorrect.
+The previous code was not perfect. You might not click on the map some very particular cases [#1541](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1541).
+
+- (Android/iOS) Stop DOM inspection when you interact with map [fd465ff](https://github.com/mapsplugin/cordova-plugin-googlemaps/commit/fd465ffc61c25dfcdc15c574d3f572a11d597f06).
 
 ## Jul/13/2017
 
@@ -10,6 +16,9 @@ In order to resolve this issue, the plugin catches the `backbutton` event all th
 But other plugins or your JS code might want to catch the `backbutton` event.
 In order to passes the event, the maps plugin fires the `plugin_backbutton` event alternatively.
 (But this is for just in case)
+
+- (JS) Update: Prevent the "plugin is undefined" error [0f55e49](https://github.com/mapsplugin/cordova-plugin-googlemaps/commit/0f55e4937b495bb377840efac377a7deceb2c895)
+Hopefully this commit helps for [#1482](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1482)
 
 ## Jul/11/2017
 
