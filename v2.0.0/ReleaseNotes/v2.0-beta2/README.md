@@ -1,5 +1,11 @@
 # Release notes v2.0-beta2
 
+## Jul/16/2017
+
+- (JS) Bug fix: Child elements of SVG causes the error "node.classname Error" [#1558](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1558)
+
+- (JS) Bug fix: HTMLInfoWindow stays after removing it's marker [#1556](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1556)
+
 ## Jul/14/2017
 
 - (JS) Bug fix: The calculation of DOM tree was incorrect.
