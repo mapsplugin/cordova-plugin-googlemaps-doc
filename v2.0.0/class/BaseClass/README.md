@@ -38,12 +38,16 @@ The Base class is designed for MVC(Model-View-Controller). MVC helps you to writ
         <td>The same as the <a href="./addListener/README.md">addListener()</a> method.</td>
     </tr>
     <tr>
-        <th>one(eventName:string, handler:Function)</th>
+        <th>one(eventName, callback)</th>
         <td>The same as <a href="./addListenerOnce/README.md">addListenerOnce()</a>.</td>
     </tr>
     <tr>
-        <th>off(eventName?:string, callback?:function)</th>
+        <th>off(eventName, callback)</th>
         <td>The same as <a href="./removeEventListener/README.md">removeEventListener()</a>.</td>
+    </tr>
+    <tr>
+        <th><a href="./bindTo/README.md">bindTo(key, target, targetKey, noNotify)</a></th>
+        <td>If the value assigned with <span class="highlight">key</span> is changed, the value assigned with <span class="highlight">targetKey</span> also changed.</td>
     </tr>
     <tr>
         <th>empty()</th>
