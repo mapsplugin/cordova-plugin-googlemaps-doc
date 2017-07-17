@@ -1,6 +1,6 @@
 # spherical.computeDistanceBetween()
 
-Returns the distance, in meters, between two LatLngs.
+Returns the distance, in meters, between two [LatLng](../../../LatLng/README.md)s.
 
 ```html
 <div id="map_canvas">

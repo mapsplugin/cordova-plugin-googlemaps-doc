@@ -1,6 +1,6 @@
 # spherical.computeOffset()
 
-Returns the LatLng resulting from moving a distance from an origin in the specified heading.
+Returns the [LatLng](../../../LatLng/README.md) resulting from moving a distance from an origin in the specified heading.
 
 ```html
 <div id="map_canvas"></div>
