@@ -1,5 +1,36 @@
 # Release notes v2.0-beta2
 
+## Jul/19/2017
+
+- (JS) Bug fix: Ionic 2 - Slow DOM manipulation  [#1522](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1522)
+
+- (JS) Bug fix: the plugin keeps the information of removed elements
+
+- (JS) Add: noNotify option for `insertAt`, `setAt`, `removeAt`, `push`, `pop`, and `empty` methods of BaseArrayClass
+
+- (JS) Add: `indexOf`, `filter`, `reverse`, and `sort` methods into BaseArrayClass
+
+- (Android/iOS) Bug fix: Polyline.setPoints(), Polygon.setPoints() , Polygon.setHoles() do not work sometime [#1547](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1547)
+
+- (Android/iOS) Update: Hide map view until the map camera is configured when the camera option is given to the map.getMap() [#1570](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1570)
+
+- (JS) Update: `map.clear()` method accepts callback [#1569](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1569)
+
+- (ionic) Send a pull request to ionic wrapper plugin.
+[pull request #1815](https://github.com/ionic-team/ionic-native/pull/1815)
+
+## Jul/18/2017
+
+- (JS) update: Suspend the view positioning when the map div(s) is/are not displayed  [#1522](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1522)
+
+- (JS) Bug fix: iOS app crash with map.addTileOverlay  [#1565](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1565)
+
+- (JS) Bug fix: HtmlInfoWindow is displayed in out side of the map view  [#1561](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1561)
+
+## Jul/17/2017
+
+- (JS) update: Disable background, background-color, and background-image CSS mandatory.
+
 ## Jul/16/2017
 
 - (JS) Bug fix: Child elements of SVG causes the error "node.classname Error" [#1558](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1558)
