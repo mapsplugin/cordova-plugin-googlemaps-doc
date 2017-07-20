@@ -37,6 +37,8 @@
 
 - (JS) Bug fix: HTMLInfoWindow stays after removing it's marker [#1556](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1556)
 
+- (JS) Update: event listener performance has been improved
+
 ## Jul/14/2017
 
 - (JS) Bug fix: The calculation of DOM tree was incorrect.

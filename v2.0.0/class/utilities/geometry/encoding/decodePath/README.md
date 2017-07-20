@@ -1,6 +1,6 @@
 # encoding.decodePath()
 
-Decodes an encoded path string into a sequence of LatLngs.
+Decodes an encoded path string into a sequence of [LatLng](../../../LatLng/README.md)s.
 
 ```js
 <div id="map_canvas"></div>

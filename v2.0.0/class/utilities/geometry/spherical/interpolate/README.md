@@ -1,6 +1,6 @@
 # spherical.interpolate()
 
-Returns the LatLng which lies the given fraction of the way between the origin LatLng and the destination LatLng.
+Returns the LatLng which lies the given fraction of the way between the origin [LatLng](../../../LatLng/README.md) and the destination [LatLng](../../../LatLng/README.md).
 
 ```html
 <div id="map_canvas"></div>

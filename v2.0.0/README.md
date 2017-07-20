@@ -61,7 +61,6 @@
 
 ### Utilities
 
-- [geometry.spherical](./utilities/geometry/spherical/README.md)
+- [geometry.spherical](./class/utilities/geometry/spherical/README.md)
 
-- [geometry.encoding](./utilities/geometry/encoding/README.md)
-
+- [geometry.encoding](./class/utilities/geometry/encoding/README.md)

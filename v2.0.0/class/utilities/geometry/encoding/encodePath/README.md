@@ -1,6 +1,6 @@
 # encoding.encodePath()
 
-Encodes a sequence of LatLngs into an encoded path string.
+Encodes a sequence of [LatLng](../../../LatLng/README.md)s into an encoded path string.
 
 ```html
 <div  id="map_canvas"></div>
