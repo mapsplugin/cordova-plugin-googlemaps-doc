@@ -28,7 +28,7 @@ These methods have not been implemented yet, because of deprecated considering o
 <tr><td>map.closeDialog()</td><td>Deprecated considering</td></tr>
 <tr><td>map.setDebuggable()</td><td>Technically not ready yet</td></tr>
 <tr><td>map.refreshLayout()</td><td>Actually implemented, but you don't need to use this anymore.<br>
-Instead of this method, trigger the <a href="https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/What-are-news-in-v2%3F#change-4-save-battery-life">touch_start event</a>.</td></tr>
+Instead of this method, trigger the <a href="https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/whats-new-v2/README.md#change-4-save-battery-life">plugin_touch</a> event.</td></tr>
 <tr><td>map.addKmlOverlay()</td><td>technically not ready yet</td></tr>
 </table>
 
