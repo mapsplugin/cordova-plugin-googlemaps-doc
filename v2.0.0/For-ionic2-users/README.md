@@ -11,4 +11,4 @@ Unfortunately, Masashi(@wf9a5m75) is not familiar with the Ionic framework, so b
 ## The ionic-native wrapper plugin
 
 The ionic team creates a wrapper plugin of this plugin in order to use this plugin with typescript.
-You can read documents at https://ionicframework.com/docs/native/google-maps/
+You can read documents at https://ionic-site-staging.herokuapp.com/docs/native/google-maps/
