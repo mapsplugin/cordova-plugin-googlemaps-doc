@@ -24,6 +24,8 @@ $ npm install --save @ionic-native/google-maps
 
 ## Usage
 
+**pages/home/home.ts**
+
 ```TypeScript
 import {
  GoogleMaps,
@@ -98,6 +100,22 @@ export class HomePage {
       });
   }
 }
+```
+
+**pages/home/home.html**
+
+```html
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div #map id="map" style="height:100%;"></div>
+</ion-content>
 ```
 
 ![](usage_example.png)
