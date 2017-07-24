@@ -12,7 +12,7 @@
 
 - [Migrate from v1 to v2](migrate-from-v1/README.md)
 
-- [For Ionic 2 users](For-ionic2-users/README.md)
+- [ionic-native version](ionic-native/README.md)
 
 ## License
 
