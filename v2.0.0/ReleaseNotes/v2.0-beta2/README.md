@@ -1,5 +1,38 @@
 # Release notes v2.0-beta2
 
+## Jul/25/2017
+
+- (iOS) Bug fix: MAP_READY event is not fired when camera options are specified [#1587](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1587)
+
+- (iOS) Bug fix: MAP_READY event is not fired when the app is launched in offline at the first time  [#1577](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1577)
+
+- (JS) Bug fix: The opacity = 0 of map.addTileOverlay() does not work [#1577](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1577)
+
+- (Android/iOS) Update: change the default tile size of map.addTileOverlay() from 256x256 to 512x512
+    The reason of this is that the Google Maps SDK for iOS requests strange zoom levels on iOS retina devices.
+    Uses 512x512 tile size prevents this issue.
+    If you prepare 256x256 tile images, the plugin resizes them automatically, so you don't need to do anything.
+    But if you want to keep qualities of map tiles, please use the 512x512.
+
+## Jul/24/2017
+
+- (JS) Bug fix: Cannot read property 'style' of null [#1583](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1583)
+
+- (iOS) Merge pull req: The debug option of map.addTileOverlay() is always true [#1586](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1586)
+
+## Jul/20/2017
+
+- (Android/iOS) Bug fix: cordova is undefined error
+
+- (Android/iOS) Bug fix: normal infoWindow is not displayed when you don't set the title and the snippet properties and you set either of them later
+
+- (Android/iOS) Bug fix: map is not displayed when the camera options is not specified at the map.getMap() [#1570](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1570), [#1573](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1573)
+
+- (Android/iOS) Bug fix: different version code was mixed (sorry!!)
+
+- (Android/iOS) Bug fix: useHtmlInfoWnd does not work correctly
+
+
 ## Jul/19/2017
 
 - (JS) Bug fix: Ionic 2 - Slow DOM manipulation  [#1522](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1522)
