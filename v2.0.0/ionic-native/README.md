@@ -4,6 +4,11 @@ The Google Maps plugin of the Ionic native 4.0 uses the cordova-googlemaps-plugi
 Since the Google Maps plugin of the ionic native was written by Ionic team, code style is little different.
 But the most of all methods are the same as the original version.
 
+## The documentation
+
+The ionic team creates a wrapper plugin of this plugin in order to use this plugin with typescript.
+You can read documents at https://ionic-site-staging.herokuapp.com/docs/native/google-maps/
+
 ## Installation
 
 ### 1. Install the Cordova and Ionic Native plugins:
