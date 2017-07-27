@@ -29,6 +29,8 @@ $ npm install --save @ionic-native/google-maps
 
 ## Usage
 
+Example code files: https://github.com/mapsplugin/ionic-google-maps
+
 **pages/home/home.ts**
 
 ```TypeScript
