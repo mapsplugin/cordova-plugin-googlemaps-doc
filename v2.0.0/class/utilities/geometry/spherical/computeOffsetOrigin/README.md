@@ -15,7 +15,7 @@ var radius = 300;
 // Calculate the positions
 var offsets = [];
 for (var degree = 0; degree < 360; degree += 45) {
-    offsets.push(plugin.google.maps.geometry.spherical.computeOffset(center, radius, degree));
+    offsets.push(plugin.google.maps.geometry.spherical.computeOffsetOrigin(center, radius, degree));
 }
 
 var mapDiv = document.getElementById("map_canvas");
