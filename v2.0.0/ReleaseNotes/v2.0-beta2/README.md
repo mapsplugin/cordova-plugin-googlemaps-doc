@@ -1,5 +1,8 @@
 # Release notes v2.0-beta2
 
+## Jul/31/2017
+- Bump up the version [v2.0-beta3](../v2.0-beta3/README.md)
+
 ## Jul/29/2017
 
 - (Android) Bug fix: tileOverlay.remove() causes null pointer error [#1597](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1597)

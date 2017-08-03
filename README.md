@@ -16,7 +16,7 @@ You can only create one map in your application.
 - [Documentations](./v1.4.0/README.md)
 
 
-## v2.0.0-beta2 (new version, but might be unstable)
+## v2.0.0-beta3 (new version, mostly stable)
 
 You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
@@ -26,7 +26,7 @@ But it might be unstable sometimes.
 
 - [Demo](https://github.com/mapsplugin/v2.0-demo)
 
-- [Release notes](./v2.0.0/ReleaseNotes/v2.0-beta2/README.md)
+- [Release notes](./v2.0.0/ReleaseNotes/v2.0-beta3/README.md)
 
 ### Version 2.0 Beta Roadmap
 
