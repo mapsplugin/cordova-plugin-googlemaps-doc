@@ -125,7 +125,7 @@
 <table>
     <tr>
         <th>MARKER_CLICK</th>
-        <td>Arguments:  none<br>This event is fired when you click on a marker.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a marker.</td>
     </tr>
     <tr>
         <th>MARKER_DRAG_START</a>
