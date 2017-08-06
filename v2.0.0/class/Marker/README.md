@@ -142,18 +142,18 @@
     </tr>
     <tr>
         <th>INFO_OPEN</th>
-        <td>Arguments:  none<br>This event is fired when the infoWindow is opened.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when the infoWindow is opened.</td>
     </tr>
     <tr>
         <th>INFO_CLICK</th>
-        <td>Arguments:  none<br>This event is fired when you click on the infoWindow.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on the infoWindow.</td>
     </tr>
     <tr>
         <th>INFO_LONG_CLICK</th>
-        <td>Arguments:  none<br>This event is fired when you click longer on the infoWindow.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click longer on the infoWindow.</td>
     </tr>
     <tr>
         <th>INFO_CLOSE</th>
-        <td>Arguments:  none<br>This event is fired when the infoWindow is closed.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when the infoWindow is closed.</td>
     </tr>
 </table>
