@@ -118,3 +118,17 @@ map.addMarker({
 
 });
 ```
+
+### LatLng.toUrlValue() and LayLng.toString() return values changed
+
+In version 2 the two methods LatLng.toUrlValue(precision) and LatLng.toString(), no longer return a string in the format of "lat,lng" like Google Maps JS API, but a stringified JSON value. 
+
+```js
+
+// v1
+var strLatlng = latLng.toUrlValue();
+
+// equivalent in v2 
+var strLatlng= latLng.lat + "," + latLng.lng;
+
+```
