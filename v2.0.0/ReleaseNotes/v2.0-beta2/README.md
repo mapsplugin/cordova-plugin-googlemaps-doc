@@ -1,5 +1,20 @@
 # Release notes v2.0-beta2
 
+## Jul/31/2017
+- Bump up the version [v2.0-beta3](../v2.0-beta3/README.md)
+
+## Jul/29/2017
+
+- (Android) Bug fix: tileOverlay.remove() causes null pointer error [#1597](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1597)
+
+## Jul/27/2017
+
+- (iOS) Bug fix: MAP_READY event is not fired when camera options are specified [#1594](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1594)
+
+- (iOS) Bug fix: HtmlInfoWindow does not follow the marker if you click on the same marker twice times
+
+- Update: (iOS) Pan the map when you tap a marker even it is already tapped before [#1589](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1589)
+
 ## Jul/25/2017
 
 - (iOS) Bug fix: MAP_READY event is not fired when camera options are specified [#1587](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1587)
