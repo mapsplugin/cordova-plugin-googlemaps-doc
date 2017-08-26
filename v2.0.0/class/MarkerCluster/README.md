@@ -7,6 +7,9 @@ If you click on the clustered marker, the map zooms-in to the bounds that contai
 
 ![](cluster.gif)
 
+## Example
+https://github.com/mapsplugin/marker_cluster_demo
+
 ## Create
 
 <table>
