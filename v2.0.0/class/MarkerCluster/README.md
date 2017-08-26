@@ -5,10 +5,11 @@ Closed-locations are clustered to one marker, and the clustered marker displays 
 
 If you click on the clustered marker, the map zooms-in to the bounds that contains all markers in that area.
 
+- Example
+https://github.com/mapsplugin/marker_cluster_demo
+
 ![](cluster.gif)
 
-## Example
-https://github.com/mapsplugin/marker_cluster_demo
 
 ## Create
 
