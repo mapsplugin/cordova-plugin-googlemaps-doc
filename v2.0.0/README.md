@@ -32,6 +32,8 @@
 
 - [Marker class](./class/Marker/README.md)
 
+- [MarkerCluster class](./class/MarkerCluster/README.md)
+
 - [HtmlInfoWindow class](./class/HtmlInfoWindow/README.md)
 
 - [Polyline class](./class/Polyline/README.md)
