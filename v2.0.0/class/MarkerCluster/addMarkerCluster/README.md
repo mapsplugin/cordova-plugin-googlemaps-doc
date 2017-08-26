@@ -44,7 +44,7 @@ map.on(plugin.google.maps.event.MAP_READY, function() {
   map.addMarkerCluster({
     //maxZoomLevel: 5,
     boundsDraw: true,
-    markers: data,
+    markers: dummyData(),
     icons: [
       {min: 2, max: 100, url: "./img/blue.png", anchor: {x: 16, y: 16}},
       {min: 100, max: 1000, url: "./img/yellow.png", anchor: {x: 16, y: 16}},
