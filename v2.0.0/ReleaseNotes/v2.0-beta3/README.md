@@ -1,5 +1,21 @@
 # Release notes v2.0-beta3
 
+## Aug/25/2017
+
+- (Android/iOS) Add: [Marker cluster](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/class/MarkerCluster/README.md) is general available!
+
+- (Android) Bug fix: getMyLocation crashes app when permission denied ([#1672](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1672))
+
+- (Android) Bug fix: Can not load image with file:// protocol ([#1668](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1668))
+
+- (iOS) Bug fix: Second Load of Map is Failing with Latest Plugin ([#1666](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1666))
+
+- (JS) Bug fix: Map become unresponsive with the ionic2-super-tabs ([#1664](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1664))
+
+## Aug/24/2017
+
+- (Android) Bug fix: map.clear() does not work correctly ([#1639](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1639), [#1669](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1669))
+
 ## Aug/23/2017
 
 - (Android/iOS) Add: trigger the plugin_touch event when you tap on marker (in order to detect the dialog something)
