@@ -121,7 +121,7 @@ export class HomePage {
 </ion-header>
 
 <ion-content padding>
-  <div #map id="map" style="height:100%;"></div>
+  <div #map id="map" style="height:100%;z-index: 1000;"></div>  
 </ion-content>
 ```
 
