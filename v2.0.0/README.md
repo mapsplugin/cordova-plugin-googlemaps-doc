@@ -22,6 +22,10 @@
 
 ## Release notes
 
+- [v2.0-stable](./ReleaseNotes/v2.0-stable/README.md)
+
+- [v2.0-beta3](./ReleaseNotes/v2.0-beta3/README.md)
+
 - [v2.0-beta2](./ReleaseNotes/v2.0-beta2/README.md)
 
 ## API Reference

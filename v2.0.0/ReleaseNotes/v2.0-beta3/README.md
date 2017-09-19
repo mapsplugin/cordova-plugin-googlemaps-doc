@@ -1,5 +1,74 @@
 # Release notes v2.0-beta3
 
+## Sep/5/2017
+
+- (IOS) Update: the methods of camera action execute as the sync mode
+
+- Merge the multiple_maps branch to the master branch (version 2.0 release!)
+
+## Sep/4/2017
+
+- (JS/Android) Bug fix: Can not click on the overlay menu #1703
+
+- (Andoid/iOS/JS) Bug fixL After removing marker cluster by map.clear() newly added marker cluster not bind markers click callback fn #1701
+
+- (iOS)Update: the methods of camera action execute as the sync mode
+
+## Sep/3/2017
+
+- (JS) Update: Marker.isInfoWindowShown() #1699
+
+- (JS) Bug fix: the backbutton does not work on Android
+
+## Sep/1/2017
+
+- (JS) Bug fix: commit #a1781ed (bug fix for #1691) affects other cases
+
+- (JS) Update: use node.children instead of node.childNodes
+
+- (Android) Bug fix: MarkerCluster remove() method not work and break clustering on Android #1702
+
+- (iOS) Bug fix: Markers Sometimes Missing #1689
+
+- (iOS) Bug fix: Info window closed after click on marker and camera move when using marker cluster on iOS #1697
+
+## Aug/31/2017
+
+- (iOS) Update: Cluster image quality on iOS #1679
+
+- (JS) Update: Maker cluster freezes application when zooming to cluster with many markers to resolution = 999 #1696
+
+## Aug/30/2017
+
+- (Android/iOS) Bug fix: Marker INFO_CLICK event not firing when is applied on clicked marker in clusterer. #1692
+
+- (iOS) Bug fix: setCameraZoom crashes Xcode simulator #1685
+
+- (iOS) Bug fix: Map Not Panning To Lat Lng / Markers Sometimes Missing #1689
+
+- (Android) Bug fix: Plugin dont add all markers with custom icons to map with latest commit #1684
+
+- (Android) Bug fix of the commit #f8592ccff7aa110c2457bc19179639e88878004e
+
+- (JS) Bug fix: Map not dragging/panning #1691
+
+## Aug/29/2017
+
+- (JS) Bug fix: `self is undefined` in LatLng class
+
+## Aug/28/2017
+
+- (JS) Bug fix: HTMLInfoWindow does not close when you use the @ionic-native/google-maps wrapper plugin #1680
+
+- (Android) Bug fix: memory leak on setIcon (on Android) #1677
+Bug fix: setIcon leaking memory on Android #1649
+
+## Aug/27/2017
+
+- (Android/iOS) Bug fix: memory leak of marker cluster feature
+
+- (Android/iOS) Bug fix: setIcon leaking memory on Android / iOS #1649
+
 ## Aug/25/2017
 
 - (Android/iOS) Add: [Marker cluster](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/class/MarkerCluster/README.md) is general available!
