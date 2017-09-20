@@ -1,5 +1,15 @@
 # Release notes v2.0-stable
 
+## Sep/19/2017
+
+- (JS) Bug fix: InfoWindow setContent() Stopped Working #1748
+
+- (JS) Bug fix: MarkerCluster not working in last version 2.0.9 #1751
+
+- (JS) Bug fix: The methods of marker class do not work
+
+- (JS) Merge Pull request: #1753
+
 ## Sep/18/2017
 
 - (JS) Bug fix: InfoWindow setContent() Stopped Working #1748
