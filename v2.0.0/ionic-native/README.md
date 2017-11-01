@@ -1,25 +1,25 @@
-# Google Maps plugin of Ionic native 4.0
+# @ionic-native/google-maps plugin
 
-The Google Maps plugin of the Ionic native 4.0 uses the cordova-googlemaps-plugin v2.0,
-Since the Google Maps plugin of the ionic native was written by Ionic team, code style is little different.
-But the most of all methods are the same as the original version.
+[@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps) is a wrapper plugin of [Cordova GoogleMaps plugin](https://github.com/mapsplugin/cordova-plugin-googlemaps).
+You can write your code with TypeScript instead of pure JavaScript.
+
+Since the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps) is written by the ionic-team first, there might exist some mistakes in the wrapper plugin, such as missing some properties, or method definition is wrong.
+The author of [Cordova GoogleMaps plugin](https://github.com/mapsplugin/cordova-plugin-googlemaps), Masashi, has been working to fix the plugin, but the plugin has lots of featues. So far it is difficult to figure out bugs everything.
+If you find any problems with the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps), please report the issue to the [issue list](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues) with test project.
 
 ## The documentation
 
-The ionic team creates a wrapper plugin of this plugin in order to use this plugin with typescript.
-You can read documents at https://ionic-site-staging.herokuapp.com/docs/native/google-maps/
+The official page document is here https://ionicframework.com/docs/native/google-maps/, but this page is updated only once in a while.
+
+The latest document is available at https://ionic-site-staging.herokuapp.com/docs/native/google-maps/
 
 ## Installation
 
-### 1. Install the Cordova and Ionic Native plugins:
-
 ```
-$ ionic cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps --variable API_KEY_FOR_ANDROID="YOUR_ANDROID_API_KEY_IS_HERE" --variable API_KEY_FOR_IOS="YOUR_IOS_API_KEY_IS_HERE"
+$ ionic cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="YOUR_ANDROID_API_KEY_IS_HERE" --variable API_KEY_FOR_IOS="YOUR_IOS_API_KEY_IS_HERE"
 
-$ npm install --save @ionic-native/google-maps
+$ npm install --save @ionic-native/google-maps@latest @ionic-native/google-maps@latest
 ```
-
-### 2. [Add this plugin to your app's module](https://ionicframework.com/docs/native/#Add_Plugins_to_Your_App_Module)
 
 
 ## Supported platforms
@@ -29,7 +29,8 @@ $ npm install --save @ionic-native/google-maps
 
 ## Usage
 
-Example code files: 
+Full source code: https://github.com/mapsplugin/ionic-googlemaps-quickdemo
+
 
 [src/app/app.component.ts](https://github.com/mapsplugin/ionic-googlemaps-quickdemo/blob/master/src/app/app.component.ts)
 
@@ -95,7 +96,8 @@ export class HomePage {
   }
 
   loadMap() {
-    // Create a map after the view is ready and the native platform is ready.
+    // Create a map after the view is loaded.
+    // (platform is already ready in app.component.ts)
     this.map = this.googleMaps.create('map_canvas', {
       camera: {
         target: {
@@ -195,3 +197,4 @@ page-home {
 }
 ```
 
+<img src="https://raw.githubusercontent.com/mapsplugin/ionic-googlemaps-quickdemo/master/capture.png" width="250">
