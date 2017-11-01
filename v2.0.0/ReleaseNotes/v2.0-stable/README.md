@@ -1,5 +1,8 @@
 # Release notes v2.0-stable
 
+** Note that [the release notes for v2.1.0](../v2.1.0/README.md) is moved.
+
+
 ## Sep/19/2017
 
 - (JS) Bug fix: InfoWindow setContent() Stopped Working #1748
