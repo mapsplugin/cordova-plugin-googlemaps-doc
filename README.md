@@ -17,7 +17,7 @@ But it might be unstable sometimes.
 
 - [Documentation](./v2.0.0/README.md)
 
-- [Demo](https://github.com/mapsplugin/v2.0-demo)
+- [Full Demo](https://github.com/mapsplugin/v2.0-demo)
 
 - [v2.0-stable Release notes](./v2.0.0/ReleaseNotes/v2.0-stable/README.md)
 
@@ -27,6 +27,12 @@ But it might be unstable sometimes.
 You can only create one map in your application.
 
 - [Documentations](./v1.4.0/README.md)
+
+## @ionic-native/google-maps
+
+- [Description](./v2.0.0/ionic-native/README.md)
+
+- [Quick Demo](https://github.com/mapsplugin/ionic-googlemaps-quickdemo)
 
 -----
 
