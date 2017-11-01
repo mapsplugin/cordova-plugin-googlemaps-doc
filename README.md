@@ -19,7 +19,7 @@ But it might be unstable sometimes.
 
 - [Full Demo](https://github.com/mapsplugin/v2.0-demo)
 
-- [v2.1.0 Release notes](./v2.1.0/ReleaseNotes/v2.1.0/README.md)
+- [v2.1.0 Release notes](./v2.0.0/ReleaseNotes/v2.1.0/README.md)
 
 
 ## v1.4.0 (old version)
