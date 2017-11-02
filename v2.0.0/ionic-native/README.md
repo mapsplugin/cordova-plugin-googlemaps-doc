@@ -198,3 +198,10 @@ page-home {
 ```
 
 <img src="https://raw.githubusercontent.com/mapsplugin/ionic-googlemaps-quickdemo/master/capture.png" width="250">
+
+
+----
+
+## Another demo
+
+https://github.com/mapsplugin/ionic-googlemaps-starter-tab
