@@ -6,7 +6,7 @@ $> keytool -v -list -keystore <keystore path>
 
 For example:
 ```
-$> keytool -v -list -keystore ~/.android/debug.keystroe
+$> keytool -v -list -keystore ~/.android/debug.keystore
 ```
 
 ## meteor
