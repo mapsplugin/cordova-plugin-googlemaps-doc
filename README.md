@@ -34,6 +34,7 @@ You can only create one map in your application.
 
 - [Quick Demo](https://github.com/mapsplugin/ionic-googlemaps-quickdemo)
 
+- [Presentation at @ionic Los Angeles meetup](https://docs.google.com/presentation/d/1zlkmoSY4AzDJc_P4IqWLnzct41IqHyzGkLeyhlAxMDE/edit#slide=id.p)
 -----
 
 ### Buy me a beer
