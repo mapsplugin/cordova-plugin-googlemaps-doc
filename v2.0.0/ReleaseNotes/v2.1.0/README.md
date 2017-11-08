@@ -48,7 +48,7 @@ anchorDiv.style.setProperty("transform", "translate3d(" + x + "px, " + y + "px, 
 The [External Service](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v1.4.0/class/External-Service/README.md) is no longer available.
 Please use [Launch Navigator Cordova/Phonegap Plugin](https://github.com/dpa99c/phonegap-launch-navigator).
 
-### @ionic-native/google-maps 4.3.3
+### @ionic-native/google-maps 4.3.3  ([more details](./ionic-googlemaps-4.3.3/README.md))
 
 The wrapper plugin waits the page view is fully loaded if you specify the map div ID.
 This helps you leave from `setTimeout`

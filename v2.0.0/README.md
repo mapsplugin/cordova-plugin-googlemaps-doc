@@ -23,6 +23,7 @@
 ## Release notes
 
 - [v2.1.0](./ReleaseNotes/v2.1.0/README.md) <-- current
+  [@ionic-native/4.3.3](./ReleaseNotes/ionic-googlemaps-4.3.3/README.md)
 
 - [v2.0-stable](./ReleaseNotes/v2.0-stable/README.md)
 
