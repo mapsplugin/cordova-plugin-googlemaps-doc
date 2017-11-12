@@ -18,7 +18,7 @@ The latest document is available at https://ionic-site-staging.herokuapp.com/doc
 ```
 $ ionic cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="YOUR_ANDROID_API_KEY_IS_HERE" --variable API_KEY_FOR_IOS="YOUR_IOS_API_KEY_IS_HERE"
 
-$ npm install --save @ionic-native/google-maps@latest @ionic-native/google-maps@latest
+$ npm install --save @ionic-native/core@latest @ionic-native/google-maps@latest
 ```
 
 
@@ -50,7 +50,7 @@ export class MyApp {
   initializeApp() {
     this.platform.ready().then(() => {
       this.rootPage = HomePage;    // <<< Set the first page after native side is ready.
-      
+
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
