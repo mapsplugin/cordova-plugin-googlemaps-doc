@@ -1,11 +1,11 @@
 # Environment.getLicenseInfo()
 
-Get the open source software license information for __Google Maps Android API v2 and__ Google Maps SDK for iOS.
+Get the open source software license information for ~~Google Maps Android API v2 and~~ Google Maps SDK for iOS.
 
 If you use this plugin in your application, you **MUST** include the license attribution text as part of a **"Legal Notices"** section in your application.
 Including legal notices as an independent menu item, or as part of an "About" menu item, is recommended.
 
-This is requirement by __Google Maps Android API v2 and__ Google Maps SDK for iOS.
+This is requirement by ~~Google Maps Android API v2 and~~ Google Maps SDK for iOS.
 
 ```html
 <button>Click here!</button>
