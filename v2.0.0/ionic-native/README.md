@@ -3,9 +3,9 @@
 [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps) is a wrapper plugin of [Cordova GoogleMaps plugin](https://github.com/mapsplugin/cordova-plugin-googlemaps).
 You can write your code with TypeScript instead of pure JavaScript.
 
-Since the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps) is written by the ionic-team first, there might exist some mistakes in the wrapper plugin, such as missing some properties, or method definition is wrong.
-The author of [Cordova GoogleMaps plugin](https://github.com/mapsplugin/cordova-plugin-googlemaps), Masashi, has been working to fix the plugin, but the plugin has lots of features. So far it is difficult to figure out bugs everything.
-If you find any problems with the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps), please report the issue to the [issue list](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues) with test project.
+Since the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps) was first written by the ionic-team, there might exist some mistakes in the wrapper plugin, such as missing some properties, or wrong method definition.
+The author of [Cordova GoogleMaps plugin](https://github.com/mapsplugin/cordova-plugin-googlemaps), Masashi, has been working to fix the plugin, but the plugin has lots of featues. It's hard to figure out all the mistakes alone.
+So if you find any problems with the [@ionic-native/google-maps plugin](https://www.npmjs.com/package/@ionic-native/google-maps), please report the issue to the [issue list](https://github.com/mapsplugin/cordova-plugin-googlemaps/issues) with test project.
 
 ## The documentation
 
