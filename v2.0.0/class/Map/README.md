@@ -142,7 +142,7 @@
     </tr>
     <tr>
         <th><a href="./setVisible/README.md">setVisible()</a></th>
-        <td>Set visiblity of the map.</td>
+        <td>Set visibility of the map.</td>
     </tr>
     <tr>
         <th><a href="./setPadding/README.md">setPadding()</a></th>

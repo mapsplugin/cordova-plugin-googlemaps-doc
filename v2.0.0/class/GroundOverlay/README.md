@@ -42,7 +42,7 @@
     </tr>
     <tr>
         <th><a href="./setClickable/README.md">setClickable()</a></th>
-        <td>Change clickablity of the ground overlay.</td>
+        <td>Change click-ability of the ground overlay.</td>
     </tr>
     <tr>
         <th>getClickable()</th>

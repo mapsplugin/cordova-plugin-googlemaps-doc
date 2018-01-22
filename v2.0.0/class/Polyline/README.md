@@ -38,7 +38,7 @@
     </tr>
     <tr>
         <th><a href="./setClickable/README.md">setClickable()</a></th>
-        <td>Changes clickablity of the polyline.</td>
+        <td>Changes click-ability of the polyline.</td>
     </tr>
     <tr>
         <th>getClickable()</th>

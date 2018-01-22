@@ -87,7 +87,7 @@
     </tr>
     <tr>
         <th>isDraggable()</th>
-        <td>Returs true when the marker is draggable.</td>
+        <td>Returns true when the marker is draggable.</td>
     </tr>
     <tr>
         <th><a href="./setDisableAutoPan/README.md">setDisableAutoPan()</a></th>
