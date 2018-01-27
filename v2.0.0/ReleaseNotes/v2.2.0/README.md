@@ -131,7 +131,15 @@ How about the opposite case? Yes, possible.
 
 ![](mylocation_v2.2.0-b.png)
 
+In this case, if you tap on the myLocation button, the map does not do anything because `myLocation = false`. But you can get the event with `MY_LOCATION_BUTTON_CLICK` event.
 
+```js
+map.on(plugin.google.maps.event.MY_LOCATION_BUTTON_CLICK, function() {
+  alert("The my location button is clicked.");
+});
+```
 
+### The `MY_LOCATION_CLICK`, `POI_CLICK` events are added.
 
-### HtmlInfoWindow moves smoothly than ever.
+From the maps plugin v2.2.0, you can listen the `MY_LOCATION_CLICK` event.
+This event is fired when you tap on the `blue dot`.
