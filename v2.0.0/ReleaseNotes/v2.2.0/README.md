@@ -86,6 +86,14 @@ The maps plugin v2.2.0 becomes better the maps positioning than ever.
 
 ![](scroll.gif)
 
+### (iOS) Fix the problem that can not click on DatePicker(or other) plugins.
+
+In the past, you can **not** click on other plugins such as DatePicker.
+Because these plugins insert their own native views under the browser view.
+But this problem is fixed at this version.
+
+![](other_plugins.gif)
+
 ### LocationService.getMyLocation() without map!
 
 Some people use [cordova-plugin-geolocation](https://github.com/apache/cordova-plugin-geolocation), because they want to know the device location **before creating a map**.
@@ -143,7 +151,7 @@ map.on(plugin.google.maps.event.MY_LOCATION_BUTTON_CLICK, function() {
 
 When you tap on POIs, you can get the information.
 
-```
+```js
 map.on(plugin.google.maps.event.POI_CLICK, function(placeId, name, latLng) {
   map.addMarker({
     'position': latLng,
@@ -161,5 +169,42 @@ map.on(plugin.google.maps.event.POI_CLICK, function(placeId, name, latLng) {
 
 ### The `MY_LOCATION_CLICK` event
 
-From the maps plugin v2.2.0, you can listen the `MY_LOCATION_CLICK` event.
+You can listen the `MY_LOCATION_CLICK` event.
 This event is fired when you tap on the `blue dot`.
+
+```js
+map.on(plugin.google.maps.event.MY_LOCATION_CLICK, function(location) {
+  map.addMarker({
+    'title': ["Current your location:\n",
+        "latitude:" + location.latLng.lat.toFixed(3),
+        "longitude:" + location.latLng.lng.toFixed(3),
+        "speed:" + location.speed,
+        "time:" + location.time,
+        "bearing:" + location.bearing].join("\n"),
+    'position': location.latLng,
+    'animation': plugin.google.maps.Animation.DROP,
+    'disableAutoPan': true
+  }, function(marker) {
+    marker.showInfoWindow();
+  });
+});
+```
+![](MY_LOCATION_CLICK.gif)
+
+
+
+### BaseArrayClass
+
+Useful methods are added to `BaseArrayClass`.
+
+  - [mapAsync(value, fn)](../.../BaseArrayClass/mapAsync/README.md)
+  - [mapSeries(value, fn)](../.../BaseArrayClass/mapSeries/README.md)
+  - [filterAsync(value, fn)](../.../BaseArrayClass/filterAsync/README.md)
+
+
+Working logs
+------------------------------------------------------------------------
+
+https://github.com/mapsplugin/cordova-plugin-googlemaps/compare/2285dc4ea45cc31210e7997b7d4fd0083c9f08b4...621f5305847a8ec5757f8129c5f34b2fca81bfc2
+
+![](working_logs.png)

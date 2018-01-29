@@ -107,6 +107,34 @@ This class extends [BaseClass](../BaseClass/README.md).
         <th><a href="setAt/README.md">setAt(i:number, elem:*)</a></th>
         <td>Sets an element at the specified index.</td>
     </tr>
+    <tr>
+        <th><a href="forEach/README.md">forEach(fn)</a></th>
+        <td>Iterate `fn` in synchro.</td>
+    </tr>
+    <tr>
+        <th><a href="forEachAsync/README.md">forEachAsync(fn, callback)</a></th>
+        <td>Iterate `fn` in asynchro.</td>
+    </tr>
+    <tr>
+        <th><a href="filter/README.md">filter(fn)</a></th>
+        <td>Filter values in synchro.</td>
+    </tr>
+    <tr>
+        <th><a href="filterAsync/README.md">filterAsync(fn, callback)</a></th>
+        <td>Filter values in asynchro.</td>
+    </tr>
+    <tr>
+        <th><a href="map/README.md">map(fn)</a></th>
+        <td>Map values in synchro.</td>
+    </tr>
+    <tr>
+        <th><a href="mapAsync/README.md">mapAsync(fn, callback)</a></th>
+        <td>Map values in asynchro.</td>
+    </tr>
+    <tr>
+        <th><a href="mapSeries/README.md">mapSeries(fn, callback)</a></th>
+        <td>Map values in asynchro, but keep the iterate order.</td>
+    </tr>
 </table>
 
 

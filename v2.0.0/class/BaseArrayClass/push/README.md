@@ -2,6 +2,8 @@
 
 Adds one element to the end of the array and returns the new length of the array.
 
+<img src="./push_pop.png" width="500">
+
 ```js
 var baseArray = new plugin.google.maps.BaseArrayClass();
 

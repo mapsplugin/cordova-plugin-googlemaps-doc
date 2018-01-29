@@ -2,6 +2,8 @@
 
 Removes the last element of the array and returns that element.
 
+<img src="./push_pop.png" width="500">
+
 ```js
 var baseArray = new plugin.google.maps.BaseArrayClass();
 
