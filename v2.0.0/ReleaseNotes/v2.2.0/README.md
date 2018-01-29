@@ -39,7 +39,7 @@ map.addKmlOverlay({
 }, function(kmlOverlay) {
 
   // debug
-  //console.log(kmlOverlay);
+  //console.log(kmlOverlay.getKmlData());
 
   // You can get additional information
   //kmlOverlay.on(plugin.google.maps.event.KML_CLICK, function(overlay, latLng) {
@@ -139,7 +139,27 @@ map.on(plugin.google.maps.event.MY_LOCATION_BUTTON_CLICK, function() {
 });
 ```
 
-### The `MY_LOCATION_CLICK`, `POI_CLICK` events are added.
+### The `POI_CLICK` event
+
+When you tap on POIs, you can get the information.
+
+```
+map.on(plugin.google.maps.event.POI_CLICK, function(placeId, name, latLng) {
+  map.addMarker({
+    'position': latLng,
+    'title': [
+      "placeId = " + placeId,
+      "name = " + name,
+      "position = " + latLng.toUrlValue()
+    ].join("\n")
+  }, function(marker) {
+    marker.showInfoWindow();
+  });
+});
+```
+![](POI_CLICK.gif)
+
+### The `MY_LOCATION_CLICK` event
 
 From the maps plugin v2.2.0, you can listen the `MY_LOCATION_CLICK` event.
 This event is fired when you tap on the `blue dot`.
