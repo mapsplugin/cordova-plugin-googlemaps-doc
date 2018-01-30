@@ -13,7 +13,6 @@ There are two versions:
 
 You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
-But it might be unstable sometimes.
 
 - [Documentation](./v2.0.0/README.md)
 
@@ -25,6 +24,7 @@ But it might be unstable sometimes.
 ## v1.4.0 (old version)
 
 You can only create one map in your application.
+No longer supported.
 
 - [Documentations](./v1.4.0/README.md)
 
