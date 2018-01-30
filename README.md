@@ -9,7 +9,7 @@ You can create a map application that uses native Google Maps with JavaScript, w
 
 There are two versions:
 
-## v2.1.0 (current version)
+## v2.2.0 (current version)
 
 You can create multiple maps in your application.
 Many bugs are fixed, and many features are improved.
@@ -19,7 +19,7 @@ But it might be unstable sometimes.
 
 - [Full Demo](https://github.com/mapsplugin/v2.0-demo)
 
-- [v2.1.0 Release notes](./v2.0.0/ReleaseNotes/v2.1.0/README.md)
+- [v2.2.0 Release notes](./v2.0.0/ReleaseNotes/v2.2.0/README.md)
 
 
 ## v1.4.0 (old version)
