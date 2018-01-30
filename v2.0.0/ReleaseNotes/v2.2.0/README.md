@@ -208,10 +208,9 @@ map.on(plugin.google.maps.event.MY_LOCATION_CLICK, function(location) {
 
 Useful methods are added to `BaseArrayClass`.
 
-  - [mapAsync(value, fn)](../.../BaseArrayClass/mapAsync/README.md)
-  - [mapSeries(value, fn)](../.../BaseArrayClass/mapSeries/README.md)
-  - [filterAsync(value, fn)](../.../BaseArrayClass/filterAsync/README.md)
-
+  - [mapAsync(value, fn)](../class/BaseArrayClass/mapAsync/README.md)
+  - [mapSeries(value, fn)](../class/BaseArrayClass/mapSeries/README.md)
+  - [filterAsync(value, fn)](../class/BaseArrayClass/filterAsync/README.md)
 
 ---
 
