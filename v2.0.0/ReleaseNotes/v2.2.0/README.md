@@ -1,5 +1,6 @@
 # Release notes version 2.2.0
 
+---
 Featured points
 ------------------------------------------------------------------------
 
@@ -61,6 +62,7 @@ Other tags that are not listed the above table, you can still get the data.
 New KML parser returns all tag elements.
 
 
+---
 
 ### Just like a HTML element!
 
@@ -94,6 +96,8 @@ But this problem is fixed at this version.
 
 ![](other_plugins.gif)
 
+---
+
 ### LocationService.getMyLocation() without map!
 
 Some people use [cordova-plugin-geolocation](https://github.com/apache/cordova-plugin-geolocation), because they want to know the device location **before creating a map**.
@@ -121,6 +125,8 @@ plugin.google.maps.LocationService.getMyLocation(function(result) {
 
 ![](location_service_demo.gif)
 
+---
+
 ### The `myLocation` property is changed!
 
 This is really important announce. You set `controls.myLocation = true` when you want to display the current location (aka, `blue dot`);
@@ -147,6 +153,8 @@ map.on(plugin.google.maps.event.MY_LOCATION_BUTTON_CLICK, function() {
 });
 ```
 
+---
+
 ### The `POI_CLICK` event
 
 When you tap on POIs, you can get the information.
@@ -166,6 +174,8 @@ map.on(plugin.google.maps.event.POI_CLICK, function(placeId, name, latLng) {
 });
 ```
 ![](POI_CLICK.gif)
+
+---
 
 ### The `MY_LOCATION_CLICK` event
 
@@ -192,6 +202,7 @@ map.on(plugin.google.maps.event.MY_LOCATION_CLICK, function(location) {
 ![](MY_LOCATION_CLICK.gif)
 
 
+---
 
 ### BaseArrayClass
 
@@ -201,6 +212,53 @@ Useful methods are added to `BaseArrayClass`.
   - [mapSeries(value, fn)](../.../BaseArrayClass/mapSeries/README.md)
   - [filterAsync(value, fn)](../.../BaseArrayClass/filterAsync/README.md)
 
+
+---
+
+### Specify the SDK version of Google Play Services.
+
+
+You can specify the SDK version of Google Play Services.
+
+**Note that the maps plugin v2.2.0 requires the Google Play Services v11.8.0 or over.**
+
+Example using the Cordova CLI
+
+```bash
+$> cordova plugin add cordova-plugin-googlemaps \
+    --variable API_KEY_FOR_ANDROID="..." \
+    --variable API_KEY_FOR_IOS="..." \
+    --variable PLAY_SERVICES_VERSION="11.8.0"
+```
+
+Example using config.xml
+```xml
+<plugin name="cordova-plugin-googlemaps" spec="2.2.0">
+    <variable name="API_KEY_FOR_ANDROID" value="YOUR_ANDROID_API_KEY_IS_HERE" />
+    <variable name="API_KEY_FOR_IOS" value="YOUR_IOS_API_KEY_IS_HERE" />
+    <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
+</plugin>
+```
+
+---
+
+### `CLUSTER_CLICK` event is removed
+
+Even if you want to use this event, you can still listen like this:
+
+```
+markerCluster.on('cluster_click', function() {
+  ...
+});
+```
+
+---
+
+### `MAP_LOADED` event is removed
+
+This event is removed completely.
+
+---
 
 Working logs
 ------------------------------------------------------------------------
