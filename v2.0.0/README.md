@@ -1,7 +1,5 @@
 # Cordova GoogleMaps plugin for iOS and Android - version 2
 
-![](https://github.com/mapsplugin/v2.0-demo/raw/master/image.gif?raw=true)
-
 - [What's new in version 2?](whats-new-v2/README.md)
 
 - [How to install the v2-beta?](Installation/README.md)
