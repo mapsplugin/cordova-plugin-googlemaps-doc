@@ -7,35 +7,33 @@ Get the current device location. You can get the location **without creating a m
 ```
 
 ```js
-plugin.google.maps.LocationService.getMyLocation(function(result) {
+// Get the current device location "without map"
+plugin.google.maps.LocationService.getMyLocation(function(location) {
 
+  // Create a map with the device location
   var mapDiv = document.getElementById('map_canvas');
-
   var map = plugin.google.maps.Map.getMap(mapDiv, {
-    'mapType': plugin.google.maps.MapTypeId.HYBRID,
     'camera': {
-      target: result.latLng,
+      target: location.latLng,
       zoom: 16
     }
   });
 
   map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-    var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
-    htmlInfoWindow.setContent([
-      "Current your location:",
-      "",
-      JSON.stringify(result, null, 2)
-    ].join("\n") , {
-      "max-width": "90%"
-    });
+    // Add a marker
+    var text = ["Current your location:\n",
+      "latitude:" + location.latLng.lat.toFixed(3),
+      "longitude:" + location.latLng.lng.toFixed(3),
+      "speed:" + location.speed,
+      "time:" + location.time,
+      "bearing:" + location.bearing].join("\n");
 
     map.addMarker({
-      position: result.latLng
+      title: text,
+      position: location.latLng
     }, function(marker) {
-      marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
-        htmlInfoWindow.open(marker);
-      });
+      marker.showInfoWindow();
     });
 
   });
