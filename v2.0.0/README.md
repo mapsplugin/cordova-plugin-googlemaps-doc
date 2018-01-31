@@ -117,4 +117,4 @@
 
 - [geometry.poly](./class/utilities/geometry/poly/README.md)
 
-- [LocationService](./class/LocationService/README.md)
+- [LocationService](./class/locationservice/README.md)
