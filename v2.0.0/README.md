@@ -1,6 +1,6 @@
 # Cordova GoogleMaps plugin for iOS and Android - version 2
 
-![](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/raw/master/v2.0.0/class/HtmlInfoWindow/newHtmlInfoWindow/image.gif)
+![](https://github.com/mapsplugin/v2.0-demo/raw/master/image.gif?raw=true)
 
 - [What's new in version 2?](whats-new-v2/README.md)
 
@@ -74,7 +74,7 @@
 
 ## API Reference
 
-### Classes
+### Dynamic Classes
 
 - [Map class](./class/Map/README.md)
 
@@ -109,7 +109,7 @@
 - [CameraPosition object](./class/CameraPosition/README.md)
 
 
-### static classes
+### Static classes
 
 - [geometry.spherical](./class/utilities/geometry/spherical/README.md)
 
@@ -118,3 +118,8 @@
 - [geometry.poly](./class/utilities/geometry/poly/README.md)
 
 - [LocationService](./class/locationservice/README.md)
+
+# demo code repository
+ - https://github.com/mapsplugin/v2.0-demo
+ 
+ ![](https://github.com/mapsplugin/v2.0-demo/raw/master/image.gif?raw=true)
