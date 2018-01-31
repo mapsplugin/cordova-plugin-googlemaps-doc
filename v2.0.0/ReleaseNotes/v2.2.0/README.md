@@ -100,30 +100,46 @@ But this problem is fixed at this version.
 
 ### LocationService.getMyLocation() without map!
 
-Some people use [cordova-plugin-geolocation](https://github.com/apache/cordova-plugin-geolocation), because they want to know the device location **before creating a map**.
-
-From the maps plugin v2.2.0, you can get the location throw `LocationService` static class.
+You can get the location throw `LocationService` static class.
 
 ```js
-// Get the device location without map first.
-plugin.google.maps.LocationService.getMyLocation(function(result) {
+// Get the current device location "without map"
+var option = {
+  enableHighAccuracy: true // use GPS as much as possible
+};
+plugin.google.maps.LocationService.getMyLocation(option, function(location) {
 
-  // Then create a map with the location.
+  // Create a map with the device location
+  var mapDiv = document.getElementById('map_canvas');
   var map = plugin.google.maps.Map.getMap(mapDiv, {
-    'mapType': plugin.google.maps.MapTypeId.HYBRID,
     'camera': {
-      target: result.latLng,
+      target: location.latLng,
       zoom: 16
     }
   });
 
   map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
-     ...
+
+    // Add a marker
+    var text = ["Current your location:\n",
+      "latitude:" + location.latLng.lat.toFixed(3),
+      "longitude:" + location.latLng.lng.toFixed(3),
+      "speed:" + location.speed,
+      "time:" + location.time,
+      "bearing:" + location.bearing].join("\n");
+
+    map.addMarker({
+      title: text,
+      position: location.latLng
+    }, function(marker) {
+      marker.showInfoWindow();
+    });
+
   });
 });
 ```
 
-![](location_service_demo.gif)
+![](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/raw/master/v2.0.0/class/locationservice/getMyLocation/image.gif?raw=true)
 
 ---
 
