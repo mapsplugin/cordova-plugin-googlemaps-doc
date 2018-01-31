@@ -109,10 +109,12 @@
 - [CameraPosition object](./class/CameraPosition/README.md)
 
 
-### Utilities
+### static classes
 
 - [geometry.spherical](./class/utilities/geometry/spherical/README.md)
 
 - [geometry.encoding](./class/utilities/geometry/encoding/README.md)
 
 - [geometry.poly](./class/utilities/geometry/poly/README.md)
+
+- [LocationService](./class/LocationService/README.md)
