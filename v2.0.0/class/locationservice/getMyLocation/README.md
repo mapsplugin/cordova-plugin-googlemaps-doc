@@ -8,7 +8,10 @@ Get the current device location. You can get the location **without creating a m
 
 ```js
 // Get the current device location "without map"
-plugin.google.maps.LocationService.getMyLocation(function(location) {
+var option = {
+  enableHighAccuracy: true // use GPS as much as possible
+};
+plugin.google.maps.LocationService.getMyLocation(option, function(location) {
 
   // Create a map with the device location
   var mapDiv = document.getElementById('map_canvas');
