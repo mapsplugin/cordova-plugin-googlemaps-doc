@@ -6,8 +6,8 @@ Featured points
 
 ### Welcome back the `KmlOverlay`!
 
-I'm really happy to introduce new KmlOverlay!
-The new KmlOverlay supports many tags than the maps plugin v1.4.0.
+I'm really happy to introduce the new KmlOverlay!
+It supports much more tags than the previous maps plugin v1.4.0.
 
 Supported tags are:
 <table>
@@ -58,33 +58,33 @@ map.addKmlOverlay({
 });
 ```
 
-Other tags that are not listed the above table, you can still get the data.
-New KML parser returns all tag elements.
-
+You still can get data from other tags that are not listed in the above table.
+The new KML parser returns all tag elements.
 
 ---
 
 ### Just like a HTML element!
 
-**You should not face the Maps not clickable problem anymore!**
+**You should no longer face the non-clickable Google Maps problem!**
 
 The maps plugin v2.2.0 implements correct HTML hierarchy calculation algorithm.
 It means if you open an HTML dialog over the map, you don't need to execute `map.setClickable(false)`.
 The maps plugin detects it correctly.
 
-This is big benefits for the users that use JS frameworks, such as `ionic` or `framework7`.
-Because these frameworks support multiple page mechanism in variable ways.
+This is of great benefit to users who use JS frameworks, such as `ionic` or` framework7`.
+Because these frameworks support multipage mechanisms in varying ways.
+
 
 Also the DOM inspection performance has been improved significantly.
 
 ### No longer support for Android 4.3 or lower versions
 
 The maps plugin v2.2.0 implements a new way to detect the DOM hierarchy,
-the plugin uses `MutableObserver`. Because of this, no longer support for Android 4.3 or lower versions.
+the plugin uses `MutableObserver`. Because of this, it no longer supports Android 4.3 or lower versions.
 
 ### Improve the maps positioning
 
-The maps plugin v2.2.0 becomes better the maps positioning than ever.
+The maps plugin v2.2.0 makes map positioning better than ever before.
 
 ![](scroll.gif)
 
@@ -92,7 +92,7 @@ The maps plugin v2.2.0 becomes better the maps positioning than ever.
 
 In the past, you can **not** click on other plugins such as DatePicker.
 Because these plugins insert their own native views under the browser view.
-But this problem is fixed at this version.
+But this problem was fixed at this version.
 
 ![](other_plugins.gif)
 
@@ -100,7 +100,7 @@ But this problem is fixed at this version.
 
 ### LocationService.getMyLocation() without map!
 
-You can get the location throw `LocationService` static class.
+You can get the location through `LocationService` static class.
 
 ```js
 // Get the current device location "without map"
@@ -143,7 +143,7 @@ plugin.google.maps.LocationService.getMyLocation(option, function(location) {
 
 ---
 
-### The `myLocation` property is changed!
+### The `myLocation` property has changed!
 
 This is really important announce. You set `controls.myLocation = true` when you want to display the current location (aka, `blue dot`);
 
@@ -152,12 +152,12 @@ Because the Google Maps Android API v2 implements so like that.
 
 ![](mylocation_v2.1.1.png)
 
-However I figured out the way to control them separately.
+However, I figured out a way to control them separately.
 From the maps plugin v2.2.0, you can hide the `myLocationButton` but display the `blue dot`.
 
 ![](mylocation_v2.2.0-a.png)
 
-How about the opposite case? Yes, possible.
+How about the opposite case? Yes, it's possible.
 
 ![](mylocation_v2.2.0-b.png)
 
@@ -235,7 +235,7 @@ Useful methods are added to `BaseArrayClass`.
 
 You can specify the SDK version of Google Play Services.
 
-**Note that the maps plugin v2.2.0 requires the Google Play Services v11.8.0 or over.**
+**Note that the maps plugin v2.2.0 requires the Google Play Services v11.8.0 or newer.**
 
 Example using the Cordova CLI
 
