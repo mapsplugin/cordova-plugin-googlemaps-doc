@@ -34,10 +34,11 @@ var map = plugin.google.maps.Map.getMap(div, {
   'mapType': plugin.google.maps.MapTypeId.ROADMAP,
   'controls': {
     'compass': true,
+    'indoorPicker': true,
     'myLocationButton': false,
     'myLocation': false,   // (blue dot)
-    'indoorPicker': true,
-    'zoom': true
+    'zoom': true,          // android only
+    'mapToolbar': true     // android only
   },
   'gestures': {
     'scroll': true,
