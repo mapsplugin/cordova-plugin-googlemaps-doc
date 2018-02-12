@@ -14,8 +14,10 @@ var map = plugin.google.maps.Map.getMap(div, {
   'controls': {
     'compass': true,
     'myLocationButton': true,
+    'myLocation': true,   // (blue dot)
     'indoorPicker': true,
-    'zoom': true // Only for Android
+    'zoom': true,          // android only
+    'mapToolbar': true     // android only
   },
   'styles': [
     {
