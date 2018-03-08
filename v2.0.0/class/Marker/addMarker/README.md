@@ -105,7 +105,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
     // The variable "options" contains each element of the data.
     //
     // The variable "cb" is a callback function of interation.
-    map.addMarker(option, cb);
+    map.addMarker(options, cb);
 
   }, function(markers) {
 
