@@ -4,12 +4,12 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 
 ## Contents
 
-  - <a href="#Overview">Overview</a>
-    - <a href="#Create_a_map">Create a map</a>
-    - <a href="#How_does_the_plugin_work">How does the plugin work</a>
-    - <a href="#Events">Events</a>
-    - <a href="#Camera">Camera</a>
-  - <a href="#API_reference">API Reference</a>
+  - <a href="#overview">Overview</a>
+    - <a href="#create-a-map">Create a map</a>
+    - <a href="#how-does-the-plugin-work">How does the plugin work</a>
+    - <a href="#events">Events</a>
+    - <a href="#camera">Camera</a>
+  - <a href="#api-reference">API Reference</a>
 
 ------------
 
@@ -169,7 +169,7 @@ Before using this plugin, please understand how this plugin work.
   });
   ```
 
-  <a href="./animateCamera/image.gif"><img src="animateCamera/image.gif" width="150">
+  <a href="./animateCamera/image.gif"><img src="animateCamera/image.gif" width="150"></a>
 
   Other methods `animateCameraZoomIn()`, `moveCameraZoomIn()`, `setCameraTarget()`...etc use one of the above methods internally.
 
