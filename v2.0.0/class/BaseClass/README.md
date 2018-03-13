@@ -3,6 +3,8 @@
 ## Contents
 
   - <a href="#overview">Overview</a>
+    - <a href="#what-is-mvc">What is MVC?</a>
+    - <a href="#how-can-i-use-baseclass">How can I use BaseClass?</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
