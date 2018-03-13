@@ -146,7 +146,7 @@ In this code case:
 <table>
     <tr>
         <th>BaseClass()</th>
-        <td>Creates an MVCObject.</td>
+        <td>Creates a MVCObject.</td>
     </tr>
 </table>
 
