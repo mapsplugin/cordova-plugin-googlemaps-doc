@@ -5,10 +5,10 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 ## Contents
 
   - <a href="#overview">Overview</a>
-    - <a href="#create-a-map">Create a map</a>
-    - <a href="#how-does-the-plugin-work">How does the plugin work</a>
-    - <a href="#events">Events</a>
-    - <a href="#camera">Camera</a>
+    - <a href="#create-a-marker-cluster">Create a marker cluster</a>
+    - <a href="#change-the-text-styles">Change the text styles</a>
+    - <a href="#get-your-data-from-clicked-marker">Get your data from clicked marker</a>
+    - <a href="#remove-the-red-box">Remove the red box</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
@@ -171,7 +171,9 @@ map.addMarkerCluster({
 ![](example4.gif)
 ------------
 
-## Create
+## API Reference
+
+### Create
 
 <table>
     <tr>
@@ -181,7 +183,7 @@ map.addMarkerCluster({
 </table>
 
 
-## Methods
+### Methods
 
 <table>
     <tr>
@@ -199,7 +201,7 @@ map.addMarkerCluster({
 </table>
 
 
-## Events
+### Events
 
 <table>
     <tr>
