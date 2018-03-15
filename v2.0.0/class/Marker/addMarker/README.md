@@ -104,7 +104,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   baseArrayClass.map(function(options, cb) {
     // The variable "options" contains each element of the data.
     //
-    // The variable "cb" is a callback function of interation.
+    // The variable "cb" is a callback function of iteration.
     map.addMarker(options, cb);
 
   }, function(markers) {
