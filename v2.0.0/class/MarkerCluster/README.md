@@ -1,5 +1,20 @@
 # MarkerCluster class
 
+_This class extends [BaseClass](../BaseClass/README.md)_.
+
+## Contents
+
+  - <a href="#overview">Overview</a>
+    - <a href="#create-a-map">Create a map</a>
+    - <a href="#how-does-the-plugin-work">How does the plugin work</a>
+    - <a href="#events">Events</a>
+    - <a href="#camera">Camera</a>
+  - <a href="#api-reference">API Reference</a>
+
+------------
+
+## Overview
+
 The marker cluster helps you to add bunch of markers on the map.
 Closed-locations are clustered to one marker, and the clustered marker displays the number of markers.
 
@@ -10,6 +25,151 @@ https://github.com/mapsplugin/marker_cluster_demo
 
 ![](cluster.gif)
 
+------------
+
+### Create a marker cluster
+
+The **map.addMarkerCluster()** method creates an instance marker cluster onto the map.
+
+**_The `markers` and `icons` properties are required._**
+
+```js
+var options = {
+    'camera': {
+        'target': dummyData()[0].position,
+        'zoom': 12
+    }
+};
+var map = plugin.google.maps.Map.getMap(mapDiv, options);
+map.on(plugin.google.maps.event.MAP_READY, function() {
+
+  //------------------------------------------------------
+  // Create a marker cluster.
+  // Providing all locations at the creating is the best.
+  //------------------------------------------------------
+  map.addMarkerCluster({
+    markers: dummyData(),
+    icons: [
+        {min: 2, max: 100, url: "./img/blue.png", anchor: {x: 16, y: 16}},
+        {min: 100, max: 1000, url: "./img/yellow.png", anchor: {x: 16, y: 16}},
+        {min: 1000, max: 2000, url: "./img/purple.png", anchor: {x: 24, y: 24}},
+        {min: 2000, url: "./img/red.png",anchor: {x: 32,y: 32}}
+    ]
+  }, function (markerCluster) {
+
+    // somethings you want to do...
+
+  });
+});
+
+function dummyData() {
+  return [
+    {
+      "position": {
+        "lat": 21.382314,
+        "lng": -157.933097
+      },
+      "name": "Starbucks - HI - Aiea  03641",
+      "address": "Aiea Shopping Center_99-115 Aiea Heights Drive #125_Aiea, Hawaii 96701",
+      "phone": "808-484-0000",
+      "icon": "./img/starbucks.png"
+    },
+     ...
+     ...
+     ...
+    {
+      "position": {
+        "lat": 21.3871,
+        "lng": -157.9482
+      },
+      "name": "Starbucks - HI - Aiea  03642",
+      "address": "Pearlridge Center_98-125 Kaonohi Street_Aiea, Hawaii 96701",
+      "phone": "808-484-0000",
+      "icon": "./img/starbucks.png"
+    }
+  ]
+}
+
+```
+
+![](example1.gif)
+------------
+
+### Change the text styles
+
+You can specify a few style options.
+
+```
+// Available options
+var labelOptions = {
+  bold: true,
+  fontSize: 15,
+  color: "white",
+  italic: true
+};
+
+map.addMarkerCluster({
+  markers: dummyData(),
+  icons: [
+      {min: 2, max: 100, url: "./img/blue.png", anchor: {x: 16, y: 16}, label: labelOptions},
+      {min: 100, max: 1000, url: "./img/yellow.png", anchor: {x: 16, y: 16}, label: labelOptions},
+      {min: 1000, max: 2000, url: "./img/purple.png", anchor: {x: 24, y: 24}, label: labelOptions},
+      {min: 2000, url: "./img/red.png",anchor: {x: 32,y: 32}, label: labelOptions}
+  ]
+}, function (markerCluster) {
+
+});
+```
+
+![](example2.gif)
+------------
+
+### Get your data from clicked marker
+
+As well as regular marker, you can store your custom data, then get them later.
+
+```
+map.addMarkerCluster({
+  markers: dummyData(),
+  icons: [
+      {min: 2, max: 100, url: "./img/blue.png", anchor: {x: 16, y: 16}, label: labelOptions},
+      {min: 100, max: 1000, url: "./img/yellow.png", anchor: {x: 16, y: 16}, label: labelOptions},
+      {min: 1000, max: 2000, url: "./img/purple.png", anchor: {x: 24, y: 24}, label: labelOptions},
+      {min: 2000, url: "./img/red.png",anchor: {x: 32,y: 32}, label: labelOptions}
+  ]
+}, function (markerCluster) {
+
+    markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
+      alert(marker.get("name"));
+    });
+
+});
+```
+
+![](example3.gif)
+------------
+
+### Remove the red box
+
+If you want to remove the red box, you just set `boundsDraw = false`.
+
+```
+map.addMarkerCluster({
+  boundsDraw: false
+  markers: dummyData(),
+  icons: [
+      {min: 2, max: 100, url: "./img/blue.png", anchor: {x: 16, y: 16}},
+      {min: 100, max: 1000, url: "./img/yellow.png", anchor: {x: 16, y: 16}},
+      {min: 1000, max: 2000, url: "./img/purple.png", anchor: {x: 24, y: 24}},
+      {min: 2000, url: "./img/red.png",anchor: {x: 32,y: 32}}
+  ]
+}, function (markerCluster) {
+
+});
+```
+
+![](example4.gif)
+------------
 
 ## Create
 

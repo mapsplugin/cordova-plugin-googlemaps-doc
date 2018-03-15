@@ -401,8 +401,8 @@ Before using this plugin, please understand how this plugin work.
         <td>Add <a href="../TileLayer/README.md">tile layer</a>.</td>
     </tr>
     <tr>
-        <th><a href="../TileLayer/addKmlLayer/README.md">map.addKmlLayer()</a></th>
-        <td>Add <a href="../KmlLayer/README.md">kml layer</a>.</td>
+        <th><a href="../KmlOverlay/addKmlLayer/README.md">map.addKmlOverlay()</a></th>
+        <td>Add <a href="../KmlOverlay/README.md">kml layer</a>.</td>
     </tr>
 </table>
 
