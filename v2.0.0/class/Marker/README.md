@@ -5,10 +5,13 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 ## Contents
 
   - <a href="#overview">Overview</a>
-    - <a href="#create-a-map">Create a map</a>
-    - <a href="#how-does-the-plugin-work">How does the plugin work</a>
-    - <a href="#events">Events</a>
-    - <a href="#camera">Camera</a>
+    - <a href="#create-a-marker">Create a marker</a>
+    - <a href="#create-multiple-marker">Create multiple marker</a>
+    - <a href="#marker-class-extends-baseclass">Marker class extends BaseClass</a>
+    - <a href="#icon">Icon</a>
+    - <a href="#drag">Drag</a>
+    - <a href="#marker-animation">Marker Animation</a>
+    - <a href="#disable-auto-pan">Disable auto pan</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
