@@ -21,7 +21,9 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 
 ### Create a marker
 
-The **map.addMarker()** method adds a marker onto the map. This method works **after the MAP_READY event**.
+The **map.addMarker()** method adds a marker onto the map.
+
+- _This method works **after the MAP_READY event**._
 
 ```js
 const GOOGLE = {"lat": 37.422476, "lng": -122.08425};

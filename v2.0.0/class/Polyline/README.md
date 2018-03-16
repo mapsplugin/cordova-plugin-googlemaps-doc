@@ -1,6 +1,142 @@
 # Polyline class
 
-## Create
+_This class extends [BaseClass](../BaseClass/README.md)_.
+
+## Contents
+
+  - <a href="#overview">Overview</a>
+    - <a href="#create-one-polyline">Create one polyline</a>
+    - <a href="#click-event">Click event</a>
+    - <a href="#update-the-polyline">Update the polyline</a>
+  - <a href="#api-reference">API Reference</a>
+
+------------
+
+## Overview
+
+
+### Create one polyline
+
+The **map.addPolyline()** method draws one polyline onto the map.
+
+- _This method works **after the MAP_READY event**._
+
+```js
+var HND_AIR_PORT = {lat: 35.548852, lng: 139.784086};
+var SFO_AIR_PORT = {lat: 37.615223, lng: -122.389979};
+var HNL_AIR_PORT = {lat: 21.324513, lng: -157.925074};
+var AIR_PORTS = [
+  HND_AIR_PORT,
+  HNL_AIR_PORT,
+  SFO_AIR_PORT
+];
+
+var mapDiv = document.getElementById("map_canvas");
+
+// Create a map with specified camera bounds
+var map = plugin.google.maps.Map.getMap(mapDiv, {
+  camera: {
+    target: AIR_PORTS
+  }
+});
+map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
+
+  // Add a polyline
+  map.addPolyline({
+    points: AIR_PORTS,
+    'color' : '#AA00FF',
+    'width': 10,
+    'geodesic': true
+  });
+
+});
+```
+
+<img src="./addPolyline/image.png" width="200">
+
+------------
+
+### Click event
+
+The `POLYLINE_CLICK` event is fired when you tap on the polyline with clicked position ([LatLng](../LatLng/README.md) object);
+
+```
+// Add a polyline
+map.addPolyline({
+  points: AIR_PORTS,
+  'color' : '#AA00FF',
+  'width': 10,
+  'geodesic': true,
+  'clickable': true // default = false
+}, function(polyline) {
+
+  // Catch the POLYLINE_CLICK event
+  polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function(latLng) {
+
+    map.addMarker({
+      position: latLng,
+      title: "You clicked on the polyline",
+      snippet: latLng.toUrlValue(),
+      disableAutoPan: true
+    }, function(marker) {
+
+      marker.showInfoWindow();
+    });
+
+  });
+
+});
+```
+
+<img src="./POLYLINE_CLICK/image.gif" width="200">
+
+------------
+
+### Update the polyline
+
+The `getPoints()` method returns an instance of [BaseArrayClass](../BaseArrayClass/README.md).
+If you change the element value of it, the polyline is also updated automatically.
+Also if you add new element, or remove one of them, the polyline is also updated.
+
+```js
+// Add a polyline
+map.addPolyline({
+  'points': points,
+  'color' : '#AA00FF',
+  'width': 10,
+  'geodesic': true
+}, function(polyline) {
+
+  // polyline.getPoints() returns an instance of BaseArrayClass.
+  var mvcArray = polyline.getPoints();
+
+  // Add draggable markers
+  mvcArray.mapAsync(function(latLng, cb) {
+    map.addMarker({
+      position: latLng,
+      draggable: true
+    }, cb);
+  }, function(markers) {
+
+    // If a marker is dragged, set the position of it to the points of the Polygon.
+    markers.forEach(function(marker, idx) {
+      marker.on(plugin.google.maps.event.MARKER_DRAG, function(position) {
+        mvcArray.setAt(idx, position);
+      });
+    });
+
+  });
+});
+
+```
+
+<img src="./getPoints/image.gif" width="200">
+
+------------
+
+## API Reference
+
+### Create
 
 <table>
     <tr>
@@ -9,7 +145,7 @@
     </tr>
 </table>
 
-## Methods
+### Methods
 <table>
     <tr>
         <th><a href="./setPoints/README.md">setPoints()</a></th>
@@ -78,7 +214,7 @@
     </tr>
 </table>
 
-## Events
+### Events
 
 <table>
     <tr>

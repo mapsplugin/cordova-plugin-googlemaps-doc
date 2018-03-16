@@ -31,7 +31,8 @@ https://github.com/mapsplugin/marker_cluster_demo
 
 The **map.addMarkerCluster()** method creates an instance marker cluster onto the map.
 
-**_The `markers` and `icons` properties are required._**
+- _The `markers` and `icons` properties are required._
+- _This method works **after the MAP_READY event**._
 
 ```js
 var options = {

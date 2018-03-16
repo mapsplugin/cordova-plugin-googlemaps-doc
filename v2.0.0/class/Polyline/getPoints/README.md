@@ -49,11 +49,11 @@ function addEditablePolyline(map, points, callback) {
     'geodesic': true
   }, function(polyline) {
 
-    // polyline.getPoints() returns an instance of the BaseArrayClass.
+    // polyline.getPoints() returns an instance of BaseArrayClass.
     var mvcArray = polyline.getPoints();
 
     // Add draggable markers
-    mvcArray.map(function(latLng, cb) {
+    mvcArray.mapAsync(function(latLng, cb) {
       map.addMarker({
         position: latLng,
         draggable: true
