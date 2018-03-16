@@ -135,7 +135,7 @@ baseArrayClass.map(function(options, cb) {
 
 #### Add your data, and hold them
 
-Since the Marker class extends [BaseClass](../BaseClass/README.md), you can set your custom values.
+Since Marker class extends [BaseClass](../BaseClass/README.md), you can set your custom values.
 Of course, listening the `(key)_changed` event is as well.
 
 ```js
@@ -209,6 +209,7 @@ map.addMarker({
 
 
 #### Color Icon
+
 You can specify [HTML color](./Available-HTML-colors) as icon.
 The alpha value is ignored.
 
@@ -228,6 +229,7 @@ map.addMarker({
 
 
 #### Base64 Encoded Icon
+
 The marker's icon and title properties accept base64 encoded image strings.
 You can generate the base64 encoded strings using HTML5's Canvas object.
 This means you are able to create marker image programmatically.
@@ -289,6 +291,7 @@ map.addMarker({
 ------------
 
 ### Marker Animation
+
 You can specify animation for marker.
 
 Available values:

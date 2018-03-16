@@ -8,6 +8,7 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
     - <a href="#create-one-polyline">Create one polyline</a>
     - <a href="#click-event">Click event</a>
     - <a href="#update-the-polyline">Update the polyline</a>
+    - <a href="#assign-your-data">Assign your data</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
@@ -131,6 +132,59 @@ map.addPolyline({
 ```
 
 <img src="./getPoints/image.gif" width="200">
+
+------------
+
+#### Assign your data
+
+Since Polyline class extends [BaseClass](../BaseClass/README.md), you can assign your data.
+
+```js
+const HND_AIR_PORT = {"lat": 35.548852, "lng": 139.784086};
+const SFO_AIR_PORT = {"lat": 37.615223, "lng": -122.389979};
+const HNL_AIR_PORT = {"lat": 21.332898, "lng": -157.921418};
+
+//---------------------------------
+// [Model]
+//    Create one polyline
+//---------------------------------
+map.addPolyline({
+  'points': [
+    HND_AIR_PORT,
+    HNL_AIR_PORT,
+    SFO_AIR_PORT
+  ],
+  'color' : "red",
+  'width': 10,
+  'geodesic': true,
+  'idx': 0
+}, function(polyline) {
+
+  //---------------------------------
+  // [Control]
+  //    Increment the idx field.
+  //    If the value is grater than 3,
+  //    reset to 0.
+  //---------------------------------
+  polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function() {
+    var idx = this.get("idx");
+    idx = idx + 1;
+    this.set("idx", idx > 3 ? 0 : idx);
+  });
+
+  //---------------------------------
+  // [View]
+  //    Update the polyline color
+  //    based on the idx field.
+  //---------------------------------
+  polyline.on("idx_changed", function() {
+    var idx = this.get("idx");
+    this.setColor(["green", "blue", "orange", "red"][idx]);
+  });
+});
+```
+
+<img src="./polyline_click.gif" width="300">
 
 ------------
 
