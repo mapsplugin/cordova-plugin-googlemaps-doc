@@ -23,7 +23,7 @@ HtmlInfoWindow is able to display any HTML elements on it.
 
 ### Create a HtmlInfoWindow
 
-```
+```js
 var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
 var html = [
@@ -53,7 +53,7 @@ map.addMarker({
 
 The `setContent()` method accepts either `HTML strings` or `DOM elements`.
 
-```
+```js
 var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
 var iframe = document.createElement("iframe");
