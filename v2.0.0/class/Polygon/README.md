@@ -7,8 +7,7 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
   - <a href="#overview">Overview</a>
     - <a href="#create-one-polygon">Create one polygon</a>
     - <a href="#click-event">Click event</a>
-    - <a href="#update-the-polyline">Update the polyline</a>
-    - <a href="#assign-your-data">Assign your data</a>
+    - <a href="#create-polygon-with-holes">Create polygon with holes</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
