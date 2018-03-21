@@ -1,6 +1,126 @@
 # Circle class
 
-## Create
+_This class extends [BaseClass](../BaseClass/README.md)_.
+
+## Contents
+
+  - <a href="#overview">Overview</a>
+    - <a href="#create-one-polygon">Create one polygon</a>
+    - <a href="#click-event">Click event</a>
+    - <a href="#create-polygon-with-holes">Create polygon with holes</a>
+  - <a href="#api-reference">API Reference</a>
+
+------------
+
+## Overview
+
+
+### Create one polygon
+
+The **map.addCiecle()** method adds one circle onto the map.
+
+- _This method works **after the MAP_READY event**._
+
+```js
+var GOOGLE = {"lat" : 37.422858, "lng" : -122.085065};
+var mapDiv = document.getElementById("map_canvas");
+var map = plugin.google.maps.Map.getMap(mapDiv);
+
+map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
+
+  // Add circle
+  map.addCircle({
+    'center': GOOGLE,
+    'radius': 300,
+    'strokeColor' : '#AA00FF',
+    'strokeWidth': 5,
+    'fillColor' : '#880000'
+  }, function(circle) {
+
+    map.moveCamera({
+      target: circle.getBounds()
+    });
+
+  });
+
+});
+
+```
+
+<img src="./addCircle/image.png" width="200" />
+
+
+### Listen CLICK event
+
+In order to listen the CIRCLE_CLICK event, you need to specify the `clickable` option.
+You can get the latitude/longitude pair of clicked position.
+
+```js
+// Add a circle
+map.addCircle({
+  'center': GOOGLE,
+  'radius': 300,
+  'strokeColor' : '#AA00FF',
+  'strokeWidth': 5,
+  'fillColor' : '#880000',
+  'clickable' : true   // default = false
+}, function(circle) {
+
+  map.moveCamera({
+    target: circle.getBounds()
+  });
+
+  // Catch the CIRCLE_CLICK event
+  circle.on(plugin.google.maps.event.CIRCLE_CLICK, onCircleClick);
+
+});
+
+
+// The CIRCLE_CLICK event passes to the callback
+// with the latLng position where is you clicked.
+function onCircleClick(latLng) {
+
+  // The callback is called as the overlay instance.
+  var circle = this;
+
+  // Do something...
+}
+```
+
+<img src="./CIRCLE_CLICK/image.gif" width="200" />
+
+
+#### bindTo() method
+
+Circle `bindTo()` method is useful when you manipulate multiple overlays with the same value. The `bindTo()` method comes from [BaseClass](../BaseClass/README.md).
+
+```js
+map.addMarker({
+  position: {lat: 43.0741704, lng: -89.3809802},
+  draggable: true
+}, function(marker) {
+
+  map.addCircle({
+    center: marker.getPosition(),
+    radius: 10,
+    fillColor: "rgba(0, 0, 255, 0.5)",
+    strokeColor: "rgba(0, 0, 255, 0.75)",
+    strokeWidth: 1
+  }, function(circle) {
+
+    // circle.center = marker.position
+    marker.bindTo("position", circle, "center");
+  });
+
+});
+```
+
+<img src="bindTo.gif" width="200">
+
+------------
+## API Reference
+
+### Create
 <table>
     <tr>
         <th><a href="./addCircle/README.md">map.addCircle()</a></th>
@@ -8,7 +128,7 @@
     </tr>
 </table>
 
-## Methods
+### Methods
 
 <table>
     <tr>
@@ -81,7 +201,7 @@
     </tr>
 </table>
 
-## Events
+### Events
 
 <table>
     <tr>
