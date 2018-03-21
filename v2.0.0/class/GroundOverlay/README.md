@@ -74,6 +74,6 @@
 <table>
     <tr>
         <th><a href="./GROUND_OVERLAY_CLICK/README.md">GROUND_OVERLAY_CLICK</a></th>
-        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a circle.</td>
+        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a ground overlay.</td>
     </tr>
 </table>
