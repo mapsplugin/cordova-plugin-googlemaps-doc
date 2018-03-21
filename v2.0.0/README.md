@@ -27,9 +27,11 @@
   <tr>
     <td>Jan/29/2018</td>
     <td>
-      <a href="./ReleaseNotes/v2.2.0/README.md">v2.2.0</a>
+      <a href="./ReleaseNotes/v2.2.0/README.md">v2.2.0 - v2.2.8</a>
     </td>
-    <td>(not ready yet)</td>
+    <td>
+      <a href="./ReleaseNotes/ionic-googlemaps-4.6.0/README.md">v4.6.0</a>
+    </td>
   </tr>
   <tr>
     <td>Nov/2/2017</td>
@@ -119,5 +121,5 @@
 
 # demo code repository
  - https://github.com/mapsplugin/v2.0-demo
- 
+
  ![](https://github.com/mapsplugin/v2.0-demo/raw/master/image.gif?raw=true)
