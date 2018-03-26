@@ -19,7 +19,7 @@ var map = plugin.google.maps.Map.getMap(div);
 
 map.one(plugin.google.maps.event.MAP_READY, function() {
 
-  // Catch all camera events
+  // Catch all map drag events
   map.on(plugin.google.maps.event.MAP_DRAG_START, onMapDragEvents);
   map.on(plugin.google.maps.event.MAP_DRAG, onMapDragEvents);
   map.on(plugin.google.maps.event.MAP_DRAG_END, onMapDragEvents);
