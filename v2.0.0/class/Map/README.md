@@ -429,6 +429,10 @@ Before using this plugin, please understand how this plugin work.
         <td>This events are fired when the camera moves.</td>
     </tr>
     <tr>
+        <th><a href="./MAP_DRAG_EVENTS/README.md">MAP_DRAG_START<BR>MAP_DRAG<br>MAP_DRAG_END</a></th>
+        <td>This events are fired when the camera moves with gestures.</td>
+    </tr>
+    <tr>
         <th><a href="./MAP_READY/README.md">MAP_READY</a></th>
         <td>This event is fired when the map is created using the <a href="./getMap/README.md">map.getMap()</a> method.</td>
     </tr>
