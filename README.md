@@ -34,7 +34,7 @@ No longer supported.
 
 - [Presentation at @ionic Los Angeles meetup](https://docs.google.com/presentation/d/1zlkmoSY4AzDJc_P4IqWLnzct41IqHyzGkLeyhlAxMDE/edit#slide=id.p)
 
-  ## examples:
+  **examples:**
     - [ionic-googlemaps-quickdemo](https://github.com/mapsplugin/ionic-googlemaps-quickdemo)
     - [ionic-map-provider-example](https://github.com/mapsplugin/ionic-map-provider-example)
 -----
