@@ -9,10 +9,9 @@ You can create a map application that uses native Google Maps with JavaScript, w
 
 There are two versions:
 
-## v2.2.0 (current version)
+## v2.2.9 (current version)
 
 You can create multiple maps in your application.
-Many bugs are fixed, and many features are improved.
 
 - [Documentation](./v2.0.0/README.md)
 
@@ -21,6 +20,20 @@ Many bugs are fixed, and many features are improved.
 - [v2.2.0 Release notes](./v2.0.0/ReleaseNotes/v2.2.0/README.md)
 
 
+## @ionic-native/google-maps
+
+- [Description](./v2.0.0/ionic-native/README.md)
+
+- [API reference](https://github.com/ionic-team/ionic-native-google-maps/blob/master/documents/README.md)
+
+- [Presentation at @ionic Los Angeles meetup](https://docs.google.com/presentation/d/1zlkmoSY4AzDJc_P4IqWLnzct41IqHyzGkLeyhlAxMDE/edit#slide=id.p)
+
+  **examples:**
+    - [ionic-googlemaps-quickdemo](https://github.com/mapsplugin/ionic-googlemaps-quickdemo)
+    - [ionic-map-provider-example](https://github.com/mapsplugin/ionic-map-provider-example)
+    
+-----
+
 ## v1.4.0 (old version)
 
 You can only create one map in your application.
@@ -28,15 +41,7 @@ No longer supported.
 
 - [Documentations](./v1.4.0/README.md)
 
-## @ionic-native/google-maps
-
-- [Description](./v2.0.0/ionic-native/README.md)
-
-- [Presentation at @ionic Los Angeles meetup](https://docs.google.com/presentation/d/1zlkmoSY4AzDJc_P4IqWLnzct41IqHyzGkLeyhlAxMDE/edit#slide=id.p)
-
-  **examples:**
-    - [ionic-googlemaps-quickdemo](https://github.com/mapsplugin/ionic-googlemaps-quickdemo)
-    - [ionic-map-provider-example](https://github.com/mapsplugin/ionic-map-provider-example)
+    
 -----
 
 ### Buy me a beer
