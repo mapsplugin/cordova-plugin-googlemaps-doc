@@ -94,6 +94,8 @@
 
 - [GroundOverlay class](./class/GroundOverlay/README.md)
 
+- [KmlOverlay class](./class/KmlOverlay/README.md)
+
 - [Geocoder class](./class/Geocoder/README.md)
 
 - [Environment class](./class/Environment/README.md)
