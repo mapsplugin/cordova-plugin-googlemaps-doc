@@ -47,7 +47,7 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.rootPage = HomePage;    // <<< Set the first page after native side is ready.
+      this.rootPage = HomePage;    // <<< Set the first page after native side is ready. So, you don't need to write platform.ready() in anypage anymore.
 
       this.statusBar.styleDefault();
       this.splashScreen.hide();
@@ -73,7 +73,6 @@ import {
   MyLocation
 } from '@ionic-native/google-maps';
 
-import { Platform } from 'ionic-angular';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -83,10 +82,7 @@ export class HomePage {
   mapReady: boolean = false;
   map: GoogleMap;
 
-  constructor(
-    public navCtrl: NavController,
-    public toastCtrl: ToastController,
-    private googleMaps: GoogleMaps) {
+  constructor() {
   }
 
   ionViewDidLoad() {
@@ -96,7 +92,7 @@ export class HomePage {
   loadMap() {
     // Create a map after the view is loaded.
     // (platform is already ready in app.component.ts)
-    this.map = this.googleMaps.create('map_canvas', {
+    this.map = GoogleMaps.create('map_canvas', {
       camera: {
         target: {
           lat: 43.0741704,
