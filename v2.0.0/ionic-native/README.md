@@ -9,9 +9,7 @@ So if you find any problems with the [@ionic-native/google-maps plugin](https://
 
 ## The documentation
 
-The official page document is here https://ionicframework.com/docs/native/google-maps/, but this page is updated only once in a while.
-
-The latest document is available at https://ionic-site-staging.herokuapp.com/docs/native/google-maps/
+The official page document is here https://github.com/ionic-team/ionic-native-google-maps/blob/master/documents/README.md
 
 ## Installation
 
