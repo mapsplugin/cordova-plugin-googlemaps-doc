@@ -1,4 +1,4 @@
-# map.getMyLocation()
+# map.getMyLocation(options?, success_callback, error_callback)
 
 Get the current device location.
 
@@ -43,7 +43,10 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
   var button = div.getElementsByTagName('button')[0];
   button.addEventListener('click', function() {
     map.clear();
-    map.getMyLocation(onSuccess, onError);
+    var options = {
+      enableHighAccuracy: false  // Set true if you want to use GPS. Otherwise, use network.
+    };
+    map.getMyLocation(options, onSuccess, onError);
   });
 
 });
