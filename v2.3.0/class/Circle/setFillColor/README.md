@@ -43,7 +43,7 @@ var idx = 0;
 circle.on(plugin.google.maps.event.CIRCLE_CLICK, function(latLng) {
 
   // Available HTML colors
-  // https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/Available-HTML-colors
+  // https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v1.4.0/Available-HTML-colors/README.md
   //
   circle.setFillColor(["skyblue", "lime", "tomato", "bisque"][idx++]);
   idx = idx > 3 ? 0 : idx;

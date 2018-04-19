@@ -10,14 +10,14 @@ circle.setVisible(flag);
 
 name           | type          | description
 ---------------|---------------|---------------------------------------
-flag           | boolean       | `true`: visible, `false`M: invisible
+flag           | boolean       | `true`: visible, `false`: invisible
 -----------------------------------------------------------------------
 
 ## Demo code
 
 ```html
 <div id="map_canvas">
-  <span class="smallPanel"><button>Reverse the zIndex orders</button></span>
+  <span class="smallPanel"><button>change visibility</button></span>
 </div>
 ```
 

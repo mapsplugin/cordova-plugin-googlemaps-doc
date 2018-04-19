@@ -11,7 +11,7 @@ circle.setClickable(flag);
 
 name           | type          | description
 ---------------|---------------|---------------------------------------
-flag           | LatLng        | new center position
+flag           | boolean       | `true`: clickable, `false`: non-clickable
 -----------------------------------------------------------------------
 
 ## Demo code

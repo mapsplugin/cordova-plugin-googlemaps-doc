@@ -5,9 +5,9 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 ## Contents
 
   - <a href="#overview">Overview</a>
-    - <a href="#create-one-polygon">Create one polygon</a>
-    - <a href="#click-event">Click event</a>
-    - <a href="#create-polygon-with-holes">Create polygon with holes</a>
+    - <a href="#create-one-circle">Create one circle</a>
+    - <a href="#listen-click-event">Click event</a>
+    - <a href="#bindto-method">bindTo() method</a>
   - <a href="#api-reference">API Reference</a>
 
 ------------
