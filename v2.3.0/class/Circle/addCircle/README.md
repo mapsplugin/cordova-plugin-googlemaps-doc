@@ -6,14 +6,14 @@ The map.addCircle() method adds a circle onto the map.
 (from v2.3.0 to current)
 var circle = map.addCircle(options)
 
-(from v2.0.0 to v2.2.9)
+(from v2.0.0 to current)
 map.addCircle(options, callback);
 ```
 
 ## Options
 
 params         | type          | description
----------------|------------------------------|---------------------------------------
+---------------|---------------|---------------------------------------
 center         | LatLng        | center position of the map
 radius         | number        | radius in meters
 strokeColor?   | string        | (optional) stroke color (HTML colors)
