@@ -5,7 +5,7 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 ## Contents
 
   - <a href="#overview">Overview</a>
-    - <a href="#create-one-circle">Create one circle</a>
+    - <a href="#create-one-groundoverlay">Create one GroundOverlay</a>
     - <a href="#listen-click-event">Click event</a>
   - <a href="#api-reference">API Reference</a>
 
