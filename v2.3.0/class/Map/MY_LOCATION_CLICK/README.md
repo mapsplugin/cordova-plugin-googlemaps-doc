@@ -1,4 +1,4 @@
-# MY_LOCATION_BUTTON_CLICK event
+# MY_LOCATION_CLICK event
 
 This event is fired when you tap on the location control (blue dot).
 

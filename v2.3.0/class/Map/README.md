@@ -100,6 +100,7 @@ Before using this plugin, please understand how this plugin work.
   - CAMERA_MOVE_END
   - MY_LOCATION_BUTTON_CLICK
   - MY_LOCATION_CLICK
+  - POI_CLICK
 
   The above events passes with event information in parameter, such as where is clicked.
 
