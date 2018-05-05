@@ -2,6 +2,19 @@
 
 Decodes an encoded path string into a sequence of [LatLng](../../../LatLng/README.md)s.
 
+```
+plugin.google.maps.geometry.encoding.decodePath(encodedPath);
+```
+
+## Parameters
+
+name           | type          | description
+---------------|---------------|---------------------------------------
+encodedPath    | string        | encoded path strings
+-----------------------------------------------------------------------
+
+## Demo code
+
 ```js
 <div id="map_canvas"></div>
 ```

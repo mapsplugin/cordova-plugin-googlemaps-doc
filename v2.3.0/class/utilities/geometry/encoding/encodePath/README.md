@@ -2,6 +2,19 @@
 
 Encodes a sequence of [LatLng](../../../LatLng/README.md)s into an encoded path string.
 
+```
+plugin.google.maps.geometry.encoding.encodePath(path);
+```
+
+## Parameters
+
+name           | type          | description
+---------------|---------------|---------------------------------------
+path           | ILatLng[]     | Array of ILatLng
+-----------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div  id="map_canvas"></div>
 ```
