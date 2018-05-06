@@ -22,10 +22,10 @@ And other optional parameters are:
 
 ```js
 var options = {
-    'camera': {
-        'target': dummyData()[0].position,
-        'zoom': 12
-    }
+  'camera': {
+    'target': dummyData()[0].position,
+    'zoom': 12
+  }
 };
 var map = plugin.google.maps.Map.getMap(mapDiv, options);
 map.on(plugin.google.maps.event.MAP_READY, function() {
@@ -36,7 +36,7 @@ map.on(plugin.google.maps.event.MAP_READY, function() {
   // Create a marker cluster.
   // Providing all locations at the creating is the best.
   //------------------------------------------------------
-  map.addMarkerCluster({
+  var markerCluster = map.addMarkerCluster({
     //maxZoomLevel: 5,
     boundsDraw: true,
     markers: dummyData(),
@@ -46,41 +46,40 @@ map.on(plugin.google.maps.event.MAP_READY, function() {
         {min: 1000, max: 2000, url: "./img/purple.png", anchor: {x: 24, y: 24}},
         {min: 2000, url: "./img/red.png",anchor: {x: 32,y: 32}}
     ]
-  }, function (markerCluster) {
-
-      //-----------------------------------------------------------------------
-      // Display the resolution (in order to understand the marker cluster)
-      //-----------------------------------------------------------------------
-      markerCluster.on("resolution_changed", function (prev, newResolution) {
-          var self = this;
-          label.innerHTML = "&lt;b&gt;zoom = " + self.get("zoom").toFixed(0) + ", resolution = " + self.get("resolution") + "&lt;/b&gt;";
-      });
-      markerCluster.trigger("resolution_changed");
-
-      //------------------------------------
-      // If you tap on a marker,
-      // you can get the marker instnace.
-      // Then you can do what ever you want.
-      //------------------------------------
-      var htmlInfoWnd = new plugin.google.maps.HtmlInfoWindow();
-      markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
-        var html = [
-          "&lt;div style='width:250px;min-height:100px'&gt;",
-          "&lt;img src='img/starbucks_logo.gif' align='right'&gt;",
-          "&lt;strong&gt;" + (marker.get("title") || marker.get("name")) + "&lt;/strong&gt;"
-        ];
-        if (marker.get("address")) {
-          html.push("&lt;div style='font-size:0.8em;'&gt;" + marker.get("address") + "&lt;/div&gt;");
-        }
-        if (marker.get("phone")) {
-          html.push("&lt;a href='tel:" + marker.get("phone") + "' style='font-size:0.8em;color:blue;'&gt;Tel: " + marker.get("phone") + "&lt;/div&gt;");
-        }
-        html.push("&lt;/div&gt;");
-        htmlInfoWnd.setContent(html.join(""));
-        htmlInfoWnd.open(marker);
-      });
-
   });
+
+  //-----------------------------------------------------------------------
+  // Display the resolution (in order to understand the marker cluster)
+  //-----------------------------------------------------------------------
+  markerCluster.on("resolution_changed", function (prev, newResolution) {
+      var self = this;
+      label.innerHTML = "&lt;b&gt;zoom = " + self.get("zoom").toFixed(0) + ", resolution = " + self.get("resolution") + "&lt;/b&gt;";
+  });
+  markerCluster.trigger("resolution_changed");
+
+  //------------------------------------
+  // If you tap on a marker,
+  // you can get the marker instnace.
+  // Then you can do what ever you want.
+  //------------------------------------
+  var htmlInfoWnd = new plugin.google.maps.HtmlInfoWindow();
+  markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
+    var html = [
+      "&lt;div style='width:250px;min-height:100px'&gt;",
+      "&lt;img src='img/starbucks_logo.gif' align='right'&gt;",
+      "&lt;strong&gt;" + (marker.get("title") || marker.get("name")) + "&lt;/strong&gt;"
+    ];
+    if (marker.get("address")) {
+      html.push("&lt;div style='font-size:0.8em;'&gt;" + marker.get("address") + "&lt;/div&gt;");
+    }
+    if (marker.get("phone")) {
+      html.push("&lt;a href='tel:" + marker.get("phone") + "' style='font-size:0.8em;color:blue;'&gt;Tel: " + marker.get("phone") + "&lt;/div&gt;");
+    }
+    html.push("&lt;/div&gt;");
+    htmlInfoWnd.setContent(html.join(""));
+    htmlInfoWnd.open(marker);
+  });
+
 });
 function dummyData() {
   return [
