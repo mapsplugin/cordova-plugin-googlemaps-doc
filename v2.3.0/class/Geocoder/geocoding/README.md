@@ -155,12 +155,11 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
           latLngBounds.extend(geocodeResult[0].position);
 
-          map.addMarker({
+          var marker = map.addMarker({
             'position': geocodeResult[0].position,
             'title':  JSON.stringify(geocodeResult)
-          }, function(marker) {
-            markers.push(marker);
           });
+          markers.push(marker);
         } else {
           markers.push(null);
         }

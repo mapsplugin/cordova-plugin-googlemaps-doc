@@ -169,11 +169,15 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
             results[0].postalCode || "",
             results[0].country || ""].join(", ");
 
-          map.addMarker({
+          var marker = map.addMarker({
             'position': results[0].position,
             'icon': '../images/starbucks.gif',
             'title': address
-          }, onMarkerAdded);
+          });
+
+          marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+            marker.showInfoWindow();
+          });
         }
       });
 
@@ -188,13 +192,6 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
   });
 
 });
-function onMarkerAdded(marker) {
-  var marker = this;
-
-  marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
-    marker.showInfoWindow();
-  });
-}
 ```
 
 ![](image2.gif)
