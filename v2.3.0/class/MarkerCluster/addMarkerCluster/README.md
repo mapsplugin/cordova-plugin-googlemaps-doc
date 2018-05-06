@@ -1,18 +1,110 @@
 # map.addMarkerCluster()
 
+```
+var markerCluster = map.addMarkerCluster(options);
+```
+
 The map.addMarkerCluster() method takes a single options object literal, specifying the initial properties of the marker.
 
-You need to configure **require parameters**:
-- `markers`: Array of marker options (not actual markers)
-- `icons`: Array of conditions for cluster icon
+## options parameter
 
-And other optional parameters are:
+<table>
+<tr>
+  <th>Params</th>
+  <th>Type</th>
+  <th>Details</th>
+</tr>
+<tr>
+  <td>markers</td>
+  <td>MarkerOptions[]</td>
+  <td>Array of marker options (not actual markers)<br>
+    <a href="../Marker/addMarker/README.md">check out the addMarker() page</a></td>
+</tr>
+<tr>
+  <td>icons</td>
+  <td>MarkerClusterIcon[]</td>
+  <td>Array of conditions for cluster icon</td>
+</tr>
+<tr>
+  <td>boundsDraw</td>
+  <td>boolean</td>
+  <td>(optional)Draw bounds when you tap on a clustered marker (default: true)</td>
+</tr>
+<tr>
+  <td>maxZoomLevel</td>
+  <td>number</td>
+  <td>(optional)Maximum zoom level of clustering (default: 15, max: 18)</td>
+</tr>
+</table>
 
-- `boundsDraw`: draw bounds when you tap on a clustered marker (default: true)
-- `maxZoomLevel`: maximum zoom level of clustering (default: 15, max: 18)
+## MarkerClusterIcon
 
+<table>
+<tr>
+  <th>Params</th>
+  <th>Type</th>
+  <th>Details</th>
+</tr>
+<tr>
+  <td>min</td>
+  <td>number</td>
+  <td>Minimum number of clustering</td>
+</tr>
+<tr>
+  <td>max</td>
+  <td>number</td>
+  <td>Maximum number of clustering</td>
+</tr>
+<tr>
+  <td>url</td>
+  <td>string</td>
+  <td>icon url or path</td>
+</tr>
+<tr>
+  <td>anchor</td>
+  <td>{x: number, y: number}</td>
+  <td>(optional) anchor position</td>
+</tr>
+<tr>
+  <td>label</td>
+  <td>MarkerLabel</td>
+  <td>(optional) cluster label</td>
+</tr>
+</table>
 
-## Add a marker cluster
+## MarkerLabel
+
+<table>
+<tr>
+  <th>Params</th>
+  <th>Type</th>
+  <th>Details</th>
+</tr>
+<tr>
+  <td>bold</td>
+  <td>boolean</td>
+  <td>(optional)Set true if use bold font</td>
+</tr>
+<tr>
+  <td>italic</td>
+  <td>boolean</td>
+  <td>(optional)Set true if use italic font</td>
+</tr>
+<tr>
+  <td>fontSize</td>
+  <td>number</td>
+  <td>(optional)Set font size in pixel</td>
+</tr>
+<tr>
+  <td>color</td>
+  <td>string</td>
+  <td>(optional)color strings</td>
+</tr>
+</table>
+
+------------------------------------------------------------------------------------------
+
+## Demo code
 
 ```html
 <div class="map" id="map_canvas">
