@@ -2,6 +2,23 @@
 
 You can change camera position with animation.
 
+```
+map.animateCamera(options, callback);
+```
+
+
+## Parameters
+
+name     | type                                             | description
+---------|--------------------------------------------------|----------------------
+options  | [CameraPosition](../../CameraPosition/README.md) | new camera position
+callback | Function                                         | (optional) callback
+-----------------------------------------------------------------------------------
+
+
+## Demo code
+
+
 ```html
 <div class="map" id="map_canvas">
     <button>Click here</button>

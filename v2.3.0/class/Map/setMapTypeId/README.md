@@ -3,6 +3,19 @@
 You can change map type using `map.setMapTypeId()`.
 Available map types are `ROADMAP`, `SATELLITE`, `HYBRID`, `TERRAIN` and `NONE`.
 
+```
+marker.setMapTypeId(mapTypeId);
+```
+
+## Parameters
+
+name           | type       | description
+---------------|------------|---------------------------------------
+mapTypeId      | MapTypeId  | new map type id
+---------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <select>

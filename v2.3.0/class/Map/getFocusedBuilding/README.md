@@ -2,6 +2,10 @@
 
 Get the current focused building information.
 
+------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <span class="smallPanel" id="indoorInfo"></span>

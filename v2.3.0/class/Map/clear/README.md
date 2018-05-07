@@ -2,6 +2,10 @@
 
 Removes all markers, polylines, polygons, overlays, etc from the map.
 
+-----------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

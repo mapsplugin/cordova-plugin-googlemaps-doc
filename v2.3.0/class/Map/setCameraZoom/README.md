@@ -2,6 +2,19 @@
 
 Change the camera zoom level.
 
+```
+marker.setCameraZoom(zoom);
+```
+
+## Parameters
+
+name       | type     | description
+-----------|----------|---------------------------------------
+zoom       | number   | new camera zoom level
+--------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

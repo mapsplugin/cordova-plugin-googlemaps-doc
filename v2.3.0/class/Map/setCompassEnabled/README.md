@@ -2,6 +2,20 @@
 
 Set true if you want to show the compass button.
 
+```
+marker.setCompassEnabled(flag);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+flag           | boolean  | `false`: disabled, `true`: enabled
+------------------------------------------------------------------
+
+## Demo code
+
+
 ```html
 <div class="map" id="map_canvas">
   <span class="smallPanel"><button>current: map.compassEnabled = true</button></span>

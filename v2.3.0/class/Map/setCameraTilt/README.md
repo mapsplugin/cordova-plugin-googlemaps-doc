@@ -2,6 +2,19 @@
 
 Change the camera view angle.
 
+```
+marker.setCameraTilt(tilt);
+```
+
+## Parameters
+
+name       | type     | description
+-----------|----------|---------------------------------------
+tilt       | number   | new camera tilt
+--------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

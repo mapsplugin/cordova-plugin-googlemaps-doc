@@ -2,6 +2,17 @@
 
 This event is fired when you tap on the location control (blue dot).
 
+* Please read here: _[The myLocation property has changed!](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/ReleaseNotes/v2.2.0/README.md#the-mylocation-property-has-changed) since v2.2.0_
+
+## Parameters
+
+name       | type                                      | description
+-----------|-------------------------------------------|------------------------
+location   | [MyLocation](../../MyLocation/README.md)  | current device location
+--------------------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div id="map_canvas"></div>
 ```
@@ -40,3 +51,5 @@ plugin.google.maps.LocationService.getMyLocation(function(result) {
 
 });
 ```
+
+![](../../../../v2.0.0/ReleaseNotes/v2.2.0/MY_LOCATION_CLICK.gif)

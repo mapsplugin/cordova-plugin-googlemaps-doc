@@ -2,6 +2,24 @@
 
 Sets multiple options to the map at the same time. You can specify the same options to the `map.getMap()` method.
 
+```
+marker.setOptions(options);
+```
+
+## Parameters
+
+name           | type        | description
+---------------|-------------|------------------------------------
+options        | MapOptions  | options
+
+## MapOptions
+
+https://github.com/ionic-team/ionic-native-google-maps/blob/sync-test/documents/googlemapoptions/README.md
+
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <span class="smallPanel"><button>Click here</button></span>

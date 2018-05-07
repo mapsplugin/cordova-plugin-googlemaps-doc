@@ -2,6 +2,19 @@
 
 Zooming out the camera with animation.
 
+```
+map.animateCameraZoomOut(callback);
+```
+
+## Parameters
+
+name     | type      | description
+---------|-----------|----------------------
+callback | Function  | (optional) callback
+--------------------------------------------
+
+## Demo code
+
 ```html
 <div id="map_canvas">
     <button>Click here</button>

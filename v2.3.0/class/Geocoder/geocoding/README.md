@@ -95,92 +95,90 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
     ]
   }
 });
-map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-  // Show a virtual dialog (loader.js)
-  showVirtualDialog(mapDiv, "Click on button!");
+// Show a virtual dialog (loader.js)
+showVirtualDialog(mapDiv, "Click on button!");
 
-  var inputField = mapDiv.getElementsByTagName("input")[0];
-  var button = mapDiv.getElementsByTagName("button")[0];
-  var isRunning = false;
-  button.addEventListener("click", function() {
-    if (isRunning) {
-      return;
-    }
-    isRunning = true;
+var inputField = mapDiv.getElementsByTagName("input")[0];
+var button = mapDiv.getElementsByTagName("button")[0];
+var isRunning = false;
+button.addEventListener("click", function() {
+  if (isRunning) {
+    return;
+  }
+  isRunning = true;
 
-    var dialogDiv = showVirtualDialog(mapDiv, "Just a moment, please ...");
-    setTimeout(function() {
-      mapDiv.removeChild(dialogDiv);
-    }, 3000);
+  var dialogDiv = showVirtualDialog(mapDiv, "Just a moment, please ...");
+  setTimeout(function() {
+    mapDiv.removeChild(dialogDiv);
+  }, 3000);
 
-    var start = Date.now();
+  var start = Date.now();
 
-    // Geocode multiple location
-    plugin.google.maps.Geocoder.geocode({
+  // Geocode multiple location
+  plugin.google.maps.Geocoder.geocode({
 
-      // US Capital cities
-      "address": [
-        "Montgomery, AL, USA", "Juneau, AK, USA", "Phoenix, AZ, USA",
-        "Little Rock, AR, USA", "Sacramento, CA, USA", "Denver, CO, USA",
-        "Hartford, CT, USA", "Dover, DE, USA", "Washington, DC, USA",
-        "Tallahassee, FL, USA", "Atlanta, GA, USA", "Honolulu, HI, USA",
-        "Boise, ID, USA", "Springfield, IL, USA", "Indianapolis, IN, USA",
-        "Des Moines, IA, USA", "Topeka, KS, USA", "Frankfort, KY, USA",
-        "Baton Rouge, LA, USA", "Augusta, ME, USA", "Annapolis, MD, USA",
-        "Boston, MA, USA", "Lansing, MI, USA", "Saint Paul, MN, USA",
-        "Jackson, MS, USA", "Jefferson City, MO, USA", "Helena, MT, USA",
-        "Lincoln, NE, USA", "Carson City, NV, USA", "Concord, NH, USA",
-        "Trenton, NJ, USA", "Santa Fe, NM, USA", "Albany, NY, USA",
-        "Raleigh, NC, USA", "Bismarck, ND, USA", "Columbus, OH, USA",
-        "Oklahoma City, OK, USA", "Salem, OR, USA", "Harrisburg, PA, USA",
-        "Providence, RI, USA", "Columbia, SC, USA", "Pierre, SD, USA",
-        "Nashville, TN, USA", "Austin, TX, USA", "Salt Lake City, UT, USA",
-        "Montpelier, VT, USA", "Richmond, VA, USA", "Olympia, WA, USA",
-        "Charleston, WV, USA", "Madison, WI, USA", "Cheyenne, Wyoming, USA"
-      ]
-    }, function(mvcArray) {
+    // US Capital cities
+    "address": [
+      "Montgomery, AL, USA", "Juneau, AK, USA", "Phoenix, AZ, USA",
+      "Little Rock, AR, USA", "Sacramento, CA, USA", "Denver, CO, USA",
+      "Hartford, CT, USA", "Dover, DE, USA", "Washington, DC, USA",
+      "Tallahassee, FL, USA", "Atlanta, GA, USA", "Honolulu, HI, USA",
+      "Boise, ID, USA", "Springfield, IL, USA", "Indianapolis, IN, USA",
+      "Des Moines, IA, USA", "Topeka, KS, USA", "Frankfort, KY, USA",
+      "Baton Rouge, LA, USA", "Augusta, ME, USA", "Annapolis, MD, USA",
+      "Boston, MA, USA", "Lansing, MI, USA", "Saint Paul, MN, USA",
+      "Jackson, MS, USA", "Jefferson City, MO, USA", "Helena, MT, USA",
+      "Lincoln, NE, USA", "Carson City, NV, USA", "Concord, NH, USA",
+      "Trenton, NJ, USA", "Santa Fe, NM, USA", "Albany, NY, USA",
+      "Raleigh, NC, USA", "Bismarck, ND, USA", "Columbus, OH, USA",
+      "Oklahoma City, OK, USA", "Salem, OR, USA", "Harrisburg, PA, USA",
+      "Providence, RI, USA", "Columbia, SC, USA", "Pierre, SD, USA",
+      "Nashville, TN, USA", "Austin, TX, USA", "Salt Lake City, UT, USA",
+      "Montpelier, VT, USA", "Richmond, VA, USA", "Olympia, WA, USA",
+      "Charleston, WV, USA", "Madison, WI, USA", "Cheyenne, Wyoming, USA"
+    ]
+  }, function(mvcArray) {
 
-      var latLngBounds = new plugin.google.maps.LatLngBounds();
-      var markers = new plugin.google.maps.BaseArrayClass();
+    var latLngBounds = new plugin.google.maps.LatLngBounds();
+    var markers = new plugin.google.maps.BaseArrayClass();
 
-      mvcArray.on('error', function(error) {
-        console.log(error);
-      });
-      mvcArray.on('insert_at', function(index) {
-
-        // Get a result
-        var geocodeResult = mvcArray.getAt(index);
-        if (geocodeResult.length > 0) {
-
-          latLngBounds.extend(geocodeResult[0].position);
-
-          var marker = map.addMarker({
-            'position': geocodeResult[0].position,
-            'title':  JSON.stringify(geocodeResult)
-          });
-          markers.push(marker);
-        } else {
-          markers.push(null);
-        }
-      });
-
-      mvcArray.on('finish', function() {
-        isRunning = false;
-      });
-
-      markers.on('insert_at', function() {
-        if (!isRunning && markers.getLength() === mvcArray.getLength()) {
-          var end = Date.now();
-          alert("results : " + mvcArray.getLength() + "\n" +
-                "duration: " + ((end - start) / 1000).toFixed(1) + " seconds");
-        }
-      });
-
+    mvcArray.on('error', function(error) {
+      console.log(error);
     });
-  });
+    mvcArray.on('insert_at', function(index) {
 
+      // Get a result
+      var geocodeResult = mvcArray.getAt(index);
+      if (geocodeResult.length > 0) {
+
+        latLngBounds.extend(geocodeResult[0].position);
+
+        var marker = map.addMarker({
+          'position': geocodeResult[0].position,
+          'title':  JSON.stringify(geocodeResult)
+        });
+        markers.push(marker);
+      } else {
+        markers.push(null);
+      }
+    });
+
+    mvcArray.on('finish', function() {
+      isRunning = false;
+    });
+
+    markers.on('insert_at', function() {
+      if (!isRunning && markers.getLength() === mvcArray.getLength()) {
+        var end = Date.now();
+        alert("results : " + mvcArray.getLength() + "\n" +
+              "duration: " + ((end - start) / 1000).toFixed(1) + " seconds");
+      }
+    });
+
+  });
 });
+
 ```
 
 ![](image2.gif)

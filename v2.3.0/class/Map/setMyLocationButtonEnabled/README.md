@@ -2,6 +2,21 @@
 
 Set true if you want to show the MyLocation button.
 
+* Please read here: _[The myLocation property has changed!](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/ReleaseNotes/v2.2.0/README.md#the-mylocation-property-has-changed) since v2.2.0_
+
+```
+marker.setMyLocationButtonEnabled(flag);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+flag           | boolean  | `false`: disabled, `true`: enabled
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>current: map.myLocationButton = true</button></span>

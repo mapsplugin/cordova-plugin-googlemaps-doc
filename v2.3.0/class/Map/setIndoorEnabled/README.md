@@ -2,6 +2,19 @@
 
 Set true if you want to show the indoor map.
 
+```
+marker.setIndoorEnabled(flag);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+flag           | boolean  | `false`: disabled, `true`: enabled
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <span class="smallPanel"><button>current: map.indoorEnable = false</button></span>

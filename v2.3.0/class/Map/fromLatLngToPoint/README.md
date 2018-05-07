@@ -2,6 +2,20 @@
 
 Convert the unit from LatLng to the pixels from the left/top of the map div.
 
+```
+map.fromLatLngToPoint(position, callback);
+```
+
+## Parameters
+
+name      | type      | description
+----------|-----------|----------------------
+position  | ILatLng   | position
+callback  | Function  | function(point) {}
+---------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas"></div>
 ```

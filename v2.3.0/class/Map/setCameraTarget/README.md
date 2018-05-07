@@ -2,6 +2,19 @@
 
 Set the camera target(latitude/longitude) position.
 
+```
+marker.setCameraTarget(position);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+position       | ILatLng  | new camera target
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

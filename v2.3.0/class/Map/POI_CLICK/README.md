@@ -2,6 +2,17 @@
 
 This event is fired when you tap on POIs(such as building icon).
 
+## Parameters
+
+name       | type                             | description
+-----------|----------------------------------|---------------------------------
+placeId    | string                           | place id for Google Places API
+name       | string                           | place name
+latLng     | [LatLng](../../LatLng/README.md) | place location
+--------------------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div id="map_canvas"></div>
 ```
@@ -35,3 +46,5 @@ map.on(plugin.google.maps.event.POI_CLICK, function(placeId, name, latLng) {
 });
 
 ```
+
+![](../../../../v2.0.0/ReleaseNotes/v2.2.0/POI_CLICK.gif)

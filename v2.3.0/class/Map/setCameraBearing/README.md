@@ -2,6 +2,19 @@
 
 Change the camera view bearing.
 
+```
+marker.setCameraBearing(bearing);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+bearing        | number   | new camera bearing
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

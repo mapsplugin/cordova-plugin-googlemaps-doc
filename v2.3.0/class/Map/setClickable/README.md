@@ -1,6 +1,19 @@
 # map.setClickable()
 
-Set false to ignore all clicks on the map (default: true).
+Enables or disables click events for map (default: true).
+
+```
+marker.setClickable(flag);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+flag           | boolean  | `false`: non-clickable, `true`: clickable
+------------------------------------------------------------------
+
+## Demo code
 
 ```html
 <div class="map" id="map_canvas">

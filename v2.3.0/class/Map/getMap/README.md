@@ -22,6 +22,8 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 ![](image1.png)
 
+-----------------------------------------------------------------------------------------------
+
 ## Create a map with initialize options
 
 You can specify the map options with **getMap()** method.
@@ -89,6 +91,7 @@ map.one(plugin.google.maps.event.MAP_READY, function() {
 
 ![](image2.png)
 
+-----------------------------------------------------------------------------------------------
 
 ## Put any HTML elements on the map
 

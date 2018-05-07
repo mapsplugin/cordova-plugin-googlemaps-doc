@@ -2,6 +2,10 @@
 
 Changes the center of the map by the given distance in pixels.
 
+--------------------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

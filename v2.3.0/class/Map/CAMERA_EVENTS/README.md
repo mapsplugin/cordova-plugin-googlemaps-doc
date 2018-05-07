@@ -6,6 +6,16 @@ These events are fired when the camera moves.
 - The `CAMERA_MOVE` event is fired while the camera is moving.</li>
 - The `CAMERA_MOVE_END` event is fired when the camera is stopped.</li>
 
+## Parameters
+
+name           | type                                              | description
+---------------|---------------------------------------------------|-----------------
+cameraPosition | [CameraPosition](../../CameraPosition/README.md)  | camera target
+-------------------------------------------------------------------------------------
+
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <table  class="smallPanel">

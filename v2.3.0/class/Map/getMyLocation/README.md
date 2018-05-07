@@ -2,6 +2,26 @@
 
 Get the current device location.
 
+```
+map.getMyLocation(options, callback);
+```
+
+## Parameters
+
+name      | type                | description
+----------|---------------------|----------------------
+options   | MyLocationOptions   | position
+callback  | Function            | function(location) {}
+
+## MyLocationOptions
+
+name                 | type      | description
+---------------------|-----------|----------------------
+enableHighAccuracy   | boolean   | Set `true` if you want to try to use GPS mandatory. In `false`, the plugin try to use GPS and network. (default: `false`)
+--------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

@@ -2,6 +2,19 @@
 
 Sets the preference for whether all gestures should be enabled or disabled.
 
+```
+marker.setAllGesturesEnabled(flag);
+```
+
+## Parameters
+
+name           | type     | description
+---------------|----------|---------------------------------------
+flag           | boolean  | `false`: disabled, `true`: enabled
+------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
   <span class="smallPanel"><button>current: map.allGesturesEnabled = true</button></span>

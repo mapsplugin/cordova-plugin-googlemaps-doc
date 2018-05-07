@@ -2,6 +2,15 @@
 
 This event is fired when you click on the map.
 
+## Parameters
+
+name       | type                              | description
+-----------|-----------------------------------|-----------------
+latLng     | [LatLng](../../LatLng/README.md)  | clicked position
+-----------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div id="map_canvas"></div>
 ```

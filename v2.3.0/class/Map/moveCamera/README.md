@@ -2,6 +2,20 @@
 
 You can change camera position **without** animation.
 
+```
+map.moveCamera(options, callback);
+```
+
+## Parameters
+
+name     | type                                             | description
+---------|--------------------------------------------------|----------------------
+options  | [CameraPosition](../../CameraPosition/README.md) | new camera position (the duration property is ignored.)
+callback | Function                                         | (optional) callback
+-----------------------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <button>Click here</button>

@@ -1,8 +1,8 @@
 # map.getVisibleRegion()
 
-**May/17/2017 changed**
-
-This method returns the **visible region**.
+```
+var visibleRegion = map.getVisibleRegion();
+```
 
 The visible region contains these properties:
 
@@ -18,6 +18,9 @@ These are the latitude/longitude pairs of left-top(nearLeft), left-right(nearRig
 
 A LatLngBounds that contains the above four points. Not equals with the four points when the map is rotated or has tilt.
 
+--------------------------------------------------------
+
+## Demo code
 
 In the below example, the blue rectangle represents the visible region, the red rectangle represents the viewport region.
 

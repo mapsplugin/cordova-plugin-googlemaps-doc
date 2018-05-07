@@ -2,6 +2,21 @@
 
 Destroy a map completely.
 
+```
+map.remove(callback);
+```
+
+
+## Parameters
+
+name     | type      | description
+---------|-----------|----------------------
+callback | Function  | (optional) callback
+--------------------------------------------
+
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

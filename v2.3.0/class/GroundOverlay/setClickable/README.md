@@ -15,6 +15,7 @@ flag           | boolean       | `true`: clickable, `false`: non-clickable
 -----------------------------------------------------------------------
 
 ## Demo code
+
 ```html
 <div id="map_canvas">
   <span class="smallPanel"><input type="checkbox" id="toggleCheckbox" checked="checked">groundOverlay.setClickable(true)</span>

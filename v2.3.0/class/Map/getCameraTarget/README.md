@@ -2,6 +2,10 @@
 
 Get the current camera target(latitude/longitude) position.
 
+------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div class="map" id="map_canvas">
     <span class="smallPanel"><button>Click here</button></span>

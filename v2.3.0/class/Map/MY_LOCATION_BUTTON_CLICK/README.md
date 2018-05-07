@@ -2,6 +2,12 @@
 
 This event is fired when you tap on the location button.
 
+* Please read here: _[The myLocation property has changed!](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/ReleaseNotes/v2.2.0/README.md#the-mylocation-property-has-changed) since v2.2.0_
+
+-----------------------------------------------------------------------------------
+
+## Demo code
+
 ```html
 <div id="map_canvas"></div>
 ```

@@ -2,6 +2,8 @@
 
 This event is fired when the map is created using the `map.getMap()` method.
 
+## Demo code
+
 ```html
 <div id="map_canvas"></div>
 ```
