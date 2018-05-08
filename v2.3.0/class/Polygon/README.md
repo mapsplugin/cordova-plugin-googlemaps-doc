@@ -200,7 +200,7 @@ If you want to create second hole, the path must be **clockwise**.
         <td>Return the current polygon filling color (inner color).</td>
     </tr>
     <tr>
-        <th>setStrokeWidth()</th>
+        <th><a href="./setStrokeWidth/README.md">setStrokeWidth()</a></th>
         <td>Changes the polygon stroke width.</td>
     </tr>
     <tr>

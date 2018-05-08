@@ -1,16 +1,16 @@
-# polygon.setStrokeColor()
+# polygon.setStrokeWidth()
 
-Change the outline color of the polygon.
+Change the polygon stroke width.
 
 ```js
-polygon.setStrokeColor(color);
+polygon.setStrokeWidth(width);
 ```
 
 ## Parameters
 
 name           | type          | description
 ---------------|---------------|---------------------------------------
-color          | string        | HTML color string
+width          | number        | polygon width in pixel
 -----------------------------------------------------------------------
 
 ## Demo code
@@ -20,6 +20,7 @@ color          | string        | HTML color string
 ```
 
 ```js
+
 var GORYOKAKU_POINTS = [
   {lat: 41.79883, lng: 140.75675},
   {lat: 41.799240000000005, lng: 140.75875000000002},
@@ -52,17 +53,12 @@ var polygon = map.addPolygon({
 });
 
 
-// Change the fill color.
-var idx = 0;
-polygon.on(plugin.google.maps.event.POLYGON_CLICK, function(latLng) {
+// Change the polygon stroke width.
+polygon.on(plugin.google.maps.event.POLYLINE_CLICK, function(latLng) {
 
-  // Available HTML colors
-  // https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/Available-HTML-colors
-  //
-  polygon.setStrokeColor(["skyblue", "lime", "tomato", "bisque"][idx++]);
-  idx = idx > 3 ? 0 : idx;
+  // Change width of the polygon.
+  polygon.setStrokeWidth(20);
+
 });
 
 ```
-
-![](image.gif)

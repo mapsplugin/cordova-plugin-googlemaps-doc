@@ -1,6 +1,6 @@
 # circle.setVisible()
 
-Indicates if the circle is visible or invisible.
+Change visibility of the circle.
 
 ```
 circle.setVisible(flag);
