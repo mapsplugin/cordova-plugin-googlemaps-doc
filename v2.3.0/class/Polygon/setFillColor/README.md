@@ -1,26 +1,22 @@
-# event: POLYGON_CLICK
+# polygon.setFillColor()
 
-The POLYGON_CLICK event is fired when you click on the polygon.
+Change the filling color of the polygon.
 
-```
-polygon.on(plugin.google.maps.event.POLYGON_CLICK, onPolygonClick);
-
-function onPolygonClick(latLng) {
-  var polygon = this;
-}
+```js
+polygon.setFillColor(color);
 ```
 
 ## Parameters
 
 name           | type          | description
 ---------------|---------------|---------------------------------------
-latLng         | LatLng        | clicked position
+color          | string        | HTML Color strings
 -----------------------------------------------------------------------
 
 ## Demo code
 
 ```html
-<div id="map_canvas"></div>
+<div class="map" id="map_canvas"></div>
 ```
 
 ```js
@@ -39,7 +35,6 @@ var GORYOKAKU_POINTS = [
   {lat: 41.79909000000001, lng: 140.75465},
   {lat: 41.79883, lng: 140.75673}
 ];
-
 var mapDiv = document.getElementById("map_canvas");
 var map = plugin.google.maps.Map.getMap(mapDiv, {
   camera: {
@@ -47,35 +42,27 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
   }
 });
 
-// Show a virtual dialog (loader.js)
-showVirtualDialog(mapDiv, "Click on the polygon!");
-
-// Add a polygon
+// Add polygon
 var polygon = map.addPolygon({
   'points': GORYOKAKU_POINTS,
   'strokeColor' : '#AA00FF',
   'strokeWidth': 5,
   'fillColor' : '#880000',
-  'clickable' : true  // default = false
+  'clickable' : true   // default = false
 });
 
-// Catch the POLYGON_CLICK event
-polygon.on(plugin.google.maps.event.POLYGON_CLICK, function(clickLatLng) {
 
-  // You can change the style for instance.
-  polygon.setFillColor("blue");
-  polygon.setStrokeColor("green");
-  polygon.setStrokeWidth(10);
+// Change the fill color.
+var idx = 0;
+polygon.on(plugin.google.maps.event.POLYGON_CLICK, function(latLng) {
 
-  var marker = map.addMarker({
-    position: clickLatLng,
-    title: "You clicked here on the polygon!",
-    snippet: clickLatLng.toUrlValue()
-  });
-
-  marker.showInfoWindow();
-
+  // Available HTML colors
+  // https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/Available-HTML-colors
+  //
+  polygon.setFillColor(["skyblue", "lime", "tomato", "bisque"][idx++]);
+  idx = idx > 3 ? 0 : idx;
 });
+
 ```
 
 ![](image.gif)

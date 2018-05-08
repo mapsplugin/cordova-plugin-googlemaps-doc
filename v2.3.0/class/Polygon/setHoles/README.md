@@ -1,21 +1,23 @@
-# polygon.getHoles()
+# polygon.setHoles()
 
+Create new holes into the polygon.
 
-The getHoles() method returns the instance of Array of [BaseArrayClass](../../BaseArrayClass/README.md).
-
-You can modify the array instance using `insertAt()`, `setAt(),
-and `removeAt()` methods. The polygon is updated automatically.
-
-```
-var holes = polygon.getHoles();
+```js
+polygon.setHoles(holes);
 ```
 
-------------------------------------------------------------------------------------------
+## Parameters
+
+name           | type          | description
+---------------|---------------|---------------------------------------
+holes          | ILatLng[][]   | new holes
+-----------------------------------------------------------------------
 
 ## Demo code
 
-The below demo is an example how to update the polygon.
 
+You can make holes in polygon.
+setHoles() method takes Array of Array of LatLng.
 
 ```html
 <div id="map_canvas"></div>
@@ -34,9 +36,18 @@ var POINTS = [
   {"lat": 38.873207, "lng": -77.054959},
   {"lat": 38.873156, "lng": -77.055368},
   {"lat": 38.873367, "lng": -77.055418},
-  {"lat": 38.87318, "lng": -77.057427}
+  {"lat": 38.87318,  "lng": -77.057427}
 ];
 
+var HOLES = [
+  [
+    {"lat":38.870605, "lng":-77.05687},
+    {"lat":38.87154,  "lng":-77.056657},
+    {"lat":38.871734, "lng":-77.055464},
+    {"lat":38.870885, "lng":-77.054884},
+    {"lat":38.870203, "lng":-77.055801}
+  ]
+];
 var mapDiv = document.getElementById("map_canvas");
 
 // Create a map with specified camera bounds
@@ -46,27 +57,17 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
   }
 });
 
+// Show a virtual dialog (loader.js)
+showVirtualDialog(mapDiv, "Click on the polygon");
+
 var polygon = map.addPolygon({
   points: POINTS,
   clickable: true // default = false
 });
 
-var holes = polygon.getHoles();
-var mvcArray = new plugin.google.maps.BaseArrayClass();
-holes.push(mvcArray);
-
 polygon.on(plugin.google.maps.event.POLYGON_CLICK, function(latLng) {
 
-  var idx = mvcArray.getLength();
-  mvcArray.push(latLng);
-
-  var marker = map.addMarker({
-    position: latLng,
-    draggable: true
-  });
-  marker.on("position_changed", function(oldValue, newValue) {
-    mvcArray.setAt(idx, newValue);
-  });
+  polygon.setHoles(HOLES);
 
 });
 

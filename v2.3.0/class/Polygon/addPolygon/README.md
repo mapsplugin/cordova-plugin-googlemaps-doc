@@ -1,7 +1,30 @@
 # map.addPolygon()
 
-
 The map.addPolygon() method adds a polygon on the map.
+
+```
+(from v2.3.0 to current)
+var polygon = map.addPolygon(options)
+
+(from v2.0.0 to current)
+map.addPolygon(options, callback);
+```
+
+## Options
+
+params         | type          | description
+---------------|---------------|-----------------------------------------------------------------
+points         | ILatLng[]     | The ordered sequence of coordinates that designates a closed loop.
+holes?         | ILatLng[][]   | (optional) A hole is a region inside the polygon that is not filled.
+geodesic       | boolean       | (optional) set `true`, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth.
+strokeColor?   | string        | (optional) stroke color (HTML colors)
+strokeWidth?   | number        | (optional) stroke width in pixels
+fillColor?     | string        | (optional) inside filling color
+clickable?     | boolean       | (optional) set `true` to receive the `POLYGON_CLICK` event
+visible?       | boolean       | (optional) set `false` to create invisible polygon
+-------------------------------------------------------------------------------------------------
+
+## Demo code
 
 ```html
 <div id="map_canvas"></div>

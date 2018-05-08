@@ -13,14 +13,15 @@ map.addCircle(options, callback);
 ## Options
 
 params         | type          | description
----------------|---------------|---------------------------------------
-center         | LatLng        | center position of the map
+---------------|---------------|-----------------------------------------------------------------
+center         | ILatLng       | center position of the map
 radius         | number        | radius in meters
 strokeColor?   | string        | (optional) stroke color (HTML colors)
 strokeWidth?   | number        | (optional) stroke width in pixels
 fillColor?     | string        | (optional) inside filling color
 clickable?     | boolean       | (optional) set `true` to receive the `CIRCLE_CLICK` event
-------------------------------------------------------------------------------------------
+visible?       | boolean       | (optional) set `false` to create invisible circle
+-------------------------------------------------------------------------------------------------
 
 
 ## Demo code

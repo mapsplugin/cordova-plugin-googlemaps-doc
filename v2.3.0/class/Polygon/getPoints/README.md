@@ -1,12 +1,16 @@
 # polygon.getPoints()
 
+The getPoints() method returns an instance of [BaseArrayClass](../../BaseArrayClass/README.md).
+You can modify the array instance using `insertAt()`, `setAt()`, and `removeAt()` methods.
+The polygon is updated automatically.
+
 ```
 var points = polygon.getPoints();
 ```
 
-The getPoints() method returns an instance of [BaseArrayClass](../../BaseArrayClass/README.md).
-You can modify the array instance using `insertAt()`, `setAt()`, and `removeAt()` methods.
-The polygon is updated automatically.
+------------------------------------------------------------------------------------------
+
+## Demo code
 
 The below demo is an example how to update the polygon.
 
