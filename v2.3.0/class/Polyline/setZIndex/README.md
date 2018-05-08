@@ -1,6 +1,6 @@
 # polyline.setZIndex()
 
-Change the order in which this tile overlay is drawn with respect to other overlays (including GroundOverlays, TileOverlays, Polygons, and Circles but not Markers).
+Change the order in which this polyline overlay is drawn with respect to other overlays (including GroundOverlays, TileOverlays, Polygons, and Circles but not Markers).
 
 ```
 polyline.setZIndex(index);

@@ -1,6 +1,6 @@
 # circle.setZIndex()
 
-Change the order in which this tile overlay is drawn with respect to other overlays (including GroundOverlays, TileOverlays, Polylines, and Polygons but not Markers).
+Change the order in which this circle overlay is drawn with respect to other overlays (including GroundOverlays, TileOverlays, Polylines, and Polygons but not Markers).
 
 ```
 circle.setZIndex(index);

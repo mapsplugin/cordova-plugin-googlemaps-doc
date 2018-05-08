@@ -20,6 +20,7 @@ color?         | string        | (optional) stroke color (HTML colors)
 width?         | number        | (optional) stroke width in pixels
 clickable?     | boolean       | (optional) set `true` to receive the `POLYLINE_CLICK` event
 visible?       | boolean       | (optional) set `false` to create invisible polygon
+z-index?       | number        | (optional) z-index
 -------------------------------------------------------------------------------------------------
 
 ## Demo code

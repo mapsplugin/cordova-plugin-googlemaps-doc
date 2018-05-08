@@ -22,6 +22,7 @@ strokeWidth?   | number        | (optional) stroke width in pixels
 fillColor?     | string        | (optional) inside filling color
 clickable?     | boolean       | (optional) set `true` to receive the `POLYGON_CLICK` event
 visible?       | boolean       | (optional) set `false` to create invisible polygon
+z-index?       | number        | (optional) z-index
 -------------------------------------------------------------------------------------------------
 
 ## Demo code
