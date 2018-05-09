@@ -200,7 +200,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
     <th><a href="./PANORAMA_CAMERA_CHANGE/README.md">PANORAMA_CAMERA_CHANGE</a></th>
-    <td>Arguments:  PanoramaCameraPOV<br>This event is fired when panorama is moved, such as panning gesture.</td>
+    <td>Arguments:  PanoramaCamera<br>This event is fired when panorama is moved, such as panning gesture.</td>
   </tr>
   <tr>
     <th><a href="./PANORAMA_CLICK/README.md">PANORAMA_CLICK</a></th>
