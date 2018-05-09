@@ -17,8 +17,6 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 
 ### Create one circle
 
-- _This method works **after the MAP_READY event**._
-
 ```js
 var GOOGLE = {"lat" : 37.422858, "lng" : -122.085065};
 var mapDiv = document.getElementById("map_canvas");
