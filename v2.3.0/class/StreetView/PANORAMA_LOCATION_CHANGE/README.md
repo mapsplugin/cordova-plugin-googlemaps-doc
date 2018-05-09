@@ -3,12 +3,6 @@
 This event is fired when StreetView panorama is moved.
 
 ```
-var panorama = plugin.google.maps.StreetView.getPanorama(div);
-
-panorama.moveCamera({
-  target: {lat: 42.345573, lng: -71.098326}
-});
-
 panorama.on(plugin.google.maps.event.PANORAMA_LOCATION_CHANGE, function(location) {
 
 });
@@ -36,8 +30,8 @@ bearing        | number         | angle from north (clockwise)
 ## Demo code
 
 ```html
-<div class="map" id="pano_canvas" >
-  <div class="map" id="map_canvas"></div>
+<div id="pano_canvas" >
+  <div id="map_canvas"></div>
 </div>
 ```
 
