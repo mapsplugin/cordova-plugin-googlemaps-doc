@@ -1,5 +1,8 @@
 # poly utility
 
+------------
+## API Reference
+
 ## Methods
 
 <table>

@@ -2,13 +2,17 @@
 
 A LatLngBounds instance represents a rectangle in geographical coordinates, including one that crosses the 180 degrees longitudinal meridian.
 
-## Create
+---------------------------------------------------------------
+
+## API Reference
+
+### Create
 
 ```js
 var latLngBounds  = new plugin.google.maps.LatLngBounds([Array.<LatLng>]);
 ```
 
-## Methods
+### Methods
 
 <table>
   <tr>

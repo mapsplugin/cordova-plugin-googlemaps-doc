@@ -7,10 +7,22 @@ Latitude ranges between -90 and 90 degrees, inclusive. Values above or below thi
 var latLng = new plugin.google.maps.LatLng(40.712216,-74.22655);
 ```
 
-## Tips
+## ILatLng
 
-cordova-googlemaps-plugin allows you to write very more simple format for LatLng class.
-The below code works with this plugin.
+The prefix word `I` indicates `interface`.
+
+```
+ILatLng = {
+
+  lat: number,
+
+  lng: number
+}
+```
+
+The most of methods necessary only  `lat` value and `lng` value.
+Because of this, you can give latitude/longitude pairs with ILatLng.
+For example, the below code works with this plugin.
 
 ```js
 map.animateCamera({
@@ -22,16 +34,25 @@ map.animateCamera({
 });
 ```
 
-***
+---------------------------------------------------------------
 
+## API Reference
 
-# LatLng Class Reference
+### Create
+
+```js
+var latLngBounds  = new plugin.google.maps.LatLng(latitude, longitude);
+```
+
+### Methods
 
 Method                        | Return value | Description
 ------------------------------|--------------|----------------
 equals(other:LatLng)          | boolean      | Return true if other position is as the same as this LatLng.
 toString()                    | string       | Converts to string representation.
 toUrlValue(precision?:number) | string       | Returns a string of the form "lat,lng" for this LatLng. We round the lat/lng values to 6 decimal places by default.
+
+### Properties
 
 Property      | Return value | Description
 --------------|--------------|-------------------------------------------

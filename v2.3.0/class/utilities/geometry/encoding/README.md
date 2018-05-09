@@ -1,5 +1,8 @@
 # encoding utility
 
+------------
+## API Reference
+
 ## Methods
 
 <table>

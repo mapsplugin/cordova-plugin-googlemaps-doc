@@ -138,7 +138,11 @@ map.addKmlOverlay({
 
 <img src="./KML_CLICK/image.gif" width="200">
 
-## Create
+---------------------------------------------------------------
+
+## API Reference
+
+### Create
 
 <table>
     <tr>
@@ -147,7 +151,7 @@ map.addKmlOverlay({
     </tr>
 </table>
 
-## Methods
+### Methods
 
 <table>
   <tr>
@@ -164,7 +168,7 @@ map.addKmlOverlay({
   </tr>
 </table>
 
-## Events
+### Events
 <table>
     <tr>
         <th><a href="./GROUND_OVERLAY_CLICK/README.md">GROUND_OVERLAY_CLICK</a></th>

@@ -2,7 +2,8 @@
 
 **This is a static class.**
 
-# LocationService Class Reference
+------------
+## API Reference
 
 <table>
 <tr>

@@ -1,5 +1,8 @@
 # spherical utility
 
+------------
+## API Reference
+
 ## Methods
 <table>
     <tr>

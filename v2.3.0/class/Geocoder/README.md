@@ -9,7 +9,10 @@ You can do
 You can also give multiple locations to the geocoder method at the same time,
 then you can receive the results each time through the [BaseArrayClass](../BaseArrayClass/README.md) instance.
 
-## Examples
+
+---------------------------------------------------------------
+
+## API Reference
 
 <table class="reference">
     <tr>

@@ -1,6 +1,8 @@
 # Environment class
 
-## Methods
+Environment class provides methods that are not affected to the map view, but it is necessary methods.
+
+## API Reference
 
 <table >
     <tr>

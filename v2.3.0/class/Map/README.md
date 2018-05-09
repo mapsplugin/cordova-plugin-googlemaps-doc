@@ -411,7 +411,7 @@ Before using this plugin, please understand how this plugin work.
     </tr>
 </table>
 
-## Events
+### Events
 <table class="reference">
     <tr>
         <th><a href="./MAP_CLICK/README.md">MAP_CLICK</a></th>

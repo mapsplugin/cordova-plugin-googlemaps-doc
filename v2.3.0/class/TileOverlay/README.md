@@ -1,6 +1,9 @@
 # TileOverlay class
 
-# Create
+------------
+## API Reference
+
+### Create
 
 <table>
     <tr>
@@ -9,7 +12,7 @@
     </tr>
 </table>
 
-## Methods
+### Methods
 
 <table>
     <tr>
