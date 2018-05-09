@@ -41,7 +41,7 @@ panorama.moveCamera({
 });
 ```
 
-<img src="image1.png" width="250">
+<img src="getPanorama/image1.png" width="250">
 
 
 ------------
@@ -123,12 +123,68 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
 
 <table>
   <tr>
-      <th><a href="./setClickable/README.md">setClickable()</a></th>
-      <td>Change click-ability of the kml overlay.</td>
+      <th><a href="./animateCamera/README.md">animateCamera()</a></th>
+      <td>Moves the camera <b>with animation</b>.</td>
+  </tr>
+  <tr>
+      <th><a href="./moveCamera/README.md">moveCamera()</a></th>
+      <td>Moves the camera <b>without animation</b>.</td>
   </tr>
   <tr>
       <th><a href="./setVisible/README.md">setVisible()</a></th>
       <td>Change visibility of the kml overlay.</td>
+  </tr>
+  <tr>
+      <th>getVisible()</th>
+      <td>Returns true if the panorama is visible.</td>
+  </tr>
+  <tr>
+      <th>setPanningGesturesEnabled()</th>
+      <td>Enable or disable panning gesture.</td>
+  </tr>
+  <tr>
+      <th>getPanningGesturesEnabled()</th>
+      <td>Returns true if the panning gesture is enable.</td>
+  </tr>
+  <tr>
+      <th>setZoomGesturesEnabled()</th>
+      <td>Enable or disable zoom gesture.</td>
+  </tr>
+  <tr>
+      <th>getZoomGesturesEnabled()</th>
+      <td>Returns true if the zoom gesture is enable.</td>
+  </tr>
+  <tr>
+      <th>setNavigationEnabled()</th>
+      <td>Enable or disable navigation link.</td>
+  </tr>
+  <tr>
+      <th>getNavigationEnabled()</th>
+      <td>Returns true if the navigation link is enable.</td>
+  </tr>
+  <tr>
+      <th>setStreetNamesEnabled()</th>
+      <td>Enable or disable street name label.</td>
+  </tr>
+  <tr>
+      <th>getStreetNamesEnabled()</th>
+      <td>Returns true if the street name label is enable.</td>
+  </tr>
+  <tr>
+      <th>getLocation()</th>
+      <td>Return the last panorama location.</td>
+  </tr>
+  <tr>
+      <th>getPosition()</th>
+      <td>Return position of the last panorama location.</td>
+  </tr>
+  <tr>
+      <th>getLinks()</th>
+      <td>Return links of the last panorama location.</td>
+  </tr>
+  <tr>
+      <th>getPanoId()</th>
+      <td>Return panoId of the last panorama location.</td>
   </tr>
   <tr>
     <th><a href="./remove/README.md">remove()</a></th>
@@ -138,8 +194,12 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
 
 ### Events
 <table>
-    <tr>
-        <th><a href="./GROUND_OVERLAY_CLICK/README.md">GROUND_OVERLAY_CLICK</a></th>
-        <td>Arguments:  <a href="../LatLng/README.md">LatLng</a><br>This event is fired when you click on a circle.</td>
-    </tr>
+  <tr>
+    <th><a href="./PANORAMA_LOCATION_CHANGE/README.md">PANORAMA_LOCATION_CHANGE</a></th>
+    <td>Arguments:  PanoramaLocation<br>This event is fired when StreetView panorama is moved.</td>
+  </tr>
+  <tr>
+    <th><a href="./PANORAMA_CAMERA_CHANGE/README.md">PANORAMA_CAMERA_CHANGE</a></th>
+    <td>Arguments:  PanoramaCameraPOV<br>This event is fired when panorama is moved, such as panning gesture.</td>
+  </tr>
 </table>

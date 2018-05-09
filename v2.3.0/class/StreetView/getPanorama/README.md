@@ -1,123 +1,56 @@
-# plugin.google.maps.Map.getMap()
+# plugin.google.maps.StreetView.getPanorama()
 
-## Create a map
+## Create a panorama view
 
-You can create a google maps using `plugin.google.maps.Map.getMap(div)`.
+You can create a panorama view using `plugin.google.maps.StreetView.getPanorama(div)`.
 
 Since the cordova-plugin-googlemaps has two side: `JavaScript` and `native`.
 
-The native side initialization takes a time kind of longer than JavaScript side, you need to wait the **plugin.google.maps.event.MAP_READY** event.
+The native side initialization takes a time kind of longer than JavaScript side, you need to wait the **plugin.google.maps.event.PANORAMA_READY** event.
 
 ```html
-<div style="width:500px;height:500px" id="map_canvas1"></div>
+<div style="width:500px;height:500px" id="pano_canvas1"></div>
 ```
 
-```javascript
-var div = document.getElementById("map_canvas1");
-var map = plugin.google.maps.Map.getMap(div);
-map.one(plugin.google.maps.event.MAP_READY, function() {
-  console.log("--> map_canvas1 : ready.");
+```js
+var div = document.getElementById("pano_canvas1");
+
+var panorama = plugin.google.maps.StreetView.getPanorama(div);
+
+panorama.one(plugin.google.maps.PANORAMA_READY, function() {
+  console.log("--> pano_canvas1 : ready.");
 });
 ```
 
-![](image1.png)
+<img src="image1.png" width="250">
 
 -----------------------------------------------------------------------------------------------
 
-## Create a map with initialize options
+## Create a panorama with initialize options
 
-You can specify the map options with **getMap()** method.
+You can specify the options with **getPanorama()** method.
 
-Check out the available options at the [setOptions()](../setOptions/README.md) method.
 
 ```js
-var div = document.getElementById("map_canvas2");
-var map = plugin.google.maps.Map.getMap(div, {
-  'mapType': plugin.google.maps.MapTypeId.ROADMAP,
-  'controls': {
-    'compass': true,
-    'indoorPicker': true,
-    'myLocationButton': false,
-    'myLocation': false,   // (blue dot)
-    'zoom': true,          // android only
-    'mapToolbar': true     // android only
+var div = document.getElementById("panorama_canvas2");
+var panorama = plugin.google.maps.StreetView.getPanorama(div, {
+  camera: {
+    target: {lat: 42.345573, lng: -71.098326},
+    zoom: 1,
+    bearing: 235,
+    tilt: 10,
+    radius: 10,  // Search the nearest panorama location from the target property. Default is 50m.
+    source: plugin.google.maps.StreetView.Source.OUTSIDE // DEFAULT or OUTSIDE
   },
-  'gestures': {
-    'scroll': true,
-    'tilt': true,
-    'rotate': true,
-    'zoom': true
+  gestures: {
+    panning: true,
+    zoom: true
   },
-  'styles': [
-    {
-      featureType: "all",
-      stylers: [
-        { saturation: -80 }
-      ]
-    },{
-      featureType: "road.arterial",
-      elementType: "geometry",
-      stylers: [
-        { hue: "#00ffee" },
-        { saturation: 50 }
-      ]
-    },{
-      featureType: "poi.business",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ],
-  'camera' : {
-    target: {
-      lat: 37.422375,
-      lng: -122.084207
-    },
-    zoom: 10
-  },
-  'preferences': {
-    'zoom': {
-      'minZoom': 10,
-      'maxZoom': 18
-    },
-    'building': false
+  controls: {
+    navigation: true,   // White arrows to the next location
+    streetNames: true
   }
 });
-map.one(plugin.google.maps.event.MAP_READY, function() {
-  console.log("--> map_canvas2 : ready.");
-});
 ```
 
-![](image2.png)
-
------------------------------------------------------------------------------------------------
-
-## Put any HTML elements on the map
-
-The one of the benefits of the cordova-plugin-googlemaps is you are able to put any HTML elements on the map.
-
-```html
-<div class="map" id="map_canvas3" style="position:relative">
-  <span class="smallPanel"><button>HTML button1</button></span>
-  <span class="smallPanel" style="position:absolute;bottom:1em;right:1em;"><button>HTML button2</button></span>
-</div>
-```
-
-```js
-var div = document.getElementById("map_canvas3");
-var map = plugin.google.maps.Map.getMap(div);
-map.one(plugin.google.maps.event.MAP_READY, function() {
-  console.log("--> map_canvas3 : ready.");
-});
-var button = div.getElementsByTagName('button')[0];
-button.addEventListener('click', function() {
-  alert("The HTML button1 on the map is clicked.");
-});
-var button = div.getElementsByTagName('button')[1];
-button.addEventListener('click', function() {
-  alert("The HTML button2 on the map is clicked.");
-});
-```
-
-![](image3.gif)
+<img src="image2.png" width="250">
