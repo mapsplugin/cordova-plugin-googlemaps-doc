@@ -17,8 +17,11 @@ var div = document.getElementById("pano_canvas1");
 
 var panorama = plugin.google.maps.StreetView.getPanorama(div);
 
+
 panorama.one(plugin.google.maps.PANORAMA_READY, function() {
   console.log("--> pano_canvas1 : ready.");
+
+  panorama.setPosition({lat: 42.345573, lng: -71.098326});
 });
 ```
 

@@ -5,7 +5,7 @@ This event is fired when StreetView panorama is moved.
 ```
 var panorama = plugin.google.maps.StreetView.getPanorama(div);
 
-panorama.moveCamera({
+panorama.setPosition({
   target: {lat: 42.345573, lng: -71.098326}
 });
 

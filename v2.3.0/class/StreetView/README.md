@@ -36,7 +36,7 @@ var div = document.getElementById("pano_canvas1");
 
 var panorama = plugin.google.maps.StreetView.getPanorama(div);
 
-panorama.moveCamera({
+panorama.setPosition({
   target: {lat: 42.345573, lng: -71.098326}
 });
 ```
@@ -63,7 +63,7 @@ The `PANORAMA_LOCATION_CHANGE` event gives the information where the location is
 ```js
 var panorama = plugin.google.maps.StreetView.getPanorama(div);
 
-panorama.moveCamera({
+panorama.setPosition({
   target: {lat: 42.345573, lng: -71.098326}
 });
 
@@ -96,10 +96,11 @@ As described in [The `PANORAMA_LOCATION_CHANGE` event](#the-panorama_location_ch
 Using panoId avoids this trouble. Since the panoId is bounded to a particular panorama photo (location), you can always display exactly what you want.
 
 ```
-panorama.moveCamera({
-  'panoId': 'FEpIJhSgQJOQCL3wOzoAAA' // <-- this is dummy id
+panorama.setPosition({
+  'target': 'FEpIJhSgQJOQCL3wOzoAAA'
 })
 ```
+**Note that the above is dummy id.**
 
 <img src="take_panorama3.png" >
 
@@ -123,16 +124,16 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
 
 <table>
   <tr>
-      <th><a href="./animateCamera/README.md">animateCamera()</a></th>
-      <td>Moves the camera <b>with animation</b>.</td>
+      <th><a href="./setPosition/README.md">setPosition()</a></th>
+      <td>Sets the current LatLng position for the Street View panorama.</td>
   </tr>
   <tr>
-      <th><a href="./moveCamera/README.md">moveCamera()</a></th>
-      <td>Moves the camera <b>without animation</b>.</td>
+      <th><a href="./setPov/README.md">setPov()</a></th>
+      <td>Sets the point of view for the Street View panorama.</td>
   </tr>
   <tr>
-      <th><a href="./setVisible/README.md">setVisible()</a></th>
-      <td>Change visibility of the kml overlay.</td>
+      <th>setVisible()</th>
+      <td>Change visibility of the Street View panorama.</td>
   </tr>
   <tr>
       <th>getVisible()</th>
@@ -140,7 +141,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
       <th>setPanningGesturesEnabled()</th>
-      <td>Enable or disable panning gesture.</td>
+      <td>Determines whether the user will be able to re-orient the camera by dragging.</td>
   </tr>
   <tr>
       <th>getPanningGesturesEnabled()</th>
@@ -148,7 +149,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
       <th>setZoomGesturesEnabled()</th>
-      <td>Enable or disable zoom gesture.</td>
+      <td>Determines whether the user will be able to pinch to zoom.</td>
   </tr>
   <tr>
       <th>getZoomGesturesEnabled()</th>
@@ -156,7 +157,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
       <th>setNavigationEnabled()</th>
-      <td>Enable or disable navigation link.</td>
+      <td>Determines whether the user will be able to move to a different panorama. Users can use a single tap on navigation links, or double tap the view, to move to a new panorama.</td>
   </tr>
   <tr>
       <th>getNavigationEnabled()</th>
@@ -164,7 +165,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
       <th>setStreetNamesEnabled()</th>
-      <td>Enable or disable street name label.</td>
+      <td>Determines whether the user is able to see street names displayed on the ground.</td>
   </tr>
   <tr>
       <th>getStreetNamesEnabled()</th>
@@ -187,7 +188,7 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
       <td>Return panoId of the last panorama location.</td>
   </tr>
   <tr>
-    <th><a href="./remove/README.md">remove()</a></th>
+    <th>remove()</th>
     <td>Remove the panorama view.</td>
   </tr>
 </table>

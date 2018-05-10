@@ -66,9 +66,8 @@ marker.on("position_changed", function(oldPosition, newPosition) {
 });
 
 marker.on(plugin.google.maps.event.MARKER_DRAG_END, function(latLng) {
-  panorama.animateCamera({
-    target: latLng,
-    duration: 100
+  panorama.setPosition({
+    target: latLng
   });
 });
 panorama.on(plugin.google.maps.event.PANORAMA_LOCATION_CHANGE, function(location) {
