@@ -16,8 +16,11 @@ This documentation is designed for people familiar with JavaScript programming, 
 
 ## License
 
-- [Terms of Services](./Terms-of-Services/README.md)
-- [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
+The cordova-plugin-googlemaps plugin **itself** is provided under the Apache License version 2.0.
+- [cordova-plugin-googlemaps license](https://github.com/mapsplugin/cordova-plugin-googlemaps/blob/master/LICENSE)
+
+You also have to follow the **Terms of Services of Google Maps APIs.**
+- [Terms of Services of Google Maps APIs](./Terms-of-Services/README.md)
 
 ## Release notes
 
