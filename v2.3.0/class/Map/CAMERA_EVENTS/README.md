@@ -1,0 +1,73 @@
+# CAMERA_MOVE events
+
+These events are fired when the camera moves.
+
+- The `CAMERA_MOVE_START` event is fired when the camera moving starts.</li>
+- The `CAMERA_MOVE` event is fired while the camera is moving.</li>
+- The `CAMERA_MOVE_END` event is fired when the camera is stopped.</li>
+
+## Parameters
+
+name           | type                                              | description
+---------------|---------------------------------------------------|-----------------
+cameraPosition | [CameraPosition](../../CameraPosition/README.md)  | camera target
+-------------------------------------------------------------------------------------
+
+
+## Demo code
+
+```html
+<div class="map" id="map_canvas">
+  <table  class="smallPanel">
+      <tr>
+          <th rowspan="2">target</th>
+          <td id="lat"></td>
+      </tr>
+      <tr>
+          <td id="lng"></td>
+      </tr>
+      <tr>
+          <th>zoom</th>
+          <td id="zoom"></td>
+      </tr>
+      <tr>
+          <th>tilt</th>
+          <td id="tilt"></td>
+      </tr>
+      <tr>
+          <th>bearing</th>
+          <td id="bearing"></td>
+      </tr>
+  </table>
+</div>
+```
+
+```js
+var fields = {
+  "lat": document.getElementById("lat"),
+  "lng": document.getElementById("lng"),
+  "zoom": document.getElementById("zoom"),
+  "tilt": document.getElementById("tilt"),
+  "bearing": document.getElementById("bearing")
+};
+
+var div = document.getElementById("map_canvas");
+var map = plugin.google.maps.Map.getMap(div);
+
+// Catch all camera events
+map.on(plugin.google.maps.event.CAMERA_MOVE_START, onCameraEvents);
+map.on(plugin.google.maps.event.CAMERA_MOVE, onCameraEvents);
+map.on(plugin.google.maps.event.CAMERA_MOVE_END, onCameraEvents);
+
+function onCameraEvents(cameraPosition) {
+  // Display the current camera position
+
+  fields.lat.innerText = cameraPosition.target.lat;
+  fields.lng.innerText = cameraPosition.target.lng;
+  fields.zoom.innerText = cameraPosition.zoom;
+  fields.tilt.innerText = cameraPosition.tilt;
+  fields.bearing.innerText = cameraPosition.bearing;
+}
+```
+
+![](image.gif)

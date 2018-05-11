@@ -74,13 +74,15 @@
 
 ## API Reference
 
-### Dynamic Class
+### Dynamic Classes
 
 - [Map class](./class/Map/README.md)
 
 - [Marker class](./class/Marker/README.md)
 
 - [MarkerCluster class](./class/MarkerCluster/README.md)
+
+- [HtmlInfoWindow class](./class/HtmlInfoWindow/README.md)
 
 - [Polyline class](./class/Polyline/README.md)
 
@@ -92,6 +94,12 @@
 
 - [GroundOverlay class](./class/GroundOverlay/README.md)
 
+- [KmlOverlay class](./class/KmlOverlay/README.md)
+
+- [Geocoder class](./class/Geocoder/README.md)
+
+- [Environment class](./class/Environment/README.md)
+
 - [LatLng class](./class/LatLng/README.md)
 
 - [LatLngBounds class](./class/LatLngBounds/README.md)
@@ -100,13 +108,10 @@
 
 - [BaseArray class](./class/BaseArrayClass/README.md)
 
+- [CameraPosition object](./class/CameraPosition/README.md)
 
-### Static class
-- [HtmlInfoWindow class](./class/HtmlInfoWindow/README.md)
 
-- [Geocoder class](./class/Geocoder/README.md)
-
-- [Environment class](./class/Environment/README.md)
+### Static classes
 
 - [geometry.spherical](./class/utilities/geometry/spherical/README.md)
 
@@ -115,11 +120,6 @@
 - [geometry.poly](./class/utilities/geometry/poly/README.md)
 
 - [LocationService](./class/locationservice/README.md)
-
-### Interface
-
-- [CameraPosition object](./class/CameraPosition/README.md)
-
 
 # demo code repository
  - https://github.com/mapsplugin/v2.0-demo
