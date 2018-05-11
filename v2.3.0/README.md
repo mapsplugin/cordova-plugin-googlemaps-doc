@@ -10,8 +10,8 @@ This documentation is designed for people familiar with JavaScript programming, 
 
 ## Guides
 
-  - [Generate api keys](./api_key/README.md)
-  - [Hello world](./hello-world/README.md)
+ - [Generatapi keys](./api_key/README.md)
+ - [Hello world](./hello-world/README.md)
 
 
 ## License
