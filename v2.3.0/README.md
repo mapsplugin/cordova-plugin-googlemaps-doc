@@ -12,7 +12,7 @@ This documentation is designed for people familiar with JavaScript programming, 
 
   - [Generate api keys](./api_key/README.md)
 
-  - [Hello world](./hello_world/README.md)
+  - [Hello world](./hello-world/README.md)
 
 
 ## License
