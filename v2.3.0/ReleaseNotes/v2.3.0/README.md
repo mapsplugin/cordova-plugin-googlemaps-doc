@@ -4,7 +4,7 @@ Featured points
 ---
 - [New feature: StreetView](#new-feature-streetview)
 - [A callback is no longer required for the most part.](#a-callback-is-no-longer-required-for-the-most-part)
-  - [What’s the trick?](#this-is-a-big-breaking-change)
+  - [What’s the trick?](#whats-the-trick)
   - [Which methods are available with this new style?](#which-methods-are-available-with-this-new-style)
 - [`Promise` is supported instead of `callback`](#promise-is-supported-instead-of-callback)
 
