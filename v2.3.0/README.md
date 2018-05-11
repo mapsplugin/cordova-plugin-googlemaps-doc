@@ -10,8 +10,8 @@ This documentation is designed for people familiar with JavaScript programming, 
 
 ## Guides
 
- - [Generatapi keys](./api_key/README.md)
- - [Hello world](./hello-world/README.md)
+ - [Generate api keys](./api_key/README.md)
+ - [Adding a Map with a Marker](./hello-world/README.md)
 
 
 ## License
@@ -28,50 +28,13 @@ This documentation is designed for people familiar with JavaScript programming, 
     <th>@ionic-native</th>
   </tr>
   <tr>
-    <td>Jan/29/2018</td>
+    <td>May/11/2018</td>
     <td>
-      <a href="./ReleaseNotes/v2.2.0/README.md">v2.2.0 - v2.2.8</a>
+      <a href="./ReleaseNotes/v2.3.0/README.md">v2.3.0</a>
     </td>
     <td>
-      <a href="./ReleaseNotes/ionic-googlemaps-4.6.0/README.md">v4.6.0</a>
+      <a href="./ReleaseNotes/ionic-googlemaps-4.8.0/README.md">v4.8.0</a>
     </td>
-  </tr>
-  <tr>
-    <td>Nov/2/2017</td>
-    <td>
-      <a href="./ReleaseNotes/v2.1.0/README.md">v2.1.0 and v2.1.1</a>
-    </td>
-    <td>
-      <a href="./ReleaseNotes/ionic-googlemaps-4.4.0/README.md">v4.4.0</a>
-    </td>
-  </tr>
-  <tr>
-    <td>Sep/?/2017</td>
-    <td>(unknown)</td>
-    <td>
-      <a href="./ReleaseNotes/ionic-googlemaps-4.3.3/README.md">v4.3.3</a>
-    </td>
-  </tr>
-  <tr>
-    <td>Sep/5/2017</td>
-    <td>
-      <a href="./ReleaseNotes/v2.0-stable/README.md">v2.0-stable</a>
-    </td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>Aug/2017</td>
-    <td>
-      <a href="./ReleaseNotes/v2.0-beta3/README.md">v2.0-beta3</a>
-    </td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>Summer/2017</td>
-    <td>
-      <a href="./ReleaseNotes/v2.0-beta2/README.md">v2.0-beta2</a>
-    </td>
-    <td>&nbsp;</td>
   </tr>
 </table>
 
