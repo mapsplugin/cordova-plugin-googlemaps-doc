@@ -11,14 +11,12 @@ This documentation is designed for people familiar with JavaScript programming, 
 ## Guides
 
   - [Generate api keys](./api_key/README.md)
-
   - [Hello world](./hello-world/README.md)
 
 
 ## License
 
 - [Terms of Services](./Terms-of-Services/README.md)
-
 - [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## Release notes
