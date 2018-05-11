@@ -115,8 +115,7 @@ This documentation is designed for people familiar with JavaScript programming, 
 
 - [BaseArray class](./class/BaseArrayClass/README.md)
 
-- [CameraPosition object](./class/CameraPosition/README.md)
-
+- [StreetView class](./class/StreetView/README.md)
 
 ### Static classes
 
@@ -127,3 +126,7 @@ This documentation is designed for people familiar with JavaScript programming, 
 - [geometry.poly](./class/utilities/geometry/poly/README.md)
 
 - [LocationService](./class/locationservice/README.md)
+
+### Object
+
+- [CameraPosition object](./class/CameraPosition/README.md)
