@@ -4,7 +4,7 @@ Featured points
 ---
 - [New feature: StreetView](#new-feature-streetview)
 - [A callback is no longer required for the most part.](#a-callback-is-no-longer-required-for-the-most-part)
-  - [What’s the trick?](#this-is-a-big-breaking-change)
+  - [Whatâ€™s the trick?](#this-is-a-big-breaking-change)
   - [Which methods are available with this new style?](#which-methods-are-available-with-this-new-style)
 - [`Promise` is supported instead of `callback`](#promise-is-supported-instead-of-callback)
 
@@ -205,43 +205,43 @@ map.animateCamera({
 
 ## logs
 
-Add: Support `Promise`
-Fix: Touch events bleed through divs to the map when they are animated over the map (#2255)
-Merge pull request (#2245) from TheDuc/multiple_maps - Check whether lastLocation is null before calling getTime()
-Fix: colored icon does not work on Android (#2246)
-Fix: addTileOverlay() does not accept `file://` protocol on iOS
-Fix: (iOS) map.setMyLocationButtonEnabled() does not work
-Fix: (iOS) strange behavior of map.setDiv()
-Add: warning if the div is too small.
-Remove: `Environment.setDebug()`
-Fix: error show htmlinfowindow (#2217)
-Fix: can not load the local KML file if the application name contains space characters.
-Fix: Rebuild tbxml-android.aar (#2215)
-Fix: use "self.exec()" instead of "exec"
-Fix: options.controls.myLocationButton does not work for map.setOptions() (#2209)
-Fix: strange behaviors on Android
-Fix: the values of "makerOptions" variable are not defined as property
-Fix: tiny memory leak point
-Fix: the "type" property should not be lowercase
-Update: Allow remove action before map is ready (#2200)
-Update: positioning mechanism
-Fix: attachToWebView is undefined error
-Fix: putHtmlElements() does not return sometimes
-Fix: HtmlInfoWindow always 80% of the map div width
-Fix: plugin/google/maps/MyPluginLayout.java:463: error: incompatible types: Object cannot be converted to int (#2204)
-Fix: map disappears when the user executes `map.setClickable(false)`
-Fix: the HtmlInfoWindow assigned on the marker of markerCluster does not close the infoWindow.
-Fix: bindTo()
-Fix: Second map is not displayed for some reason
-Fix: map disappears when the user executes `map.setClickable(false)`
-Add: Check the environment at the app starting time even on iOS
-Fix: Application stuck in splash screen after install google maps native (#2191)
-Merge pull request (#2193) from tsbgarner/multiple_maps - Improvements to coordinate precision
-Merge pull request (#2188): from makers-mark/master
-Fix: Ionic: map unexpected animation on tab switching (#2166)
-Fix: getMyLocation don´t work v 2.2.9 (#2183)
-Fix: xml2js error even in v2.2.9 (#2182)
-Fix: remove the _gmaps_cdv_ class on map.remove() even there is another map is displayed
-Fix: incorrect regular expression pattern for iOS Application name
-Merge pull request (#2200): Added exception for remove action before map is ready
-Fix: Typo in MarkerCluster.js (#2198)
+- Add: Support `Promise`
+- Fix: Touch events bleed through divs to the map when they are animated over the map (#2255)
+- Merge pull request (#2245) from TheDuc/multiple_maps - Check whether lastLocation is null before calling getTime()
+- Fix: colored icon does not work on Android (#2246)
+- Fix: addTileOverlay() does not accept `file://` protocol on iOS
+- Fix: (iOS) map.setMyLocationButtonEnabled() does not work
+- Fix: (iOS) strange behavior of map.setDiv()
+- Add: warning if the div is too small.
+- Remove: `Environment.setDebug()`
+- Fix: error show htmlinfowindow (#2217)
+- Fix: can not load the local KML file if the application name contains space characters.
+- Fix: Rebuild tbxml-android.aar (#2215)
+- Fix: use "self.exec()" instead of "exec"
+- Fix: options.controls.myLocationButton does not work for map.setOptions() (#2209)
+- Fix: strange behaviors on Android
+- Fix: the values of "makerOptions" variable are not defined as property
+- Fix: tiny memory leak point
+- Fix: the "type" property should not be lowercase
+- Update: Allow remove action before map is ready (#2200)
+- Update: positioning mechanism
+- Fix: attachToWebView is undefined error
+- Fix: putHtmlElements() does not return sometimes
+- Fix: HtmlInfoWindow always 80% of the map div width
+- Fix: plugin/google/maps/MyPluginLayout.java:463: error: incompatible types: Object cannot be converted to int (#2204)
+- Fix: map disappears when the user executes `map.setClickable(false)`
+- Fix: the HtmlInfoWindow assigned on the marker of markerCluster does not close the infoWindow.
+- Fix: bindTo()
+- Fix: Second map is not displayed for some reason
+- Fix: map disappears when the user executes `map.setClickable(false)`
+- Add: Check the environment at the app starting time even on iOS
+- Fix: Application stuck in splash screen after install google maps native (#2191)
+- Merge pull request (#2193) from tsbgarner/multiple_maps - Improvements to coordinate precision
+- Merge pull request (#2188): from makers-mark/master
+- Fix: Ionic: map unexpected animation on tab switching (#2166)
+- Fix: getMyLocation donÂ´t work v 2.2.9 (#2183)
+- Fix: xml2js error even in v2.2.9 (#2182)
+- Fix: remove the _gmaps_cdv_ class on map.remove() even there is another map is displayed
+- Fix: incorrect regular expression pattern for iOS Application name
+- Merge pull request (#2200): Added exception for remove action before map is ready
+- Fix: Typo in MarkerCluster.js (#2198)
