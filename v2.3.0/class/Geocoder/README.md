@@ -21,6 +21,6 @@ then you can receive the results each time through the [BaseArrayClass](../BaseA
     </tr>
       <tr>
           <th><a href="./reverse_geocoding/README.md">Reverse geocoding</a></th>
-          <td>Get latitude / longitude pair(s) from the giving address(es).</td>
+          <td>Get the giving addresses from latitude / longitude pair(s)  .</td>
       </tr>
 </table>
