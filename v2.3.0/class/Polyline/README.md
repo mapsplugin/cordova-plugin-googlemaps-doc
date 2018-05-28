@@ -20,7 +20,6 @@ _This class extends [BaseClass](../BaseClass/README.md)_.
 
 The **map.addPolyline()** method draws one polyline onto the map.
 
-- _This method works **after the MAP_READY event**._
 
 ```js
 var HND_AIR_PORT = {lat: 35.548852, lng: 139.784086};
