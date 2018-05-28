@@ -40,17 +40,15 @@ var map = plugin.google.maps.Map.getMap(mapDiv, {
     target: AIR_PORTS
   }
 });
-map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
-  // Add a polyline
-  map.addPolyline({
-    points: AIR_PORTS,
-    'color' : '#AA00FF',
-    'width': 10,
-    'geodesic': true
-  });
-
+// Add a polyline
+map.addPolyline({
+  'points': AIR_PORTS,
+  'color' : '#AA00FF',
+  'width': 10,
+  'geodesic': true
 });
+
 ```
 
 <img src="./addPolyline/image.png" width="200">
@@ -61,30 +59,26 @@ map.addEventListener(plugin.google.maps.event.MAP_READY, function() {
 
 The `POLYLINE_CLICK` event is fired when you tap on the polyline with clicked position ([LatLng](../LatLng/README.md) object);
 
-```
+```js
 // Add a polyline
-map.addPolyline({
+var polyline = map.addPolyline({
   points: AIR_PORTS,
   'color' : '#AA00FF',
   'width': 10,
   'geodesic': true,
   'clickable': true // default = false
-}, function(polyline) {
+});
 
-  // Catch the POLYLINE_CLICK event
-  polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function(latLng) {
+// Catch the POLYLINE_CLICK event
+polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function(latLng) {
 
-    map.addMarker({
-      position: latLng,
-      title: "You clicked on the polyline",
-      snippet: latLng.toUrlValue(),
-      disableAutoPan: true
-    }, function(marker) {
-
-      marker.showInfoWindow();
-    });
-
+  var marker = map.addMarker({
+    position: latLng,
+    title: "You clicked on the polyline",
+    snippet: latLng.toUrlValue(),
+    disableAutoPan: true
   });
+  marker.showInfoWindow();
 
 });
 ```
@@ -101,34 +95,29 @@ Also if you add new element, or remove one of them, the polyline is also updated
 
 ```js
 // Add a polyline
-map.addPolyline({
+var polyline = map.addPolyline({
   'points': points,
   'color' : '#AA00FF',
   'width': 10,
   'geodesic': true
-}, function(polyline) {
-
-  // polyline.getPoints() returns an instance of BaseArrayClass.
-  var mvcArray = polyline.getPoints();
-
-  // Add draggable markers
-  mvcArray.mapAsync(function(latLng, cb) {
-    map.addMarker({
-      position: latLng,
-      draggable: true
-    }, cb);
-  }, function(markers) {
-
-    // If a marker is dragged, set the position of it to the points of the Polygon.
-    markers.forEach(function(marker, idx) {
-      marker.on(plugin.google.maps.event.MARKER_DRAG, function(position) {
-        mvcArray.setAt(idx, position);
-      });
-    });
-
-  });
 });
 
+
+// polyline.getPoints() returns an instance of BaseArrayClass.
+var mvcArray = polyline.getPoints();
+
+// Add draggable markers
+points.forEach(function(point, idx) {
+  var marker = map.addMarker({
+    position: latLng,
+    draggable: true
+  });
+  
+  // If a marker is dragged, set the position of it to the points of the Polygon.
+  marker.on(plugin.google.maps.event.MARKER_DRAG, function(position) {
+    mvcArray.setAt(idx, position);
+  });
+});
 ```
 
 <img src="./getPoints/image.gif" width="200">
@@ -148,7 +137,7 @@ const HNL_AIR_PORT = {"lat": 21.332898, "lng": -157.921418};
 // [Model]
 //    Create one polyline
 //---------------------------------
-map.addPolyline({
+var polyline = map.addPolyline({
   'points': [
     HND_AIR_PORT,
     HNL_AIR_PORT,
@@ -158,29 +147,28 @@ map.addPolyline({
   'width': 10,
   'geodesic': true,
   'idx': 0
-}, function(polyline) {
+});
 
-  //---------------------------------
-  // [Control]
-  //    Increment the idx field.
-  //    If the value is grater than 3,
-  //    reset to 0.
-  //---------------------------------
-  polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function() {
-    var idx = this.get("idx");
-    idx = idx + 1;
-    this.set("idx", idx > 3 ? 0 : idx);
-  });
+//---------------------------------
+// [Control]
+//    Increment the idx field.
+//    If the value is grater than 3,
+//    reset to 0.
+//---------------------------------
+polyline.on(plugin.google.maps.event.POLYLINE_CLICK, function() {
+  var idx = this.get("idx");
+  idx = idx + 1;
+  this.set("idx", idx > 3 ? 0 : idx);
+});
 
-  //---------------------------------
-  // [View]
-  //    Update the polyline color
-  //    based on the idx field.
-  //---------------------------------
-  polyline.on("idx_changed", function() {
-    var idx = this.get("idx");
-    this.setColor(["green", "blue", "orange", "red"][idx]);
-  });
+//---------------------------------
+// [View]
+//    Update the polyline color
+//    based on the idx field.
+//---------------------------------
+polyline.on("idx_changed", function() {
+  var idx = this.get("idx");
+  this.setColor(["green", "blue", "orange", "red"][idx]);
 });
 ```
 
