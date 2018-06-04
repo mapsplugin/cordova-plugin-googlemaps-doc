@@ -11,7 +11,8 @@ This documentation is designed for people familiar with JavaScript programming, 
 ## Guides
 
  - [Generate api keys](./api_key/README.md)
- - [Adding a Map with a Marker](./hello-world/README.md)
+ - [Hello World with Cordova CLI (on your PC)](./hello-world/README.md)
+ - [Hello World with PhoneGap Build](./hello-world-phonegap-build/README.md)
 
 
 ## License
