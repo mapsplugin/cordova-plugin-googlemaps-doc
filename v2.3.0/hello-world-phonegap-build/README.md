@@ -114,6 +114,73 @@ You should see a Google Maps in the app!
 
 ## Understanding the code
 
+Let's check the `www/index.html` file.
+The below is entire code.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("deviceready", function() {
+      var div = document.getElementById("map_canvas");
+
+      // Create a Google Maps native view under the map_canvas div.
+      var map = plugin.google.maps.Map.getMap(div);
+
+      // If you click the button, do something...
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
+
+        // Move to the position with animation
+        map.animateCamera({
+          target: {lat: 37.422359, lng: -122.084344},
+          zoom: 17,
+          tilt: 60,
+          bearing: 140,
+          duration: 5000
+        });
+
+        // Add a maker
+        var marker = map.addMarker({
+          position: {lat: 37.422359, lng: -122.084344},
+          title: "Welecome to \n" +
+                 "Cordova GoogleMaps plugin for iOS and Android",
+          snippet: "This plugin is awesome!",
+          animation: plugin.google.maps.Animation.BOUNCE
+        });
+
+        // Show the info window
+        marker.showInfoWindow();
+
+      });
+
+    }, false);
+
+    </script>
+    <style type="text/css">
+    #map_canvas { /* Must bigger size than 100x100 pixels */
+      width: 100%;
+      height: 500px;
+    }
+    button {
+      padding: .5em;
+      margin: .5em;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <div id="map_canvas">
+      <button id="button">Click me!</button>
+    </div>
+  </body>
+</html>
+```
+
+
 The code below defines an area of the page for your Google map.
 
 ```html
