@@ -30,13 +30,13 @@ All documents are moved to https://github.com/ionic-team/ionic-native-google-map
 
 -------------------------------------------------
 
-## v2.0.0 - v2.2.9 (old version)
+## v2.0.0 - v2.2.9 (:warning:old version)
 
 - [Documentations](./v2.0.0/README.md)
 
 -------------------------------------------------
 
-## v1.4.0 (no longer supported)
+## v1.4.0 (:warning:no longer supported)
 
 You can only create one map in your application.
 No longer supported.
