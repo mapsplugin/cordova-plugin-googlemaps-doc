@@ -1,3 +1,7 @@
+:warning: **This documentions are aim for older versions (from 2.0.0 to 2.2.9).
+New documetations are https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.3.0/class/Polyline/README.md**
+
+---------------
 # Polyline class
 
 _This class extends [BaseClass](../BaseClass/README.md)_.
