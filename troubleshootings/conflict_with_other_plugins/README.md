@@ -91,7 +91,7 @@ For example, you can specify `PLAY_SERVICES_VERSION` variable for the `cordova-p
 $> cordova plugin add cordova-plugin-googlemaps \
   --variable API_KEY_FOR_ANDROID="..." \
   --variable API_KEY_FOR_IOS="..." \
-  --variable PLAY_SERVICES_VERSION="12.0.1"
+  --variable PLAY_SERVICES_VERSION="15.0.1"
 ```
 
 The other plugin examples:
@@ -99,12 +99,12 @@ The other plugin examples:
 ```
 // phonegap-plugin-push
 $> cordova plugin add phonegap-plugin-push \
-  --variable FCM_VERSION=12.0.1"
+  --variable FCM_VERSION=15.0.1"
 
 // cordova-background-geolocation-lt
 $> cordova plugin add cordova-background-geolocation-lt \
   --variable LICENSE="..." \
-  --variable GOOGLE_API_VERSION="12.0.1"
+  --variable GOOGLE_API_VERSION="15.0.1"
 ```
 
 If you already install them, you need to reinstall all plugins with proper variables.
@@ -112,10 +112,10 @@ If you already install them, you need to reinstall all plugins with proper varia
 ------------------------------------------------------------------------
 
 
-## Solution 2: modify the build files
+## Solution 2: modify the build configure files
 
 Some cordova plugin developer do not provide any optional variable.
-In this case, you need to modify the build setting files.
+In this case, you need to modify the build configure files.
 
 **Step 1. Open the `platforms/android/project.properties` file.**
 
@@ -141,11 +141,11 @@ target=android-26
 android.library.reference.1=CordovaLib
 android.library.reference.2=app
 cordova.gradle.include.1=cordova-plugin-googlemaps/starter-tbxml-android.gradle
-cordova.system.library.1=com.google.android.gms:play-services-maps:12.0.1
-cordova.system.library.2=com.google.android.gms:play-services-location:12.0.1
-cordova.system.library.3=com.android.support:support-core-utils:24.1.0
-cordova.system.library.4=com.google.android.gms:play-services-auth:12.0.1
-cordova.system.library.5=com.google.android.gms:play-services-identity:12.0.1
+cordova.system.library.1=com.google.android.gms:play-services-maps:15.0.1
+cordova.system.library.2=com.google.android.gms:play-services-location:15.0.1
+cordova.system.library.3=com.android.support:support-core-utils:27.1.1
+cordova.system.library.4=com.google.android.gms:play-services-auth:15.0.1
+cordova.system.library.5=com.google.android.gms:play-services-identity:15.0.1
 ```
 
 **Step 2. Open the `platforms/android/app/build.gradle` file.**
@@ -173,11 +173,11 @@ dependencies {
   implementation fileTree(dir: 'libs', include: '*.jar')
   // SUB-PROJECT DEPENDENCIES START
   implementation(project(path: ":CordovaLib"))
-  compile "com.google.android.gms:play-services-maps:12.0.1"
-  compile "com.google.android.gms:play-services-location:12.0.1"
-  compile "com.android.support:support-core-utils:24.1.0"
-  compile "com.google.android.gms:play-services-auth:12.0.1"
-  compile "com.google.android.gms:play-services-identity:12.0.1"
+  compile "com.google.android.gms:play-services-maps:15.0.1"
+  compile "com.google.android.gms:play-services-location:15.0.1"
+  compile "com.android.support:support-core-utils:27.1.1"
+  compile "com.google.android.gms:play-services-auth:15.0.1"
+  compile "com.google.android.gms:play-services-identity:15.0.1"
   // SUB-PROJECT DEPENDENCIES END
 }
 ```
