@@ -100,31 +100,19 @@ var data = [
 ];
 
 // Add markers
-var baseArrayClass = new plugin.google.maps.BaseArrayClass(data);
-
-baseArrayClass.map(function(options, cb) {
-  // The variable "options" contains each element of the data.
-  //
-  // The variable "cb" is a callback function of iteration.
-  map.addMarker(options, cb);
-
-}, function(markers) {
-
-  // Set a camera position that includes all markers.
-  var bounds = [];
-  data.forEach(function(POI) {
-    bounds.push(POI.position);
-  });
-
-  map.moveCamera({
-    target: bounds
-  }, function() {
-
-    // After camera moves open the last marker.
-    markers[markers.length - 1].showInfoWindow();
-  });
-
+var bounds = [];
+var markers = data.map(function(options) {
+  bounds.push(options.position);
+  return map.addMarker(options);
 });
+
+// Set a camera position that includes all markers.
+map.moveCamera({
+  target: bounds
+});
+
+// open the last marker.
+markers[markers.length - 1].showInfoWindow();
 ```
 
 <img src="addMarker/image3.png" width="200">
@@ -139,21 +127,19 @@ Since Marker class extends [BaseClass](../BaseClass/README.md), you can set your
 Of course, listening the `(key)_changed` event is as well.
 
 ```js
-map.addMarker({
+var marker = map.addMarker({
   position: { lat: 43.0741704, lng: -89.3809802},
   count: 0
-}, function(marker) {
+});
 
-  marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
-    marker.set("count", marker.get("count") + 1);
-  });
+marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+  marker.set("count", marker.get("count") + 1);
+});
 
 
-  marker.on("count_changed", function(oldValue, newValue, key) {
-    marker.setTitle("'" + key + "' is changed from '" +
+marker.on("count_changed", function(oldValue, newValue, key) {
+  marker.setTitle("'" + key + "' is changed from '" +
                   oldValue + "' to '" + newValue + "'");
-  });
-
 });
 ```
 
@@ -164,24 +150,21 @@ map.addMarker({
 `bindTo()` method is useful when you manipulate multiple overlays with the same value.
 
 ```js
-map.addMarker({
+var marker = map.addMarker({
   position: {lat: 43.0741704, lng: -89.3809802},
   draggable: true
-}, function(marker) {
-
-  map.addCircle({
-    center: marker.getPosition(),
-    radius: 10,
-    fillColor: "rgba(0, 0, 255, 0.5)",
-    strokeColor: "rgba(0, 0, 255, 0.75)",
-    strokeWidth: 1
-  }, function(circle) {
-
-    // circle.center = marker.position
-    marker.bindTo("position", circle, "center");
-  });
-
 });
+
+var circle = map.addCircle({
+  center: marker.getPosition(),
+  radius: 10,
+  fillColor: "rgba(0, 0, 255, 0.5)",
+  strokeColor: "rgba(0, 0, 255, 0.75)",
+  strokeWidth: 1
+});
+
+// circle.center = marker.position
+marker.bindTo("position", circle, "center");
 ```
 
 <img src="bindTo.gif" width="300">
@@ -195,7 +178,7 @@ map.addMarker({
 You can use one of the following protocol: `https`, `file`, `cdvfile` and `file absolute path`.
 
 ```
-map.addMarker({
+var marker = map.addMarker({
   'position': GOOGLE_TOKYO,
   'title': 'Google Tokyo!',
   'icon': {
@@ -216,14 +199,14 @@ The alpha value is ignored.
 **black and white is not available for Android, because the native api accepts color as hue. This is not a bug, specification. Please read [How to set the marker color to black in google maps android(Stack Overflow)](http://stackoverflow.com/questions/28501998/how-to-set-the-marker-color-to-black-in-google-maps-android/28503769#28503769
 )**
 ```js
-map.addMarker({
+var marker = map.addMarker({
   position: {"lat": 0, "lng": 0},
   icon: 'blue',
   'title': "Hello World!\nThis plugin is very awesome!",
   'snippet': "Tap here!"
-}, function( marker ) {
-  marker.showInfoWindow();
 });
+
+marker.showInfoWindow();
 ```
 ![](./marker_icon-color.png)
 
@@ -250,21 +233,14 @@ img.onload = function() {
   context.fillText('Google', 40, 15);
   context.fillText('Tokyo!', 60, 35);
 
-  map.addMarker({
+  var marker = map.addMarker({
     'position': latLng,
     'title': canvas.toDataURL(),
     'icon': icon
-  }, function(marker) {
-    marker.showInfoWindow();
   });
-};
-map.addMarker({
-  'position': latLng,
-  'title': canvas.toDataURL(),
-  'icon': icon
-}, function(marker) {
+  
   marker.showInfoWindow();
-});
+};
 ```
 ![img](marker5.gif)
 ------------
@@ -274,16 +250,14 @@ map.addMarker({
 Simply just set `draggable: true`.
 
 ```js
-map.addMarker({
+var marker = map.addMarker({
   'position': GOOGLE,
   'draggable': true
-}, function(marker) {
+});
 
-  marker.addEventListener(plugin.google.maps.event.MARKER_DRAG_END, function(position) {
-    marker.setTitle(position.toUrlValue());
-    marker.showInfoWindow();
-  });
-
+marker.addEventListener(plugin.google.maps.event.MARKER_DRAG_END, function(position) {
+  marker.setTitle(position.toUrlValue());
+  marker.showInfoWindow();
 });
 ```
 ![img](marker_drag_event.gif)
@@ -299,20 +273,19 @@ Available values:
 - plugin.google.maps.Animation.BOUNCE
 
 ```js
-map.addMarker({
+var marker = map.addMarker({
   position: new plugin.google.maps.LatLng(35, 137),
   icon: "http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png",
   animation: plugin.google.maps.Animation.DROP
-}, function(marker) {
+});
 
-  var button = div.getElementsByTagName('button')[0];
-  button.addEventListener("click", function() {
-    marker.setAnimation(plugin.google.maps.Animation.DROP);
-  });
+var button = div.getElementsByTagName('button')[0];
+button.addEventListener("click", function() {
+  marker.setAnimation(plugin.google.maps.Animation.DROP);
+});
 
-  marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
-    marker.setAnimation(plugin.google.maps.Animation.BOUNCE);
-  });
+marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+  marker.setAnimation(plugin.google.maps.Animation.BOUNCE);
 });
 ```
 
@@ -326,22 +299,20 @@ You can disable auto panning when the marker is clicked.
 
 ```js
 // Add a marker
-map.addMarker({
+var marker = map.addMarker({
   'position': {
     lat: 20,
     lng: 20
   },
   'animation': plugin.google.maps.Animation.BOUNCE,
   'title': 'The map does not move when you click on this marker.'
-}, function(marker) {
+});
 
-  // Disable marker auto panning.
-  marker.setDisableAutoPan(true);
+// Disable marker auto panning.
+marker.setDisableAutoPan(true);
 
-  marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
-    marker.showInfoWindow();
-  });
-
+marker.on(plugin.google.maps.event.MARKER_CLICK, function() {
+  marker.showInfoWindow();
 });
 ```
 <img src="setDisableAutoPan/image.gif" width="200">
