@@ -49,7 +49,6 @@ BUILD FAILED in 8s
 (node:4142) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
 ```
 
-------------------------------------------------------------------------
 
 ## Reason
 
@@ -66,7 +65,6 @@ Conflicting occurs when one of plugins you installed requests older version of G
 
 You need to specify the same version for all plugins.
 
-------------------------------------------------------------------------
 
 ## What version number should you specify?
 
@@ -79,7 +77,6 @@ So, specifying the latest version of Google Play Services is better for most cas
 
 https://developers.google.com/android/guides/releases
 
-------------------------------------------------------------------------
 
 ## Solution 1: specify the version of Google Play Services SDK
 
@@ -109,7 +106,6 @@ $> cordova plugin add cordova-background-geolocation-lt \
 
 If you already install them, you need to reinstall all plugins with proper variables.
 
-------------------------------------------------------------------------
 
 
 ## Solution 2: modify the build configure files

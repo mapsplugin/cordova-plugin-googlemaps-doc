@@ -15,14 +15,12 @@ $ cordova run android
 ```
 
 ## Reason
-------------------------------------------------------------------------
 
 
 Your cordova version is too old.
 
 
 ## Solution1: Upgrade cordova itself
-------------------------------------------------------------------------
 
 Easiest solution is to upgrade `cordova` command itself.
 
@@ -42,7 +40,6 @@ $> cordova build android
 
 
 ## Solution 2: modify the build configure files
-------------------------------------------------------------------------
 
 Some developers do not want to upgrade cordova itself for their reasons.
 In that case, you need to modify the build configure files.
@@ -122,7 +119,6 @@ $> cordova build android
 
 
 ## Solution3: Cloud Build (such as PhoneGap Build)
-------------------------------------------------------------------------
 
 You need to specify `phonegap-version` in your config.xml
 

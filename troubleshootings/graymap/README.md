@@ -6,15 +6,12 @@ You can only see the Google logo.
 
 <img src="image1.png" width="300">
 
-------------------------------------------------------------------------
 
 ## Reason
 
 Your API key does not allow to use `Google Maps Android API` or `Google Maps SDK for iOS`.
 
 Since the `cordova-plugin-googlemaps` uses `Google Maps Android API` and `Google Maps SDK for iOS`, you need to generate API keys for `Android application` and `iOS application`.
-
-------------------------------------------------------------------------
 
 ## Common mistakes
 
@@ -23,7 +20,6 @@ Since the `cordova-plugin-googlemaps` uses `Google Maps Android API` and `Google
 - You contains unnecessary string, such as space.
 - You generated API keys before enabling API keys.
 
-------------------------------------------------------------------------
 
 ## Solution
 

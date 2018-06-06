@@ -39,13 +39,11 @@ Note: Recompile with -Xlint:unchecked for details.
 FAILURE: Build failed with an exception.
 ```
 
-------------------------------------------------------------------------
 
 ## Reason
 
 The version of Google Play Services SDK you specify is too old.
 
-------------------------------------------------------------------------
 
 ## What version number should you specify?
 
@@ -58,7 +56,6 @@ So, specifying the latest version of Google Play Services is better for most cas
 
 https://developers.google.com/android/guides/releases
 
-------------------------------------------------------------------------
 
 ## Solution: specify the version of Google Play Services SDK
 
