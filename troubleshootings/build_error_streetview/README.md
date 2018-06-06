@@ -72,3 +72,4 @@ $> cordova plugin add cordova-plugin-googlemaps \
 ```
 
 If you get a build error with other plugin conflicting, please see this page.
+https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/troubleshootings/conflict_with_other_plugins/README.md
