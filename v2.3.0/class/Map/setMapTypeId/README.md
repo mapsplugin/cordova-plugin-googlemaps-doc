@@ -4,7 +4,7 @@ You can change map type using `map.setMapTypeId()`.
 Available map types are `ROADMAP`, `SATELLITE`, `HYBRID`, `TERRAIN` and `NONE`.
 
 ```
-marker.setMapTypeId(mapTypeId);
+map.setMapTypeId(mapTypeId);
 ```
 
 ## Parameters
