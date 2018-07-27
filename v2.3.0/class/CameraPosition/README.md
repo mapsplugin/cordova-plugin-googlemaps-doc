@@ -14,9 +14,7 @@
     <td>
       ILatLng,<br>
       <br>
-      Array.&lt;ILatLng&gt;<br>
-      <br>
-      LatLngBounds
+      Array.&lt;ILatLng&gt;
     </td>
     <td>
       The center location of the camera view.
