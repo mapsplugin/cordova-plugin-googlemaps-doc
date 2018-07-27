@@ -14,7 +14,7 @@ options        | MapOptions  | options
 
 ## MapOptions
 
-https://github.com/ionic-team/ionic-native-google-maps/blob/sync-test/documents/googlemapoptions/README.md
+https://github.com/ionic-team/ionic-native-google-maps/blob/master/documents/googlemapoptions/README.md
 
 ------------------------------------------------------------------
 
