@@ -32,8 +32,8 @@ var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 var button = document.createElement("button");
 button.innerText = "Click me!";
 button.addEventListener("click", function() {
-  var html = "&lt;img src='./House-icon.png' width='64' height='64' &gt;" +
-             "&lt;br&gt;" +
+  var html = "<img src='./House-icon.png' width='64' height='64' >" +
+             "<br>" +
              "Ta-da!";
   htmlInfoWindow.setContent(html);
 });
