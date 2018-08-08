@@ -27,9 +27,9 @@ HtmlInfoWindow is able to display any HTML elements on it.
 var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
 var html = [
-  'This is &lt;b&gt;Html&lt;/b&gt; InfoWindow',
-  '&lt;br&gt;',
-  '&lt;button onclick="javascript:alert(\'clicked!\');"&gt;click here&lt;/button&gt;',
+  'This is <b>Html</b> InfoWindow',
+  '<br>',
+  '<button onclick="javascript:alert(\'clicked!\');">click here</button>',
 ].join("");
 htmlInfoWindow.setContent(html);
 
