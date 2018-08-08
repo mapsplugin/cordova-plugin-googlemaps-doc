@@ -27,8 +27,8 @@ var map = plugin.google.maps.Map.getMap(div);
 
 var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
-var html = "&lt;img src='./House-icon.png' width='64' height='64' &gt;" +
-           "&lt;br&gt;" +
+var html = "<img src='./House-icon.png' width='64' height='64' >" +
+           "<br>" +
            "This is an example";
 htmlInfoWindow.setContent(html);
 
