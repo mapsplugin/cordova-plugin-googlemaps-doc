@@ -13,7 +13,7 @@ var map = plugin.google.maps.Map.getMap(div);
 var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
 var infoDiv = document.createElement("div");
-infoDiv.innerHTML = "Click the below button.&lt;br&gt;";
+infoDiv.innerHTML = "Click the below button.<br>";
 
 var button = document.createElement("button");
 button.innerText = "Close this infoWindow";
