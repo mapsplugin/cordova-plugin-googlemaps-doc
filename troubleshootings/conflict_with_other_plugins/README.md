@@ -96,7 +96,7 @@ The other plugin examples:
 ```
 // phonegap-plugin-push
 $> cordova plugin add phonegap-plugin-push \
-  --variable FCM_VERSION=15.0.1"
+  --variable FCM_VERSION=17.3.0"
 
 // cordova-background-geolocation-lt
 $> cordova plugin add cordova-background-geolocation-lt \
