@@ -96,7 +96,7 @@ Before using this plugin, please understand how this plugin work.
   - MAP_CLICK
   - MAP_LONG_CLICK
   - CAMERA_MOVE_START (including map dragging)
-  - CAMERA_MOVE_MOVE
+  - CAMERA_MOVE
   - CAMERA_MOVE_END
   - MY_LOCATION_BUTTON_CLICK
   - MY_LOCATION_CLICK
