@@ -16,6 +16,8 @@ params         | type          | description
 ---------------|---------------|---------------------------------------
 url            | string        | image url or path
 bounds         | ILatLng[2]    | southWest and northEast
+anchor         | [x,y]         | (optional) anchor position of bearing. Specify from 0.0 to 1.0
+bearing        | number        | (optional) rotate angle. Specify from 0 - 359
 opacity        | number        | (optional) opacity from 0.0 to 1.0
 zIndex?        | number        | (optional) z-index (default: 0)
 clickable?     | boolean       | (optional) set `true` to receive the `CIRCLE_CLICK` event
