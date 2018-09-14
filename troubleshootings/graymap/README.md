@@ -24,6 +24,6 @@ Since the `cordova-plugin-googlemaps` uses `Google Maps Android API` and `Google
 ## Solution
 
 - Enable `Google Maps Android API` and `Google Maps SDK for iOS`,
-then regenerate API keys.
+then **regenerate API keys**. Regenerating new API key is necessary.
 
 - Please follow this tutorials. https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.3.0/api_key/README.md
