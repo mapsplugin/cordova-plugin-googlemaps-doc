@@ -205,6 +205,6 @@ However, this panoId is **NOT** permanent Id. If Google updates new panorama pho
   </tr>
   <tr>
     <th><a href="./PANORAMA_CLICK/README.md">PANORAMA_CLICK</a></th>
-    <td>Arguments:  PanoramaClickInfo<br>This event is fired when panorama is moved, such as panning gesture.</td>
+    <td>Arguments:  PanoramaClickInfo<br>This event is fired when you click on panorama.</td>
   </tr>
 </table>

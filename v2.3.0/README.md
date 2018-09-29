@@ -1,4 +1,4 @@
-# Cordova GoogleMaps plugin for iOS and Android - version 2.3.0
+# Cordova GoogleMaps plugin for iOS and Android - version 2.3.0 to version 2.3.8
 
 The Cordova GoogleMaps plugin lets you embed native GoogleMaps view into your application, and customize the map from your JavaScript code easily.
 
