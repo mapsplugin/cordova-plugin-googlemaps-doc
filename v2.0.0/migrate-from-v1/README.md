@@ -1,4 +1,5 @@
-**This page will be updated without announcement during beta. Please check back periodically.**
+:warning: **This document is aim for older versions (from 2.0.0 to 2.2.9).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
 
 ## Method names are renamed
 Several methods have been renamed in v2. Please rewrite your code accordingly.
@@ -121,14 +122,14 @@ map.addMarker({
 
 ### LatLng.toUrlValue() and LayLng.toString() return values changed
 
-In version 2 the two methods LatLng.toUrlValue(precision) and LatLng.toString(), no longer return a string in the format of "lat,lng" like Google Maps JS API, but a stringified JSON value. 
+In version 2 the two methods LatLng.toUrlValue(precision) and LatLng.toString(), no longer return a string in the format of "lat,lng" like Google Maps JS API, but a stringified JSON value.
 
 ```js
 
 // v1
 var strLatlng = latLng.toUrlValue();
 
-// equivalent in v2 
+// equivalent in v2
 var strLatlng= latLng.lat + "," + latLng.lng;
 
 ```

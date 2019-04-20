@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.0.0 to 2.2.9).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # MAP_LOADED event
 
 This event is fired after all tiles required to render the map have been fetched, and all labeling is complete.

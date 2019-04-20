@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.3.0 to 2.5.3).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # How to generate API keys?
 
 To use the cordova-plugin-googlemaps API, you must register your app project on the Google API Console and get a Google API key which you can add to your app.

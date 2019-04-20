@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.3.0 to 2.5.3).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # groundOverlay.setOpacity()
 
 Change the opacity of the ground overlay. The value range is from 0.0 to 1.0.

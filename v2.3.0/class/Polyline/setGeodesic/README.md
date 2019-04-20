@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.3.0 to 2.5.3).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # polyline.setGeodesic()
 
 When true, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth. When false, edges of the polygon are rendered as straight lines in screen space.

@@ -15,13 +15,11 @@ Please consider some donation to keep going to implement more functions.
 
 -------------------------------------------------
 
-There are two versions:
+## v2.6.0 - (current version)
 
-## v2.3.0 (current version)
+- [Documentation](./v2.6.0/README.md)
 
-- [Documentation](./v2.3.0/README.md)
-
-- [v2.3.0 Release notes](./v2.3.0/ReleaseNotes/v2.3.0/README.md)
+- [v2.6.0 Release notes](./v2.6.0/ReleaseNotes/v2.6.0/README.md)
 
 
 ## @ionic-native/google-maps
@@ -30,11 +28,15 @@ All documents are moved to https://github.com/ionic-team/ionic-native-google-map
 
 -------------------------------------------------
 
-## v2.0.0 - v2.2.9 (:warning:old version)
+## v2.3.0 - v2.5.3 (:warning:no longer supported)
+
+- [Documentation](./v2.3.0/README.md)
+
+- [v2.3.0 Release notes](./v2.3.0/ReleaseNotes/v2.3.0/README.md)
+
+## v2.0.0 - v2.2.9 (:warning:no longer supported)
 
 - [Documentations](./v2.0.0/README.md)
-
--------------------------------------------------
 
 ## v1.4.0 (:warning:no longer supported)
 

@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.3.0 to 2.5.3).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # groundOverlay.setZIndex()
 
 Change the order in which this ground overlay is drawn with respect to other overlays (including Circles, TileOverlays, Polylines, and Polygons but not Markers).

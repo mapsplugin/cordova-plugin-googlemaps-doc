@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.3.0 to 2.5.3).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # Polyline class
 
 _This class extends [BaseClass](../BaseClass/README.md)_.
@@ -111,7 +114,7 @@ points.forEach(function(point, idx) {
     position: latLng,
     draggable: true
   });
-  
+
   // If a marker is dragged, set the position of it to the points of the Polygon.
   marker.on(plugin.google.maps.event.MARKER_DRAG, function(position) {
     mvcArray.setAt(idx, position);

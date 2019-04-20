@@ -1,3 +1,6 @@
+:warning: **This document is aim for older versions (from 2.0.0 to 2.2.9).
+Document for new version is https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.6.0/README.md**
+
 # map.addMarkerCluster()
 
 The map.addMarkerCluster() method takes a single options object literal, specifying the initial properties of the marker.
