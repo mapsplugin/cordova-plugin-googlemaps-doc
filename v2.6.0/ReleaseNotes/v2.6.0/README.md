@@ -23,5 +23,3 @@ $> cordova plugin add cordova-plugin-googlemaps
 ## Cordova 9
 
 Support cordova version 9.
-
-## TBD: ionic/capacitor support
