@@ -86,8 +86,6 @@ For example, you can specify `PLAY_SERVICES_VERSION` variable for the `cordova-p
 
 ```
 $> cordova plugin add cordova-plugin-googlemaps \
-  --variable API_KEY_FOR_ANDROID="..." \
-  --variable API_KEY_FOR_IOS="..." \
   --variable PLAY_SERVICES_VERSION="15.0.1"
 ```
 
