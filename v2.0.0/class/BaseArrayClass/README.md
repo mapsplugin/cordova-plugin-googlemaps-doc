@@ -92,6 +92,10 @@ This class extends [BaseClass](../BaseClass/README.md).
         <td>Returns the element at the specified index.</td>
     </tr>
     <tr>
+        <th>getLength()</th>
+        <td>Returns the number of elements.</td>
+    </tr>
+    <tr>
         <th><a href="insertAt/README.md">insertAt(i:number, elem:*)</a></th>
         <td>Inserts an element at the specified index.</td>
     </tr>
