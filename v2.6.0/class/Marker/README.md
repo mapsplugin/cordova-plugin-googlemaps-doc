@@ -43,7 +43,7 @@ document.addEventListener("deviceready", function() {
   });
 
   // You have to wait the MAP_READY event.
-  map.one(plugin.google.maps.event.MAP_READY, onMapInit);
+  map.on(plugin.google.maps.event.MAP_READY, onMapInit);
 });
 
 function onMapInit(map) {
