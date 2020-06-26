@@ -377,7 +377,7 @@ Before using this plugin, please understand how this plugin work.
     </tr>
     <tr>
         <th><a href="./setOptions/README.md">setOptions()</a></th>
-        <td>Adjust the map padding.</td>
+        <td>Change the map options.</td>
     </tr>
     <tr>
         <th><a href="./toDataURL/README.md">toDataURL()</a></th>
