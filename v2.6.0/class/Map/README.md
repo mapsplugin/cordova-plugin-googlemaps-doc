@@ -32,7 +32,7 @@ document.addEventListener("deviceready", function() {
   var map = plugin.google.maps.Map.getMap(mapDiv);
 
   // The MAP_READY event notifies the native map view is fully ready to use.
-  map.one(plugin.google.maps.event.MAP_READY, onMapInit);
+  map.on(plugin.google.maps.event.MAP_READY, onMapInit);
 });
 
 function onMapInit(map) {
